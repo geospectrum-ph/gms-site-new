@@ -47,6 +47,134 @@ video {
 	height: auto;
 	}
 
+#number {
+	z-index: +1;
+	position: relative;
+	mix-blend-mode: difference;
+	font-family: Century Gothic;
+	font-size: 30px;
+	font-weight: bold;
+	}
+	
+#number .products {
+	top: 15%; 
+	padding-left: 92.25%;
+	}
+	
+#number .clients {
+	color: #cccccc;
+	}
+	
+#number .partners {
+	margin-left: -3%;
+	}
+	
+#number .people {
+	color: #cccccc;
+	margin-left: 1%;
+	}
+	
+#number .faqs {
+	line-height: 70px;
+	}
+	
+#number .sitemap {
+	top: 10%; 
+	padding-left: 1%;
+	}
+
+#numberIndicator {
+	z-index: +1;
+	position: fixed;
+	font-family: Century Gothic;
+	font-size: 12px;
+	font-weight: bold;
+	top: 50%;
+	padding-left: 10px;
+	transform: translateY(-50%);
+	}
+	
+	
+/**************************/	
+/* Section Side Indicator */
+/**************************/
+
+/* Make nav sticky */
+nav {
+	position: sticky;
+	top: 2rem;
+	align-self: start;
+	}
+
+/* ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+	color: #990099;
+	font-weight: 500;
+	}
+
+/* Sidebar Navigation */
+.section-nav {
+	padding-left: 0;
+	border-left: 0px solid #efefef;
+	}
+
+.section-nav a {
+	text-decoration: none;
+	display: block;
+	padding: .125rem 0;
+	color: #990099;
+	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+	}
+
+.section-nav a:hover {
+	color: #cccccc;
+	}	
+
+.section-nav a:focus {
+	color: #333333;
+	}	
+
+.section-nav ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+.section-nav li {
+	margin-left: 1rem;
+	list-style-type: circle;
+	color: #333333;
+	}
+		
+.section-nav li:hover {
+	background-color: $hover-sidebar-link-color;
+	}
+		
+.section-nav li.active {
+	background-color: $active-sidebar-link-color;
+	}	
+
+.section-nav li:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+	}
+				
+.section-nav li .tooltip {
+	z-index: -1;
+	display: inline-block;
+	position: absolute;		
+	background-color: rgb(0,0,0,0.5);
+	color: #cccccc;
+	padding: 3px 25px 5px 25px;
+	border-radius: 16px;
+	margin-top: -23px;
+	left: 10px;
+	opacity: 0;
+	visibility: hidden;
+	mix-blend-mode: difference;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	}
+
 /* hide scrollbar 
 ::-webkit-scrollbar {
 	width: 1px;
@@ -486,6 +614,7 @@ section {
 
 /* Handle */
 .handle {
+    z-index: 3;
     height: 100%;
     position: absolute;
     display: block;
@@ -493,7 +622,6 @@ section {
     width: 1px;
     top: 0;
     left: 50%;
-    z-index: 3;
 	}
 
 /* Skewed */
@@ -564,7 +692,7 @@ section {
 /****************/
 
 .overlay {
-	z-index: 12;
+	z-index: 9;
 	display: block;
 	height: 100%;
 	width: 0;
@@ -592,8 +720,8 @@ section {
 
 .overlay-content {
 	position: relative;
-	top: 25%;
-	width: 95%;
+	top: 0;
+	width: 100%;
 	}
 	
 .overlayMenu {
@@ -630,15 +758,20 @@ section {
 	}
 
 .overlay .closebtn {
+	z-index: 9;
 	position: absolute;
 	top: 15px;
 	right: 15px;
 	font-size: 30px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #990099;
 	}	
 
 .overlay .closebtn a:hover {
+	color: #cccccc;
+	}	
+
+.overlay .closebtn a:active {
 	color: #990099;
 	}		
 
@@ -646,12 +779,12 @@ section {
 /* Sidebar Menu */
 /****************/
 
-.sidenav {
+#sidenav {
+	z-index: 10;
 	display: block;
 	height: 100%;
 	width: 50px;
 	position: fixed;
-	z-index: 10;
 	top: 100;
 	right: 0;
 	background-color: #303030;
@@ -737,9 +870,8 @@ section {
 /* Products and Services */
 /*************************/
 
-.productWrapper { 
+#productWrapper { 
 	text-align: center;
-	color: var(--color);
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -835,6 +967,7 @@ a.modal-open {
 	}
 	
 .modal {
+  z-index:-1;
   background: rgba(0,0,0,0.93);
   position:fixed;
   width:100%;
@@ -844,15 +977,14 @@ a.modal-open {
   bottom:0px;
   transition:all .5s ease-in-out;
   opacity:0;
-  z-index:-1;
 	padding: 10px;
   border: 1px dotted #666666;
 }
 
 .modal:target {
+  z-index:+1;
   opacity:1;
   transition:all .5s ease-in-out;
-  z-index:+1;
 }
 
 .modal-content {
@@ -870,14 +1002,15 @@ a.modal-open {
 }
 
 .modal:target .modal-content {
+  z-index: 14;
   transform:translate(-50%, -50%);
   transition:all .5s ease-in-out;
   transition-delay:.5s;
-  z-index:9999;
   opacity:1;
 }
 
 .modal-close {
+  z-index:+1;
   float:right;
   text-decoration:none;
   padding:22px 22px;
@@ -885,7 +1018,6 @@ a.modal-open {
   font-weight:bold;
   font-size: 24px;
   transition:all .5s ease-in-out;
-  z-index:+1;
   background: transparent;
   text-align:center;
   border-radius:0 4px 0 0;
@@ -975,8 +1107,10 @@ a.modal-open {
 /* Clients */
 /***********/
 
-#clients {
+#clientWrapper {
 	max-width: 100%;
+	min-height: 50vh;
+	display: block;
   	background:  url(../Images.png) no-repeat center top;
 	background-color: #4C4C4C;
 	font-family: siteFont, Tahoma;
@@ -985,10 +1119,8 @@ a.modal-open {
 	}
 
 #clients-container {
-	max-width: 1400px;
-	position: relative;
-	background-color: transparent;
-	margin: auto;
+	max-width: 1000px;
+	background-color: #4C4C4C;
 	font-family: siteFont, Tahoma;
 	}
 	
@@ -997,7 +1129,6 @@ a.modal-open {
 	font-size: 16px;
 	color: #cccccc;
 	letter-spacing: 1px;
-	padding-top: 0px;
 	padding-left: 20px;
 	padding-right: 30px;
 	text-align: left; 
@@ -1021,7 +1152,7 @@ a.modal-open {
 /* Global Partners */
 /*******************/
 
-.partnerWrapper { 
+#partnerWrapper { 
 	display: block;
 	width: 100%;
 	min-height: 100vh;
@@ -1075,6 +1206,7 @@ a.modal-open {
 
 #aboutWrapper {
 	max-width: 100%;
+	min-height: 50vh;
 	display: block;
   	background:  url(../Images.png) no-repeat center top;
 	background-color: #112959;
@@ -1124,6 +1256,7 @@ a.modal-open {
 }
 
 .wave {
+    z-index: -1;
     background: rgb(255 255 255 / 25%);
     border-radius: 1000% 1000% 0 0;
     position: fixed;
@@ -1134,7 +1267,6 @@ a.modal-open {
     opacity: 0.8;
     bottom: 0;
     left: 0;
-    z-index: -1;
 }
 
 .wave:nth-of-type(2) {
@@ -1257,7 +1389,22 @@ a.modal-open {
 	
 #footer {
 	max-width: 100%;
-	padding-top: 100px;
+	padding-top: 50px;
+	display: block;
+	font-family: siteFont, Tahoma;
+	padding-left: 25px;
+	background-color: #010A26;
+	background-image: url(../Images/bgFooter.png);
+	background-size: cover;
+	background-position: center;
+  
+/*  this is where the magic happens:  */
+	background-attachment: fixed;
+	}
+	
+.footer {
+	max-width: 100%;
+	padding-top: 50px;
 	display: block;
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
@@ -1277,7 +1424,6 @@ a.modal-open {
 	margin: auto;
 	color: #cccccc;
 	font-family: siteFont, Tahoma;
-	background-color: #010A26;
 	}
 	
 .footerHeading {
@@ -1375,8 +1521,8 @@ a.modal-open {
 /* Back to Top */
 /***************/	
 .back-to-top {
+	z-index: -1;
 	position: fixed;
-	z-index: 10;
 	bottom: 10px;
 	right: 0px;
 	text-decoration: none;
@@ -1571,16 +1717,16 @@ a.modal-open {
     }
 
 .top {
-    background-color: #010A26;
     z-index: 2;
+    background-color: #010A26;
     width: 100%;
 	}
 
 .top .description {
+	z-index: 3;
     left: 10%;
 	margin-top: 15%;
 	text-align: right;
-	z-index: 3;
     width: 70%;
     }
 	

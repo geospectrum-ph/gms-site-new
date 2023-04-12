@@ -34,6 +34,18 @@
 
 <body>
 
+<div id="numberIndicator">
+	<nav class="section-nav">
+		<ol>
+			<li><a href="#about">00</a><span class="tooltip">About Us</span></li>
+			<li><a href="#vision">01</a><span class="tooltip">Vision</span></li>
+			<li><a href="#values">02</a><span class="tooltip">Values</span></li>
+			<li><a href="#people">03</a><span class="tooltip">People</span></li>
+			<li><a href="#footer">04</a><span class="tooltip">Sitemap</span></li>
+		</ol>
+	</nav>
+</div>
+
 <div class="logo" style="">
 	<a href="home.htm">
 	<img src="logos/logo_gms.png" class="logo" style="height: 40px;	width: 300px;" border="0"></a>
@@ -54,14 +66,88 @@
 	
 		<div class="d-flex flex-column justify-content-center w-100 h-100">
 			<div class="d-flex flex-column justify-content-center align-items-center">	
-				<div class="" style="margin-left:30px; margin-top:0px;">
-					<div class="" style="">	
-						<a href="home.htm" class="overlayMenu"><img src="logos/logo_gmsRowWhite.png" style="height:50%; width:50%; padding-bottom:100px;" border="0"></a>
-						<span class="overlayMenu" style=""><a href="#">Products and Services</a></span>			
-						<span class="overlayMenu" style=""><a href="about.html">About Us</a></span>		
-						<span class="overlayMenu" style=""><a href="contact.html">Contact Us</a></span>			
-					</div> 
+			
+			<!-- Start Overlay Menu -->
+			<div class="footer" style="">
+
+				<div class="row">
+					<div class="footer-container">			
+						<div class="col-6" style="margin-top:50px;">			
+							<div class="email">
+								<span class="emailQ"> Got a question? </span><br />
+								<span class="emailT"> Drop a line and we will get in touch.</span><br /><br /><br />
+												
+								<div id="linkWhite" style="font-size:18px;"><img src="Images/button_sphere_plus.png" id="sphere" class="responsive" style="margin-left:-10px;">&nbsp;&nbsp;<a href="mailto:info@geospectrum.com.ph"> EMAIL US</a> </div>
+							</div>				
+						</div>
+						
+						<div class="col-3" style="margin-top:50px;">				
+							<span class="footerHeading">Products and <br />Services</span><br />
+								<ul style="">
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Optical Satellite Imagery</a></li>
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services and Software</a></li>
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Industries Served</a></li>
+								</ul><br /><br />				
+						</div>
+						
+						<div class="col-3" style="margin-top:50px;">					
+							<span class="footerHeading" style=""><a href="about.html" style="text-decoration:none;">About Us</a></span><br />
+								<ul style="">
+									<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission and Vision</a></li>
+									<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core Values</a></li> 
+									<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our People</a></li>
+									<li class="menuFooterList"><a href="about.html#partners" style="text-decoration:none;">Our Partners</a></li>
+									<li class="menuFooterList"><a href="about.html#" style="text-decoration:none;">Our Projects</a></li> 
+								</ul> <br /><br />
+						</div>
+					</div>		
 				</div>
+				
+				<div class="row">
+					<div class="footer-container">			
+						<div class="col-6" style="margin-top:30px;">&nbsp;
+							<!-- Spacer -->
+						</div>
+						
+						<div class="col-3" style="margin-top:30px;">
+							<span class="footerHeading" style="">Visit Us </span><br />
+								<ul style="">
+									<li class="textFooter">Unit 1604 OMM-CITRA Bldg.,</li>
+									<li class="textFooter">39 San Miguel Avenue,<br />
+									Ortigas Center,</li>
+									<li class="textFooter">Pasig City, Philippines</li> 
+								</ul><br /><br />				
+						</div>
+						
+						<div class="col-3" style="margin-top:30px;">
+							<span class="footerHeading" style="">Call Us </span><br />
+								<ul style="">
+									<li class="textFooter">+63917-7915536</li>
+									<li class="textFooter">+63920-9113418</li>
+									<li class="textFooter">+(632)-8637-8026</li>
+								</ul><br /><br /><br /><br /><br />						
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="footer-container">
+						<div class="col-6" style="margin-top: 100px;">&nbsp;
+							<!-- Spacer -->
+						</div>
+						<div class="col-6" style="margin-top: 100px;">
+							<a class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
+							<a class="textFooterTiny" style="">Terms of Use</a>
+							<span class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</span><br /><br />
+						</div>
+					</div>
+				</div>
+
+				<div align="right"><a href="#" class="back-to-top"><img src="Images/top.png" alt="Top Page"></a></div>
+			</div>
+			<!-- End Overlay Menu -->
+				
 			</div>
 		</div>
 		
@@ -83,7 +169,8 @@
 <!-- End Sidebar Navigation -->
 
 <!-- Start About Us -->
-<div id="aboutWrapper">			
+<section id="about">					
+	<div id="number" class=""><span class="aboutUs" style="visibility:hidden;">00</span></div>		
 	<div id="subHeading" style="">ABOUT US</div>			
 	<div id="question" style="">WHO WE ARE</div>				
 		<div class="row">	
@@ -101,67 +188,97 @@
 			</div>
 		
 		</div>		
-</div>
+</section>
 <!-- End About Us -->
 
 <!-- Start Vision and Mission -->
-<div id="visionWrapper">
+<section id="vision">
 	<div class="vision-container">
-		<section id="section" class="reveal" style="">	
-			<div class="row">			
-						
-				<div class="goals" style="">Our Goals</div>	
+		<div id="section" class="reveal" style="">
 			
-				<div class="col-6 col-s-6" style="">	
-					<div class="services" style="">Marketing Services</div>		
-					<div class="visionText" style=""><span style="font-weight:bold;">VISION.</span> The leading people-centered developer and innovator of geospatial products, services, and analytics solutions in the Philippines.</div>		
-					<div class="visionText" style=""><span style="font-weight:bold;">MISSION.</span> To enable actionable and data driven decisions by promoting high accuracy, reliable and affordable geospatial information enhanced by innovative analytics to support national development.</div>
-					
-					<div class="aboutButton" style=""><a href="about.html"> READ MORE</a> &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" style="width:35px; height:35px; vertical-align:middle;"></div>				
+			<div id="number" class="" style=""><span class="vision">01</span></div>		
+			<span id="subHeadingDark" style="">VISION AND MISSION</span><br />			
+			<span id="questionDark" style="">WHAT WE WORK FOR</span><br /><br />	
+			
+			<div class="row">	
+			
+				<div class="col-3 col-s-3" style="">	
+					<div class="services" style="">Marketing <br />Services</div>				
 				</div>				
 				
-				<div class="col-6 col-s-6" style="">	
-					<div class="services" style="">Analytics Services</div>		
-					<div class="visionText" style=""><span style="font-weight:bold;">VISION.</span> To be the company of choice for leveraging geospatial data to generate actionable information and accurate, effective solutions.</div>		
+				<div class="col-4 col-s-4" style="">							
+					<div class="visionText" style=""><span style="font-weight:bold;">VISION.</span> The leading people-centered developer and innovator of geospatial products, services, and analytics solutions in the Philippines.</div>
+				</div>				
+				
+				<div class="col-4 col-s-4" style="">
+					<div class="visionText" style=""><span style="font-weight:bold;">MISSION.</span> To enable actionable and data driven decisions by promoting high accuracy, reliable and affordable geospatial information enhanced by innovative analytics to support national development.</div>
+					
+					<div class="aboutButton" style=""><a href="about.html"> READ MORE</a> &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" style="width:35px; height:35px; vertical-align:middle; text-align:left;"></div>
+				</div>					
+				
+				<div class="col-1 col-s-1" style="">
+				</div>
+				
+			</div><br /><br /><br />
+			
+			<div class="row" style="">	
+			
+				<div class="col-3 col-s-3" style="">	
+					<div class="services" style="">Analytics <br />Services</div>				
+				</div>				
+				
+				<div class="col-4 col-s-4" style="">		
+					<div class="visionText" style=""><span style="font-weight:bold;">VISION.</span> To be the company of choice for leveraging geospatial data to generate actionable information and accurate, effective solutions.</div>				
+				</div>				
+				
+				<div class="col-4 col-s-4" style="">		
 					<div class="visionText" style=""><span style="font-weight:bold;">MISSION.</span> To harness our access to the continuous, real-time stream of geospatial datasets, state-of-the-art analytics tools, and the skills and competencies of our team to develop knowledge-based applications and meaningful solutions that are indispensable to decision making and planning.</div>
 					
-					<div class="aboutButton" style=""><a href="about.html"> READ MORE</a> &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" style="width:35px; height:35px; vertical-align:middle;"></div>				
-				</div>	
+					<div class="aboutButton" style=""><a href="about.html"> READ MORE</a> &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" style="width:35px; height:35px; vertical-align:middle; text-align:left;"></div>				
+				</div>			
+				
+				<div class="col-1 col-s-1" style=""> &nbsp;				
+				</div>
 		
-			</div>
-		</section>	
+			</div>	
+		
+			
+		</div>	
 	</div>  
-</div>
+</section>
 <!-- End Vision and Mission -->
 
 <!-- Start Our Values -->
-<div id="valuesWrapper">
+<section id="values">
 	<div id="values-container">
-		<section id="section" class="reveal" style="">		
+		<div id="section" class="reveal" style="">		
 			<div class="row">	
 			
-				<div class="col-5 col-s-5" style="padding-top:75px; text-align:right;">		
+				<div class="col-5 col-s-5" style="padding-top:75px; text-align:right;">				
+					<div id="number" class="" style=""><span class="values">02</span></div>		
 					<span id="subHeadingLight" style="">CORE VALUES</span><br>			
 					<span id="questionLight" style="">HOW WE WORK</span><br><br>	
 				</div>
 			
 				<div class="col-7 col-s-7" style="">			
-					<div id="values" style="">working towards accuracy, reliability, innovation, ingenuity, and customer service.</div>			
+					<div class="values" style="">working towards accuracy, reliability, innovation, ingenuity, and customer service.</div>			
 				</div>
 		
 			</div>
-		</section>
+		</div>
 	</div>  
-</div>
+</section>
 <!-- End Our Values -->
 
 <!-- Start Our People -->
-<div id="people">
-	<div class="vision-container">
+<section id="people">
+	<div class="people-container">
 		<section id="section" class="reveal" style="">	
-			<div class="row">			
-						
-				<div class="peopleText" style="">Our People and Our Team</div>				
+			<div class="row">
+			
+				<div id="number" class="" style=""><span class="people">03</span></div>		
+				<span id="subHeadingLightP" style="">OUR LEADER AND OUR TEAM</span><br>						
+				<span id="questionLightP" style="">WHO WE TRUST IN</span>				
 				
 				<div class="col-8 col-s-8" style="">	
 	
@@ -254,47 +371,35 @@
 			</div>
 		</section>	
 	</div>  
-</div>
+</section>
 <!-- End Our People -->
 
 <!-- Start Footer -->
-<div id="footer" style="">
+<section id="footer" style="">
+
 	<div class="row">
-		<div class="footer-container">
-			
-			<div class="col-6" style="margin-top: 50px;">
-			
+		<div class="footer-container">				
+			<div id="number" class="" style=""><span class="sitemap">04</span></div>			
+			<div class="col-6" style="margin-top:50px;">			
 				<div class="email">
 					<span class="emailQ"> Got a question? </span><br />
 					<span class="emailT"> Drop a line and we will get in touch.</span><br /><br /><br />
 									
 					<div id="linkWhite" style="font-size:18px;"><img src="Images/button_sphere_plus.png" id="sphere" class="responsive" style="margin-left:-10px;">&nbsp;&nbsp;<a href="mailto:info@geospectrum.com.ph"> EMAIL US</a> </div>
-				</div>
-				
+				</div>				
 			</div>
 			
-			<div class="col-3" style="margin-top: 50px;">		
-			
+			<div class="col-3" style="margin-top:50px;">				
 				<span class="footerHeading">Products and <br />Services</span><br />
-						<ul style="">
-							<li class="menuFooterList"><a href="#" style="text-decoration:none;">Optical Satellite Imagery</a></li>
-							<li class="menuFooterList"><a href="#" style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
-							<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services and Software</a></li>
-							<li class="menuFooterList"><a href="#" style="text-decoration:none;">Industries Served</a></li>
-						</ul><br /><br />
-						  
-				<span class="footerHeading" style="">Visit Us </span><br />
 					<ul style="">
-						<li class="textFooter">Unit 1604 OMM-CITRA Bldg.,</li>
-						<li class="textFooter">39 San Miguel Avenue,<br />
-						Ortigas Center,</li>
-						<li class="textFooter">Pasig City, Philippines</li> 
-					</ul><br /><br />						
-				
+						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Optical Satellite Imagery</a></li>
+						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
+						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services and Software</a></li>
+						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Industries Served</a></li>
+					</ul><br /><br />				
 			</div>
 			
-			<div class="col-3" style="margin-top: 50px;">		
-			
+			<div class="col-3" style="margin-top:50px;">					
 				<span class="footerHeading" style="">About Us</span><br />
 					<ul style="">
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Mission and Vision</a></li>
@@ -303,14 +408,33 @@
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Partners</a></li>
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Projects</a></li> 
 					</ul> <br /><br />
-				
+			</div>
+		</div>		
+	</div>
+	
+	<div class="row">
+		<div class="footer-container">			
+			<div class="col-6" style="margin-top:30px;">&nbsp;
+				<!-- Spacer -->
+			</div>
+			
+			<div class="col-3" style="margin-top:30px;">
+				<span class="footerHeading" style="">Visit Us </span><br />
+					<ul style="">
+						<li class="textFooter">Unit 1604 OMM-CITRA Bldg.,</li>
+						<li class="textFooter">39 San Miguel Avenue,<br />
+						Ortigas Center,</li>
+						<li class="textFooter">Pasig City, Philippines</li> 
+					</ul><br /><br />				
+			</div>
+			
+			<div class="col-3" style="margin-top:30px;">
 				<span class="footerHeading" style="">Call Us </span><br />
 					<ul style="">
 						<li class="textFooter">+63917-7915536</li>
 						<li class="textFooter">+63920-9113418</li>
 						<li class="textFooter">+(632)-8637-8026</li>
-					</ul><br /><br /><br /><br /><br />	
-					
+					</ul><br /><br /><br /><br /><br />						
 			</div>
 		</div>
 	</div>
@@ -329,7 +453,7 @@
 	</div>
 
 	<div align="right"><a href="#" class="back-to-top"><img src="Images/top.png" alt="Top Page"></a></div>
-</div>
+</section>
 <!-- End Footer -->
 
 </body>
@@ -492,5 +616,31 @@ $slideNavPrev.click(function (e) {
        slideInAll = $('.slide');
 
   goToPreviousSlide(slideOut, slideIn, slideInAll);
+});
+</script>
+
+
+<!-- For section indicator -->
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			const id = entry.target.getAttribute("id");
+			if (entry.intersectionRatio > 0) {
+				document
+					.querySelector(`nav li a[href="#${id}"]`)
+					.parentElement.classList.add("active");
+			} else {
+				document
+					.querySelector(`nav li a[href="#${id}"]`)
+					.parentElement.classList.remove("active");
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll("section[id]").forEach((section) => {
+		observer.observe(section);
+	});
 });
 </script>
