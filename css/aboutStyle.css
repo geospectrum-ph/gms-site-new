@@ -39,6 +39,134 @@ body {
 	height: auto;
 	}
 
+#number {
+	z-index: +1;
+	position: relative;
+	mix-blend-mode: difference;
+	font-family: Century Gothic;
+	font-size: 30px;
+	font-weight: bold;
+	}
+	
+#number .aboutUs {
+	top: 15%; 
+	padding-left: 92.25%;
+	}
+	
+#number .vision {
+	top: 0%; 
+	margin-left: 75px;
+	color: #333333;
+	}
+	
+#number .values {
+	margin-left: -3%;
+	color: #cccccc;
+	}
+	
+#number .people {
+	color: #cccccc;
+	margin-left: 60.75%;
+	}
+	
+#number .sitemap {
+	top: 10%; 
+	padding-left: 1%;
+	}
+
+#numberIndicator {
+	z-index: +1;
+	position: fixed;
+	font-family: Century Gothic;
+	font-size: 12px;
+	font-weight: bold;
+	top: 50%;
+	padding-left: 10px;
+	transform: translateY(-50%);
+	}
+	
+/**************************/	
+/* Section Side Indicator */
+/**************************/
+
+/* Make nav sticky */
+nav {
+	position: sticky;
+	top: 2rem;
+	align-self: start;
+	}
+
+/* ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+	color: #990099;
+	font-weight: 500;
+	}
+
+/* Sidebar Navigation */
+.section-nav {
+	padding-left: 0;
+	border-left: 0px solid #efefef;
+	}
+
+.section-nav a {
+	text-decoration: none;
+	display: block;
+	padding: .125rem 0;
+	color: #990099;
+	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+	}
+
+.section-nav a:hover {
+	color: #cccccc;
+	}	
+
+.section-nav a:focus {
+	color: #333333;
+	}	
+
+.section-nav ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+.section-nav li {
+	margin-left: 1rem;
+	list-style-type: circle;
+	color: #333333;
+	}
+		
+.section-nav li:hover {
+	background-color: $hover-sidebar-link-color;
+	}
+		
+.section-nav li.active {
+	background-color: $active-sidebar-link-color;
+	}	
+
+.section-nav li:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+	}
+				
+.section-nav li .tooltip {
+	z-index: -1;
+	display: inline-block;
+	position: absolute;		
+	background-color: rgb(0,0,0,0.5);
+	color: #cccccc;
+	padding: 3px 25px 5px 25px;
+	border-radius: 16px;
+	margin-top: -23px;
+	left: 10px;
+	opacity: 0;
+	width: 120px;
+	visibility: hidden;
+	mix-blend-mode: difference;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	}
+
+
 /* hide scrollbar 
 ::-webkit-scrollbar {
 	width: 1px;
@@ -90,9 +218,9 @@ body {
 	display: block;
 	width: 95.5%;
 	font-size: 18px;
-	text-align: right;
-	margin-left: 0px;
-	padding-left: 15px;
+	text-align: left;
+	margin-left: 75px;
+	padding-left: 0px;
 	padding-bottom: 12px;	
 	color: #333333;
 	font-weight: bold; 
@@ -103,7 +231,8 @@ body {
 	display: block;
 	width: 95.5%;
 	margin-top: -50px;
-	text-align: right;
+	text-align: left;
+	margin-left: 75px;
 	font-family: Century Gothic;
 	color: #333333;
 	font-size: 80px; 
@@ -126,6 +255,29 @@ body {
 	line-height: 90px;
 	font-size: 80px; 
 	font-weight: bold; 
+	}
+	
+#subHeadingLightP {
+	font-size: 18px; 
+	font-weight: bold;
+	margin-left: 41%;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	text-align: right;	
+	color: #cccccc;
+	letter-spacing: 3px;
+	border: 0px dotted #fff;
+	}
+	
+#questionLightP {
+	font-family: Century Gothic;
+	color: #cccccc;
+	margin-left: 16.1%;
+	text-align: right;	
+	line-height: 90px;
+	font-size: 80px; 
+	font-weight: bold; 
+	border: 0px dotted #ffffff;
 	}
 		
 #bodyTextDark {
@@ -416,7 +568,7 @@ section {
 /****************/
 
 .overlay {
-	z-index: 12;
+	z-index: 9;
 	display: block;
 	height: 100%;
 	width: 0;
@@ -444,8 +596,8 @@ section {
 
 .overlay-content {
 	position: relative;
-	top: 25%;
-	width: 95%;
+	top: 0;
+	width: 100%;
 	}
 	
 .overlayMenu {
@@ -482,17 +634,22 @@ section {
 	}
 
 .overlay .closebtn {
+	z-index: 9;
 	position: absolute;
 	top: 15px;
 	right: 15px;
 	font-size: 30px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #990099;
 	}	
 
 .overlay .closebtn a:hover {
+	color: #cccccc;
+	}	
+
+.overlay .closebtn a:active {
 	color: #990099;
-	}		
+	}	
 
 /****************/	
 /* Sidebar Menu */
@@ -587,7 +744,7 @@ section {
 /* About Us */
 /******************/
 
-#aboutWrapper {
+#about {
 	display: block;
 	color: #ffffff;
 	background-color: #112959;
@@ -639,7 +796,7 @@ section {
 /* Vison and Mission    */
 /************************/
 
-#visionWrapper { 
+#vision { 
 	display: block;
 	background-color: #b9b7b7;
 	width: 100%;
@@ -661,31 +818,33 @@ section {
 	}
 	
 .services { 
-	margin-top: 50px;
-	line-height: 120px;
+	margin-top: 0px;
+	line-height: 60px;
 	font-family: Century Gothic, Tahoma;
 	color: #333333;
-	font-size: 50px; 
+	font-size: 40px; 
 	font-weight: bold;
-	text-align: center;
+	text-align: right;
+	border: 0px solid #333;
 	}
 	
 .visionText {
 	font-family: sitefont, Tahoma;
 	color: #33333;
-	font-size: 20px;  
-	margin-top: 50px;
-	padding: 0px 100px 0px 100px;
-	letter-spacing: 2px;
-	text-align: justify;
-	margin-bottom: 75px;
+	font-size: 16px;  
+	margin-left: 30px;
+	padding: 20px 50px 0px 20px;
+	letter-spacing: 1px;
+	text-align: left;
+	margin-bottom: 10px;
+	border-left: 1px dotted #333;
 	}
 	
 /************************/
 /* Our Values           */
 /************************/
 
-#valuesWrapper { 
+#values { 
 	text-align: center;
 	width: 100%;
 	display: block;
@@ -704,7 +863,7 @@ section {
 	padding-top: 250px;
 	}
 	
-#values {
+.values {
 	display: block;
 	font-family: sitefont, Tahoma;
 	color: #cccccc;
@@ -741,8 +900,8 @@ section {
 	padding-bottom: 50px;
 	}
 	
-.vision-container {
-	max-width: 100%;
+.people-container {
+	max-width: 1400px;
 	position: relative;
 	}
 	
@@ -979,7 +1138,22 @@ ul.expertise {
 	
 #footer {
 	max-width: 100%;
-	padding-top: 100px;
+	padding-top: 50px;
+	display: block;
+	font-family: siteFont, Tahoma;
+	padding-left: 25px;
+	background-color: #010A26;
+	background-image: url(../Images/bgFooter.png);
+	background-size: cover;
+	background-position: center;
+  
+/*  this is where the magic happens:  */
+	background-attachment: fixed;
+	}
+	
+.footer {
+	max-width: 100%;
+	padding-top: 50px;
 	display: block;
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
@@ -999,7 +1173,6 @@ ul.expertise {
 	margin: auto;
 	color: #cccccc;
 	font-family: siteFont, Tahoma;
-	background-color: #010A26;
 	}
 	
 .footerHeading {
@@ -1096,8 +1269,8 @@ ul.expertise {
 /* Back to Top */
 /***************/	
 .back-to-top {
+	z-index: -1;
 	position: fixed;
-	z-index: 10;
 	bottom: 10px;
 	right: 0px;
 	text-decoration: none;
