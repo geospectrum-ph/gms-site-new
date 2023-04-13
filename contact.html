@@ -33,9 +33,9 @@
 	function sendEmail(Full_Name_I, Email_Address_I, Contact_Number_I, Subject_I, Message_I) {
 		Email.send({
 			SecureToken: "b3a61f50-37cf-4a00-a5f0-98e37af1b275",
-			To: 'it.support@geospectrum.com.ph',
+			To: 'info@geospectrum.com.ph',
 			From: 'it.support@geospectrum.com.ph',
-			Subject: Subject_I,
+			Subject: "\"" + Subject_I + "\" from: " + Full_Name_I,
 			Body: "\"" + Message_I + "\"<br><br>From: <br>" + Full_Name_I + "<br>" + Email_Address_I + "<br>" + Contact_Number_I,
 		})
 			.then(function (message) {
@@ -44,7 +44,7 @@
 			.then(function (){
 				document.getElementById('contactform').reset();
 			});
-	} /* Not working due to Google security update */
+	}
 </script>
 
 <!-- Social Media Icon -->
