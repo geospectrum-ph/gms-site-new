@@ -27,26 +27,6 @@
 <!-- Back-to-Top -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
-<!-- Form Handler -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript">
-	function sendEmail(Full_Name_I, Email_Address_I, Contact_Number_I, Subject_I, Message_I) {
-		Email.send({
-			SecureToken: "b3a61f50-37cf-4a00-a5f0-98e37af1b275",
-			To: 'info@geospectrum.com.ph',
-			From: 'it.support@geospectrum.com.ph',
-			Subject: "\"" + Subject_I + "\" from: " + Full_Name_I,
-			Body: "\"" + Message_I + "\"<br><br>From: <br>" + Full_Name_I + "<br>" + Email_Address_I + "<br>" + Contact_Number_I,
-		})
-			.then(function (message) {
-				alert("mail sent successfully")
-			})
-			.then(function (){
-				document.getElementById('contactform').reset();
-			});
-	}
-</script>
-
 <!-- Social Media Icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -67,16 +47,16 @@
 	</nav>
 </div>
 
-<div class="logo">
+<div class="logo" style="">
 	<a href="home.htm">
 	<img src="logos/logo_gms.png" class="logo" style="height: 40px;	width: 300px;" border="0"></a>
 </div>
 
 <!-- Start Topbar Navigation -->
-<div class="topnav" id="myTopnav">
-
-	
-	
+<div id="navbar" style="">
+  <a href="#home">&nbsp;</a>
+  <a href="products.html">PRODUCTS AND SERVICES</a>
+  <a href="about.html">ABOUT US</a>
 </div>
 <!-- End Topbar Navigation -->
 
@@ -91,7 +71,7 @@
 			<div class="d-flex flex-column justify-content-center align-items-center">	
 			
 			<!-- Start Overlay Menu -->
-			<div class="footer">
+			<div class="footer" style="">
 
 				<div class="row">
 					<div class="footer-container">			
@@ -106,7 +86,7 @@
 						
 						<div class="col-3" style="margin-top:50px;">				
 							<span class="footerHeading">Products and <br />Services</span><br />
-								<ul>
+								<ul style="">
 									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Optical Satellite Imagery</a></li>
 									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
 									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services and Software</a></li>
@@ -115,8 +95,8 @@
 						</div>
 						
 						<div class="col-3" style="margin-top:50px;">					
-							<span class="footerHeading"><a href="about.html" style="text-decoration:none;">About Us</a></span><br />
-								<ul>
+							<span class="footerHeading" style=""><a href="about.html" style="text-decoration:none;">About Us</a></span><br />
+								<ul style="">
 									<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission and Vision</a></li>
 									<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core Values</a></li> 
 									<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our People</a></li>
@@ -134,8 +114,8 @@
 						</div>
 						
 						<div class="col-3" style="margin-top:30px;">
-							<span class="footerHeading">Visit Us </span><br />
-								<ul>
+							<span class="footerHeading" style="">Visit Us </span><br />
+								<ul style="">
 									<li class="textFooter">Unit 1604 OMM-CITRA Bldg.,</li>
 									<li class="textFooter">39 San Miguel Avenue,<br />
 									Ortigas Center,</li>
@@ -144,8 +124,8 @@
 						</div>
 						
 						<div class="col-3" style="margin-top:30px;">
-							<span class="footerHeading">Call Us </span><br />
-								<ul>
+							<span class="footerHeading" style="">Call Us </span><br />
+								<ul style="">
 									<li class="textFooter">+63917-7915536</li>
 									<li class="textFooter">+63920-9113418</li>
 									<li class="textFooter">+(632)-8637-8026</li>
@@ -160,9 +140,9 @@
 							<!-- Spacer -->
 						</div>
 						<div class="col-6" style="margin-top: 100px;">
-							<a class="textFooterTiny">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
-							<a class="textFooterTiny">Terms of Use</a>
-							<span class="textFooterTiny">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</span><br /><br />
+							<a class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
+							<a class="textFooterTiny" style="">Terms of Use</a>
+							<span class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</span><br /><br />
 						</div>
 					</div>
 				</div>
@@ -177,8 +157,8 @@
 	</div>
 </div>
 	
-		<span class="menuIcon" onclick="openNav()">&#9776;</span>
-		<span class="menuText">MENU</span>			
+		<span class="menuIcon" style="" onclick="openNav()">&#9776;</span>
+		<span class="menuText" style="">MENU</span>			
 		<span id="verticalFollow">connect with us</span>
 		
 	<div id="socMed">
@@ -193,10 +173,10 @@
 <!-- Start Contact Us -->
 <section id="contactWrapper">						
 	<div id="number" class=""><span class="contact" style="visibility:hidden;">00</span></div>		
-	<div id="subHeading">CONTACT US</div>			
-	<div id="question">HOW CAN WE HELP</div>				
-	<div id="answer">If you have any questions or requests, please feel free to contact us using the inquiry form below.</div>						
-	<div id="answer">You can also get in touch with us by phone or e-mail.</div>						
+	<div id="subHeading" style="">CONTACT US</div>			
+	<div id="question" style="">HOW CAN WE HELP</div>				
+	<div id="answer" style="">If you have any questions or requests, please feel free to contact us using the inquiry form below.</div>						
+	<div id="answer" style="">You can also get in touch with us by phone or e-mail.</div>						
 	<div id="answer" style="font-weight:bold; line-height:38px;"><br />+(632)-8637-8026<br />+(63917)-791-5536<br />+(63920)-911-3418</div>							
 	<div class="answerLink" id="productButton" style="line-height:18px; font-size: 22px; "><br /><a href="mailto:info@geospectrum.com.ph" style="text-decoration: none;">info@geospectrum.com.ph</a> &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" style="width:35px; height:35px; vertical-align:middle;" /></div>	
 </section>
@@ -208,30 +188,20 @@
 		<div class="row">	
 			
 			<div class="col-6 col-s-6" style="width:700px;">						
-				<div id="number" class="reveal"><span class="inquiry">01</span></div>	
-				<div id="inquiryTitle" class="reveal">Inquiry Form</div>
-				<div id="inquiryText" class="reveal">By hitting the send button on this form, you have read and agreed to the Privacy Policy of Geospectrum.</div><br />
+				<div id="number" class="reveal"><span class="inquiry" style="">01</span></div>	
+				<div id="inquiryTitle" class="reveal" style="">Inquiry Form</div>
+				<div id="inquiryText" class="reveal" style="">By hitting the send button on this form, you have read and agreed to the Privacy Policy of Geospectrum.</div><br />
 				<div class="reveal" id="productButton" style="margin-right:11.5%;"><a href="https://www.geospectrum.com.ph/gms/privacy-policy/">PRIVACY POLICY</a> &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" style="width:35px; height:35px; vertical-align:middle;" /></div>	
 			</div>
 			
 			<div class="col-6 col-s-6" style="border-top: 1px solid #b2b2b2;">
-				<form id = "contactform" method="POST" class="reveal" style="margin-left:-20px;">
-					<label for="Full Name"> Full Name *<br /><input id="Input_FN" type="text" placeholder="Full Name"/></label>
-					<label for="Email Address"> Email Address *<br /><input id="Input_EA" type="email" placeholder="Email Address"/></label>
-					<label for="Contact Number"> Contact Number<br /><input id="Input_CN" type="text" placeholder="Contact Number"/></label>
-					<label for="Subject"> Subject<br /><input id="Input_Su" type="text" placeholder="Subject"/></label>
-					<label for="Message"> Message *<br /><textarea id="Input_Me" type="text" placeholder="Message"></textarea></label>
-					<input
-						type="button"
-						class="button"
-						value="SEND"
-						onclick="sendEmail(
-							document.getElementById('Input_FN').value,
-							document.getElementById('Input_EA').value,
-							document.getElementById('Input_CN').value,
-							document.getElementById('Input_Su').value,
-							document.getElementById('Input_Me').value
-							)">
+				<form class+"reaveal" style="margin-left:-20px;">
+					<label> Full Name *<br /><input type="text" placeholder="Full Name"/></label>
+					<label> Email Address *<br /><input type="password" placeholder="Email Address"/></label>
+					<label> Contact Number<br /><input type="password" placeholder="Contact Number"/></label>
+					<label> Subject<br /><input type="password" placeholder="Subject"/></label>
+					<label> Message *<br /><textarea type="password" placeholder="Message"></textarea></label>
+					<button type="button">SEND</button>
 				</form>					
 			</div>
 		
@@ -251,27 +221,27 @@
 		<div id="faq-container" class="reveal">
 		
 			<div class="">						
-				<div id="number" class=""><span class="faq">02</span></div>			
-				<span class="faqTitle">FREQUENTLY ASKED QUESTIONS</span>		
+				<div id="number" class=""><span class="faq" style="">02</span></div>			
+				<span class="faqTitle" style="">FREQUENTLY ASKED QUESTIONS</span>		
 			</div>     	
 				<div width="0px" height="0px" scrolling="no"> 
 					<div class="faqAccordion">
 						
-						<span class="accordionFaq">Is Geospectrum a Philippine business?</span>
+						<span class="accordionFaq" style="">Is Geospectrum a Philippine business?</span>
 							<div class="panelFaq">						
-								<div>Geospectrum is 100% Filipino-owned and -operated. Geospectrum Marketing Services is a  DTI-registered business and PhilGEPS Platinum member. Geospectrum Analytics Services, Inc. is a SEC-registered corporation. Geospectrum has 2 offices, in Ortigas Center Pasig City and South Triangle Quezon City.<br /><br /></div>
+								<div style="">Geospectrum is 100% Filipino-owned and -operated. Geospectrum Marketing Services is a  DTI-registered business and PhilGEPS Platinum member. Geospectrum Analytics Services, Inc. is a SEC-registered corporation. Geospectrum has 2 offices, in Ortigas Center Pasig City and South Triangle Quezon City.<br /><br /></div>
 							</div>
-						<span class="accordionFaq">What is the difference between Geospectrum and other satellite imagery vendors?</span>
+						<span class="accordionFaq" style="">What is the difference between Geospectrum and other satellite imagery vendors?</span>
 							<div class="panelFaq">						
-								<div>Geospectrum’s partner satellite constellations constitute the largest fleet of imaging satellites, enabling more-than-daily capture of any project area. In addition, we offer always-on, nighttime, and all-weather monitoring. Geospectrum also offers a wide range of derived analytic products to provide you a comprehensive, end-to-end solutions package.<br /><br /></div>
+								<div style="">Geospectrum’s partner satellite constellations constitute the largest fleet of imaging satellites, enabling more-than-daily capture of any project area. In addition, we offer always-on, nighttime, and all-weather monitoring. Geospectrum also offers a wide range of derived analytic products to provide you a comprehensive, end-to-end solutions package.<br /><br /></div>
 							</div>
-						<span class="accordionFaq">Are your products and services on a subscription basis?</span>
+						<span class="accordionFaq" style="">Are your products and services on a subscription basis?</span>
 							<div class="panelFaq">						
-								<div>Geospectrum offers both a la carte/ad hoc ordering and regular subscription models.<br /><br /></div>
+								<div style="">Geospectrum offers both a la carte/ad hoc ordering and regular subscription models.<br /><br /></div>
 							</div>
-						<span class="accordionFaq">How much are your products?</span>
+						<span class="accordionFaq" style="">How much are your products?</span>
 							<div class="panelFaq">						
-								<div>Please contact us for a free and personalized price proposal. Pricing is highly variable based on product packaging, project size and timeline, local taxes and institution type. We offer academic, volume and institutional discounts.<br /><br /></div>
+								<div style="">Please contact us for a free and personalized price proposal. Pricing is highly variable based on product packaging, project size and timeline, local taxes and institution type. We offer academic, volume and institutional discounts.<br /><br /></div>
 							</div>	
 					
 					</div>	
@@ -287,20 +257,20 @@
 <!-- Start Address -->
 <section id="addressWrapper">
 	<div class="address-container">
-		<div id="section" class="reveal">	
+		<div id="section" class="reveal" style="">	
 			
-				<div class="col-6 col-s-6">		
+				<div class="col-6 col-s-6" style="">		
 					
-				<div class="map"><iframe class="respponsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.3026083987156!2d121.05811331470336!3d14.58182498144611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9e38b1453db%3A0x1ce477316d5cb5bd!2sGeospectrum%20Marketing%20Services!5e0!3m2!1sen!2sph!4v1680100111054!5m2!1sen!2sph" width="697" height="550" style="border:0x solid #666666; filter: grayscale(100%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+				<div class="map" style=""><iframe class="respponsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.3026083987156!2d121.05811331470336!3d14.58182498144611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9e38b1453db%3A0x1ce477316d5cb5bd!2sGeospectrum%20Marketing%20Services!5e0!3m2!1sen!2sph!4v1680100111054!5m2!1sen!2sph" width="697" height="550" style="border:0x solid #666666; filter: grayscale(100%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 				
 				</div>				
 				
-				<div class="col-6 col-s-6">
+				<div class="col-6 col-s-6" style="">
 				
-				<div id="number" class=""><span class="address">03</span></div>				
-				<div class="visit">VISIT US</div>		
-				<div class="homeTitle">MAIN OFFICE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>		
-				<div class="addressText">Unit 1604, OMM-CITRA Bldg., 39 San Miguel Avenue, <br />Ortigas Center, Pasig City, Philippines</div><br /><br />
+				<div id="number" class=""><span class="address" style="">03</span></div>				
+				<div class="visit" style="">VISIT US</div>		
+				<div class="homeTitle" style="">MAIN OFFICE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>		
+				<div class="addressText" style="">Unit 1604, OMM-CITRA Bldg., 39 San Miguel Avenue, <br />Ortigas Center, Pasig City, Philippines</div><br /><br />
 				
 				</div>	
 					
@@ -310,13 +280,13 @@
 <!-- End Address -->
 
 <!-- Start Footer -->
-<section id="footer">
+<section id="footer" style="">
 
 	<div class="row">
 		<div class="footer-container">	
 				
-			<div id="number" class=""><span class="sitemap">04</span></div>		
-			<div class="col-6" style="margin-top:50px;">			
+			<div id="number" class=""><span class="sitemap" style="">04</span></div>		
+			<div class="col-6" style="margin-top:0px;">			
 				<div class="email">
 					<span class="emailQ"> Got a question? </span><br />
 					<span class="emailT"> Drop a line and we will get in touch.</span><br /><br /><br />
@@ -325,9 +295,9 @@
 				</div>				
 			</div>
 			
-			<div class="col-3" style="margin-top:50px;">				
+			<div class="col-3" style="margin-top:0px;">				
 				<span class="footerHeading">Products and <br />Services</span><br />
-					<ul>
+					<ul style="">
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Optical Satellite Imagery</a></li>
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services and Software</a></li>
@@ -335,9 +305,9 @@
 					</ul><br /><br />				
 			</div>
 			
-			<div class="col-3" style="margin-top:50px;">					
-				<span class="footerHeading">About Us</span><br />
-					<ul>
+			<div class="col-3" style="margin-top:0px;">					
+				<span class="footerHeading" style="">About Us</span><br />
+					<ul style="">
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Mission and Vision</a></li>
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Core Values</a></li> 
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our People</a></li>
@@ -355,8 +325,8 @@
 			</div>
 			
 			<div class="col-3" style="margin-top:30px;">
-				<span class="footerHeading">Visit Us </span><br />
-					<ul>
+				<span class="footerHeading" style="">Visit Us </span><br />
+					<ul style="">
 						<li class="textFooter">Unit 1604 OMM-CITRA Bldg.,</li>
 						<li class="textFooter">39 San Miguel Avenue,<br />
 						Ortigas Center,</li>
@@ -365,8 +335,8 @@
 			</div>
 			
 			<div class="col-3" style="margin-top:30px;">
-				<span class="footerHeading">Call Us </span><br />
-					<ul>
+				<span class="footerHeading" style="">Call Us </span><br />
+					<ul style="">
 						<li class="textFooter">+63917-7915536</li>
 						<li class="textFooter">+63920-9113418</li>
 						<li class="textFooter">+(632)-8637-8026</li>
@@ -381,9 +351,9 @@
 				<a href="https://www.geospectrum.com.ph"><img src="logos/logo_gmsRowWhite.png" style="height:15px; width:165px;" border="0"></a><br /><br />
 			</div>
 			<div class="col-6" style="margin-top: 100px;">
-				<a class="textFooterTiny">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
-				<a class="textFooterTiny">Terms of Use</a>
-				<span class="textFooterTiny">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</span><br /><br />
+				<a class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
+				<a class="textFooterTiny" style="">Terms of Use</a>
+				<span class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</span><br /><br />
 			</div>
 		</div>
 	</div>
@@ -397,14 +367,16 @@
 </html>
 <!-- MAIN BODY ENDS HERE -->
 
-<!-- For responsive top navigation bar -->
+<!-- For Top Navigation Bar -->
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
   } else {
-    x.className = "topnav";
+    document.getElementById("navbar").style.top = "-100px";
   }
 }
 </script>

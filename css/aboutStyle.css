@@ -28,7 +28,7 @@ body {
 	display: block;
 	z-index: 15;
 	position: fixed;
-	top: 4.8%;
+	top: 5.70%;
 	padding-left: 12px;
 	transform: translateY(-50%);
 	mix-blend-mode: difference;
@@ -37,7 +37,41 @@ body {
 .responsive {
 	max-width: 100%;
 	height: auto;
+	}	
+	
+	
+/**************************/	
+/* Top Navigation Bar     */
+/**************************/
+
+#navbar {
+	z-index: 10;
+	background-color: #303030;
+	position: fixed;
+	top: -100px;
+	width: 100%;
+	display: block;
+	transition: top 0.3s;
+	box-shadow: 0 1px 10px #000000;
 	}
+
+#navbar a {
+	float: right;
+	display: block;
+	font-family: Century Gothic;
+	font-weight: bold;
+	color: #cccccc;
+	text-align: center;
+	padding: 30px;
+	text-decoration: none;
+	font-size: 17px;
+	letter-spacing: 1px;
+	}
+
+#navbar a:hover {
+	color: #990099;
+	}
+	
 
 #number {
 	z-index: +1;
@@ -60,7 +94,7 @@ body {
 	}
 	
 #number .values {
-	margin-left: -3%;
+	margin-left: 72.5%;
 	color: #cccccc;
 	}
 	
@@ -70,7 +104,8 @@ body {
 	}
 	
 #number .sitemap {
-	top: 10%; 
+	display: block;
+	padding-top: 100px; 
 	padding-left: 1%;
 	}
 
@@ -330,7 +365,7 @@ nav {
 	font-weight: bold;
 	color: #cccccc;
 	letter-spacing: 2px;
-	padding-left: 20px;
+	padding-left: 0px;
 	}
 	
 #linkWhite a {
@@ -461,25 +496,23 @@ nav {
 	.col-s-11 {width: 91.66%;}
 	.col-s-12 {width: 100%;}
 }
-
-/***********************/	
+	
+		
 /* Social Media Button */
-/***********************/
 
 #socMed {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 200px;
-	margin-left: 7px;
+	margin-top: 27vh;
 	background: #303030;
 	}
 
 .btnsocMed {
-	height: 30px;
-	width: 30px;
-	margin-bottom: 20px;
+	height: 3vh;
+	width: 3vh;
+	margin-bottom: 3vh;
 	border-radius: 3px;
 	background: #303030;
 	display: flex;
@@ -487,7 +520,7 @@ nav {
 	justify-content: center;
 	align-items: center;
     box-shadow: -2px -2px 5px #666666, 5px 5px 15px #111111;
-	font-size: 14px;
+	font-size: 1vw;
 	color: #990099;
 	text-decoration: none;
 	}
@@ -498,6 +531,25 @@ nav {
 	
 .btnsocMed:active {
     box-shadow: -2px -2px 5px #666666, 5px 5px 15px #111111;;
+	}
+	
+#verticalContact {
+	height: 25vh;
+	font-size: .9vw;
+	text-align: center;
+	writing-mode: vertical-lr; 
+	position: absolute; 
+	font-family: Century Gothic;
+	font-weight: bold;
+	background-color:#990099;
+	color:#ffffff;
+	letter-spacing: .5vw;
+	margin-top: 45vh;
+	margin-left: 0px;
+	padding: 10px 10px 0px 20px;
+	width: 60px;
+	text-decoration: none;
+	border-bottom: 5px solid #c0c0c0;
 	}
 
 /******************/	
@@ -520,48 +572,6 @@ section {
 	transform: translateY(0);
 	opacity: 1;
 	}
-
-/***********************/	
-/* Top bar navigation. */
-/***********************/
-	
-.topnav {
-	z-index: 9;
-	display: block;
-	height: 70px;
-	overflow: hidden;
-	position: fixed;
-	width: 100%;
-	opacity: 0.8;
-	}
-
-.topnav-right {
-	z-index: 9;
-	display: block;
-	width: 70%;
-	height: 80px;
-	text-align: right;
-	float: right;
-	padding-right: 100px;
-	padding-top: 20px;
-	margin-top: -60px;
-	}
-
-.topnav .icon {
-	display: none;
-	}
-	
-.gsMenu {
-	font-family: siteFont, Century Gothic;
-	font-variant: small-caps;
-	font-size: 20px;
-	color: #ffffff;
-	letter-spacing: 3px;
-	margin-top: 0px;
-	padding-bottom: 0px;
-	margin-right: 30px;
-	height: 80px;
-	} 	
 
 /****************/
 /* Overlay Menu */
@@ -655,88 +665,51 @@ section {
 /* Sidebar Menu */
 /****************/
 
-.sidenav {
+#sidenav {
+	z-index: 10;
 	display: block;
 	height: 100%;
-	width: 50px;
+	width: 3vw;
 	position: fixed;
-	z-index: 10;
-	top: 100;
+	top: 0;
 	right: 0;
 	background-color: #303030;
 	overflow-x: hidden;
-	padding-top: 20px;
 	box-shadow: 0 1px 10px #000000;
-	padding: 6px 8px 6px 0px;
 }
 
 .menuIcon {
 	display: block;
-	height:10%; 
-	font-size:20px; 
+	margin-left: .5vw;
+	margin-top: vw;
+	font-size:2vw; 
 	cursor:pointer; 
-	padding-left:15px; 
-	padding-top:0px; 
+	padding-left:0px;
 	color:#cccccc;
 	}
 
 .menuText {
 	display: block;
-	font-size:10px; 
-	padding-left:10px; 
-	margin-top:-35px; 
+	font-family: Century Gothic;
+	font-size: .75vw; 
+	Letter-spacing: 1px;
+	margin-left: .25vw; 
+	margin-top:; 
 	color:#cccccc;
 	}
 	
-#verticalContact {
-	height: 200px;
-	text-align: center;
+#verticalConnect {
+	display: block;
+	width: 100vw;
 	writing-mode: vertical-lr; 
-	position: absolute; 
-	font-family: Century Gothic;
-	font-weight: bold;
-	background-color:#990099;
-	color:#ffffff;
-	font-size: 14px;
-	letter-spacing: 3px;
-	margin-top: 400px;
-	margin-left: 0px;
-	padding: 15px 10px 0px 20px;
-	width: 60px;
-	text-decoration: none;
-	border-bottom: 5px solid #c0c0c0;
-	}
-	
-#verticalFeedback {
-	height: 110px;
+	margin-top: 1vh;
+	padding: 40px 0px 0px 10px;
 	text-align: center;
-	writing-mode: vertical-lr; 
-	position: absolute; 
-	font-family: Century Gothic;
-	font-weight: bold;
-	background-color:#80A629;
-	color:#ffffff;
-	font-size: 12px;
-	letter-spacing: 2px;
-	margin-top: 570px;
-	margin-left: 0px;
-	padding: 21px 10px 50px 20px;
-	width: 60px;
-	text-decoration: none;
-	}
-	
-#verticalFollow {
-	margin-top: 30px;
-	padding: 30px 10px 0px 13px;
-	text-align: center;
-	writing-mode: vertical-lr; 
 	position: absolute; 
 	font-family: Century Gothic;
 	color:#cccccc;
-	font-size: 12px;
-	letter-spacing: 2px;
-	width: 60px;
-	text-decoration: none;
+	font-size: .9vw;
+	letter-spacing: .25vw;
 	border-top: 1px solid #444444;
 	}		
 
@@ -847,6 +820,7 @@ section {
 #values { 
 	text-align: center;
 	width: 100%;
+	height:120vh;
 	display: block;
 	background-color: #112959;
 	background-image: url(../Images/bgAbout.png);
@@ -860,7 +834,7 @@ section {
 #values-container {
 	max-width: 1400px;
 	position: relative;
-	padding-top: 250px;
+	padding-top: 150px;
 	}
 	
 .values {
@@ -870,11 +844,10 @@ section {
 	max-width: 900px;
 	font-weight: bold;
 	font-size: 50px;  
-	padding-top: 50px;
+	padding-top: 0px;
 	padding-left: 100px;
 	letter-spacing: 2px;
 	text-align: left;
-	text-shadow: 3px 3px 5px #333333;
 	}	
 	
 /************************/
@@ -1138,7 +1111,7 @@ ul.expertise {
 	
 #footer {
 	max-width: 100%;
-	padding-top: 50px;
+	padding-top: 0px;
 	display: block;
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
@@ -1271,17 +1244,17 @@ ul.expertise {
 .back-to-top {
 	z-index: -1;
 	position: fixed;
-	bottom: 10px;
-	right: 0px;
+	bottom: 2vh;
+	right: .25vw;
 	text-decoration: none;
 	color: #ffffff;
 	background-color: rgba(51, 51, 51, 1.0);
-	font-size: 16px;
+	font-size: .75vw;
 	font-weight: bold;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
 	display: none;
 	/*
 	opacity: 0.75;
