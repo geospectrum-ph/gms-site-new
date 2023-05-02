@@ -29,7 +29,87 @@
 <!-- Social Media Icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<title>Geospectrum Marketing Services</title>
+<!-- Split Screen Cover -->
+<script>
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+	
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousemove", slideReady);
+	
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchend", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = (e.changedTouches) ? e.changedTouches[0] : e;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
+
+<title>Geospectrum</title>
 </head>
 
 <body>
@@ -37,6 +117,7 @@
 <div id="numberIndicator">
 	<nav class="section-nav">
 		<ol>
+			<li><a href="#splitview-container">00</a><span class="tooltip">Home</span></li>
 			<li><a href="#productWrapper">01</a><span class="tooltip">Products</span></li>
 			<li><a href="#clientWrapper">02</a><span class="tooltip">Clients</span></li>
 			<li><a href="#partnerWrapper">03</a><span class="tooltip">Partners</span></li>
@@ -61,7 +142,7 @@
 <!-- End Topbar Navigation -->
 
 <!-- Start Sidebar Navigation -->
-<section id="sidenav" style="padding-top:20px;">
+<section id="sidenav" style="padding-top:10px;">
 <div id="myNav" class="overlay">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	<div class="overlay-content">
@@ -70,42 +151,41 @@
 			<div class="d-flex flex-column justify-content-center align-items-center">	
 			
 			<!-- Start Overlay Menu -->
-			<div class="footer" style="">
+			<div class="footer" style="padding-top:100px;">
 
 				<div class="row">
-					<div class="footer-container">			
-						<div class="col-6" style="margin-top:50px;">			
+					<div class="footer-container">						
+						<div class="col-6" style="margin-top:0px;">				
 							<div class="email">
 								<span class="emailQ"> Got a question? </span><br />
 								<span class="emailT"> Drop a line and we will get in touch.</span><br /><br /><br />
 												
-								<div id="linkWhite" style="font-size:18px;"><img src="Images/button_sphere_plus.png" id="sphere" class="responsive" style="margin-left:-10px;">&nbsp;&nbsp;<a href="mailto:info@geospectrum.com.ph"> EMAIL US</a> </div>
+								<div id="linkWhiteFooter" style=""><a href="mailto:info@geospectrum.com.ph"> EMAIL US &nbsp;&nbsp;<img src="Images/button_sphere_plus.png" id="sphereFooter" class="responsive" style="margin-left:0px;"></a> </div>
 							</div>				
 						</div>
 						
-						<div class="col-3" style="margin-top:50px;">				
-							<span class="footerHeading">Products and <br />Services</span><br />
+						<div class="col-3" style="margin-top:0px; border:0px dotted #ccc;">				
+							<span class="footerHeading">Products and Services</span><br />
 								<ul style="">
 									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Optical Satellite Imagery</a></li>
 									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
-									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services and Software</a></li>
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services & Software</a></li>
 									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Industries Served</a></li>
 								</ul><br /><br />				
 						</div>
 						
-						<div class="col-3" style="margin-top:50px;">					
-							<span class="footerHeading" style=""><a href="about.html" style="text-decoration:none;">About Us</a></span><br />
+						<div class="col-3" style="margin-top:0px;">					
+							<span class="footerHeading" style="">About Us</span><br />
 								<ul style="">
-									<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission and Vision</a></li>
-									<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core Values</a></li> 
-									<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our People</a></li>
-									<li class="menuFooterList"><a href="about.html#partners" style="text-decoration:none;">Our Partners</a></li>
-									<li class="menuFooterList"><a href="about.html#" style="text-decoration:none;">Our Projects</a></li> 
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Mission and Vision</a></li>
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Core Values</a></li> 
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our People</a></li>
+									<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Partners</a></li>
 								</ul> <br /><br />
 						</div>
 					</div>		
 				</div>
-				
+	
 				<div class="row">
 					<div class="footer-container">			
 						<div class="col-6" style="margin-top:30px;">&nbsp;
@@ -128,17 +208,14 @@
 									<li class="textFooter">+63917-7915536</li>
 									<li class="textFooter">+63920-9113418</li>
 									<li class="textFooter">+(632)-8637-8026</li>
-								</ul><br /><br /><br /><br /><br />						
+								</ul><br /><br /><br /><br />					
 						</div>
 					</div>
 				</div>
-				
+	
 				<div class="row">
 					<div class="footer-container">
-						<div class="col-6" style="margin-top: 100px;">&nbsp;
-							<!-- Spacer -->
-						</div>
-						<div class="col-6" style="margin-top: 100px;">
+						<div class="col-6" style="margin-top: 0px;">
 							<a class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
 							<a class="textFooterTiny" style="">Terms of Use</a>
 							<span class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</span><br /><br />
@@ -164,46 +241,35 @@
 		<a href="https://web.facebook.com/GeospectrumPH/" class="btnsocMed" target="_blank"><i class="fa fa-facebook" style="color: #cccccc;"></i></a>	
 		<a href="https://ph.linkedin.com/company/geospectrum-ph" class="btnsocMed" target="_blank"><i class="fa fa-linkedin" style="color: #cccccc;"></i></a>	
 		<a href="mailto:info@geospectrum.com.ph?Subject=Inquire" class="btnsocMed" target="_blank"><i class="fa fa-google" style="color: #cccccc;"></i></a>		 
-		<a href="contact.html" id="verticalContact">CONTACT US</a>
-	</div>
-</div>
+		<a href="contact.html" id="verticalContact">CONTACT US</a>	 
+	</div>	
 </section>
 <!-- End Sidebar Navigation -->
 
 <!-- Start Cover -->
-<div class="splitview skewed">
-        <div class="panel1 bottom">
-            <div class="content">
-                <div class="description">
-                    <span class="captionService">We distribute high resolution, high cadence (monthly, weekly and daily revisit) satellite imagery and value-added products that address a wide range of applications.</span>
-					
-                    <span class="captionImage">Two images of Taal Volcano before and after its eruption in 12 January 2020.</span>
-                </div>
+<center><section id="splitview-container">
 
-                <img src="Images/taal_before.png" alt="Before Image" />
-            </div>
-        </div>
+	<div class="byline" style="background-color:transparent; line-height:34px;">
+		Providing accurate and up-to-date geospatial data in the Philippines.
+	</div>		
+	
+	<div id="linkWhiteA" style="">
+		<a href="#productWrapper"> READ MORE &nbsp;<img src="Images/button_sphere_plus.png" id="sphere" style="" ></a>
+	</div>
 
-        <div class="panel1 top">
-            <div class="content">
-                <div class="description">
-                    <span class="byline" style="">Providing accurate and up-to-date geospatial data in the Philippines.</span>					
-                    
-				<div id="linkWhiteCoverA" style="">
-					<a href="about.html" style=""> ABOUT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/button_sphere_plus.png" id="sphereA" style=""></a>
-				</div><br />
-				<div id="linkWhiteCoverP" style="">
-					<a href="products.html"> OUR PRODUCTS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/button_sphere_plus.png" id="sphereP" style=""></a>
-				</div>
-				
-                </div>
+	<div class="captionService">We distribute high resolution, high cadence (monthly, weekly and daily revisit) satellite imagery and value-added products that address a wide range of applications.</div>
 
-                <img src="Images/taal_after.png" alt="After Image" />
-            </div>
-        </div>
+	
+	<div class="img-comp-container">
+		<div class="img-comp-img">   
+			<img src="Images/taal_before.png" width="" height="">
+		</div>
+		<div class="img-comp-img img-comp-overlay">
+			<img src="Images/taal_after.png" width="" height="" style="">
+		</div>
+	</div>	
 
-        <div class="handle"></div>
-</div>
+</section></center>
 <!-- End Cover -->
 
 <!-- Start Products and Services -->
@@ -215,16 +281,16 @@
 			<div class="row">	
 				<div class="col-9" style="">				
 						<div id="number" class="" style=""><span class="products">01</span></div>		
-						<span id="subHeadingDark" class="" style="">PRODUCTS AND SERVICES</span><br>			
+						<span id="subHeadingDark" class="" style="">PRODUCTS AND SERVICES</span><br />			
 						<span id="questionDark" class="" style="">WHAT WE OFFER</span>
 					<div id="bodyTextDark" class="" style="">
 						Geospectrum caters to the growing need for accurate, up-to-date and timely geospatial information to support decision making and planning activities. We distributes high resolution, high cadence (monthly, weekly and daily revisit) satellite imagery and value-added products that address a wide range of applications.
 					</div>
 					<div class="containerProducts">
-						<div class="box1"><img src="Images/imagery_optical_Planet.jpg"><span style="background-color:#b9b7b7;">Optical Satellite Imagery</span></div>
+						<div class="box1"><img src="Images/imagery_optical_Planet.png"><span style="background-color:#b9b7b7;">Optical Satellite Imagery</span></div>
 						<div class="box1"><img src="Images/imagery_nonOptical_Iceeye.png"><span style="background-color:#b9b7b7;">Non-optical Satellite Imagery</span></div>
 						<div class="box1"><img src="Images/imagery_analytics_Seeds.png"><span style="background-color:#b9b7b7;">Analytics Services and Software</span> </div>
-					</div>					
+					</div>	<br /><br />				
 					
 					<div style="display:flex; padding-left:30%;">
 						<span id="linkDark" class="reveal" style=""><a href="products.html"> LEARN MORE &nbsp;<img src="Images/button_sphere_plus.png" id="sphere" class="responsive" style="vertical-align: middle; " /></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -235,23 +301,49 @@
 				<div class="col-3" style="">    	
 					<div width="0px" height="0px" scrolling="no">
 							<div id="verticalText" class="reveal" style="">APPLICATIONS</div> 
-						<div id="pageMenuColumn" class="reveal">
+						<div id="pageMenuColumn" class="reveal" style="">
 							
 							<span class="accordion" style="text-align:left;">Engineering and Construction Planning</span>
 								<div class="panel">						
-									<div class="panelText" style="">Route alignment, slope and volume computations, cross section, and profiling.<br /><br /></div>
+									<div class="panelText" style="">
+									<ul style="">
+										<li class="">Route Alignment</li>
+										<li class="">Slope and Volume Computations</li>
+										<li class="">Cross Section</li>
+										<li class="">Profiling</li>
+									</ul><br />
+									</div>
 								</div>
 							<span class="accordion" style="text-align:left;">Urban Planning and Development&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-								<div class="panel">						
-									<div class="panelText" style="">Asset and infrastructure management; disaster mitigation and management; infrastructure planning; line-of-sight/ obstruction analysis and modelling; change detection of buildings<br /><br /></div>
+								<div class="panel">							
+									<div class="panelText" style="">
+									<ul style="">
+										<li class="">Asset and Infrastructure Management</li>
+										<li class="">Disaster Mitigation and Management</li>
+										<li class="">Infrastructure Planning</li>
+										<li class="">Line-of-Sight/ Obstruction Analysis and Modelling</li>
+										<li class="">Change Detection of Buildings</li>
+									</ul><br />	
+									</div>									
 								</div>
 							<span class="accordion" style="text-align:left;">Power and Utilities Planning and Management &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-								<div class="panel">						
-									<div class="panelText" style="">Hydrogeological analysis for water resource exploration; tree-height monitoring for power transmission lines; route planning<br /><br /></div>
+								<div class="panel">							
+									<div class="panelText" style="">
+									<ul style="">
+										<li class="">Hydrogeological Analysis for Water Resource Exploration</li>
+										<li class="">Tree-height Monitoring for Power Transmission Lines</li>
+										<li class="">Route Planning</li>
+									</ul><br />	
+									</div>
 								</div>
 							<span class="accordion" style="text-align:left;">Disaster Prevention and Management</span>
-								<div class="panel">						
-									<div class="panelText" style="">Hazards susceptibility analysis; flood/landslide/debris flow modelling<br /><br /></div>
+								<div class="panel">							
+									<div class="panelText" style="">
+									<ul style="">
+										<li class="">Hazards Susceptibility Analysis</li>
+										<li class="">Flood/Landslide/Debris Flow Modelling</li>
+									</ul><br />	
+									</div>
 								</div>					
 						</div>	  
 					</div>			
@@ -279,7 +371,7 @@
 <!-- End Video Modal for Products -->
 
 <!-- Start Clients -->			
-<section id="clientWrapper" style="">
+<center><section id="clientWrapper" style="">
 	<div class="row">
 		<div id="clients-container" class="reveal" style="">	   
 	
@@ -314,7 +406,34 @@
 		
 		</div>
 	</div>
-</section>
+	
+	<div class="row">
+		<div id="clients-container" class="reveal" style="">	   
+	
+		<div class="col-2" style="">
+			<div class="">&nbsp;			
+			</div> 
+		</div>
+	
+		<div class="col-9" style="">			
+					<div class="otherClients" style="">
+						<ul style="">
+						  <li><img src="logos/clients_agriSmart.jpg" height="50px"></li>
+						  <li><img src="logos/clients_dostAsti.jpg" height="50px"></li>
+						  <li><img src="logos/clients_irri.jpg" height="50px"></li>
+						  <li><img src="logos/clients_jica.jpg" height="50px"></li>
+						  <li><img src="logos/clients_psa.png" height="50px"></li>
+						  <li><img src="logos/clients_smartGeo.png" height="50px"></li>
+						</ul>
+					</div>	
+		</div>
+	
+		<div  class="col-1" style="" style="">&nbsp;
+		</div>
+		
+		</div>
+	</div>
+</section></center>
 <!-- End Clients -->
 
 <!-- Start Global Partners -->
@@ -354,11 +473,11 @@
 <!-- End Global Partners -->
 
 <!-- Start About Us -->			
-<section id="aboutWrapper">
+<center><section id="aboutWrapper">
 	<div class="row">
 		<div id="about-container" class="reveal">	   
 	
-		<div class="col-5" style="">
+		<div class="col-6" style="text-align:left;">
 			<div class="">					
 				<div id="number" class="" style=""><span class="people">04</span></div>		
 				<span id="subHeadingLight" class="reveal" style="">ABOUT US</span><br>			
@@ -366,19 +485,20 @@
 			</div> 
 		</div>
 	
-		<div class="col-5" style="">
-			<div id="bodyTextLight" style="text-align:left;"><br /><br />
-				GEOSPECTRUM Marketing Services is a Filipino-owned business entity that caters to the growing need for accurate, up-to-date and timely information to support decision making and planning activities. GEOSPECTRUM distributes high resolution satellite imagery and value-added products that address a wide range of applications. <br><br>
+		<div class="col-6" style="">
+			<div id="bodyTextLight" style="text-align:left;"><br />
+				Geospectrum comprises of two business entities: <br /><br />
+				Geospectrum Marketing Services is established in 2014 to supply and distribute geospatial data in the Philippines. <br /><br />
+				Geospectrum Analytics Services Inc. is established in 2020 to develop analytics software and services in the Philippines. <br><br>
 			</div>				
-			<div id="linkWhite" style=""><a href="about.html"> READ MORE &nbsp;<img src="Images/button_sphere_plus.png" id="sphere" class="responsive" style=""></a></div>
-		</div>
-	
-		<div  class="col-2" style="" style="">	
+			<div id="linkWhite" style="">
+				<a href="about.html"> READ MORE &nbsp;<img src="Images/button_sphere_plus.png" id="sphere" class="responsive" style=""></a>
+			</div>
 		</div>
 		
 		</div>
 	</div>
-</section>
+</section></center>
 <!-- End About Us -->		
 
 <!-- Start FAQs -->		
@@ -438,16 +558,16 @@
 					<span class="emailQ"> Got a question? </span><br />
 					<span class="emailT"> Drop a line and we will get in touch.</span><br /><br /><br />
 									
-					<div id="linkWhite" style="font-size:18px;"><img src="Images/button_sphere_plus.png" id="sphere" class="responsive" style="margin-left:-10px;">&nbsp;&nbsp;<a href="mailto:info@geospectrum.com.ph"> EMAIL US</a> </div>
+					<div id="linkWhiteFooter" style=""><a href="mailto:info@geospectrum.com.ph"> EMAIL US &nbsp;&nbsp;<img src="Images/button_sphere_plus.png" id="sphereFooter" class="responsive" style="margin-left:0px;"></a> </div>
 				</div>				
 			</div>
 			
-			<div class="col-3" style="margin-top:0px;">				
-				<span class="footerHeading">Products and <br />Services</span><br />
+			<div class="col-3" style="margin-top:0px; border:0px dotted #ccc;">				
+				<span class="footerHeading">Products and Services</span><br />
 					<ul style="">
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Optical Satellite Imagery</a></li>
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
-						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services and Software</a></li>
+						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Analytics Services & Software</a></li>
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Industries Served</a></li>
 					</ul><br /><br />				
 			</div>
@@ -459,7 +579,6 @@
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Core Values</a></li> 
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our People</a></li>
 						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Partners</a></li>
-						<li class="menuFooterList"><a href="#" style="text-decoration:none;">Our Projects</a></li> 
 					</ul> <br /><br />
 			</div>
 		</div>		
@@ -494,10 +613,10 @@
 	
 	<div class="row">
 		<div class="footer-container">
-			<div class="col-6" style="margin-top: 100px;">										
+			<div class="col-6" style="margin-top: 50px;">										
 				<a href="https://www.geospectrum.com.ph"><img src="logos/logo_gmsRowWhite.png" style="height:15px; width:165px;" border="0"></a><br /><br />
 			</div>
-			<div class="col-6" style="margin-top: 100px;">
+			<div class="col-6" style="margin-top: 50px;">
 				<a class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
 				<a class="textFooterTiny" style="">Terms of Use</a>
 				<span class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</span><br /><br />
@@ -523,37 +642,19 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-100px";
+    document.getElementById("navbar").style.top = "-120px";
   }
 }
 </script>
 
 <!-- For Split View Iteractive -->
+
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  var parent = document.querySelector(".splitview"),
-    topPanel = parent.querySelector(".top"),
-    handle = parent.querySelector(".handle"),
-    skewHack = 0,
-    delta = 0;
-
-  // If the parent has .skewed class, set the skewHack var.
-  if (parent.className.indexOf("skewed") != -1) {
-    skewHack = 1000;
-  }
-
-  parent.addEventListener("mousemove", function (event) {
-    // Get the delta between the mouse position and center point.
-    delta = (event.clientX - window.innerWidth / 12) * 1.5;
-
-    // Move the handle.
-    handle.style.left = event.clientX + delta + "px";
-
-    // Adjust the top panel width.
-    topPanel.style.width = event.clientX + skewHack + delta + "px";
-  });
-});
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
 </script>
+
 
 <!-- For menu curtain or overlay on navigation bar -->
 <script>
