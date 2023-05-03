@@ -159,7 +159,12 @@ nav {
 /* Sidebar Page Navigation */
 .section-nav {
 	padding-left: 0;
+	width: 40px;
+	background-color: rgb(0,0,0,.8);
 	border-left: 0px solid #efefef;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	}
 
 .section-nav a {
@@ -192,11 +197,13 @@ nav {
 	}
 		
 .section-nav li:hover {
-	background-color: $hover-sidebar-link-color;
+	background-color: transparent;
+	color: #cccccc;
 	}
 		
 .section-nav li.active {
-	background-color: $active-sidebar-link-color;
+	background-color: transparent;
+	color: #cccccc;
 	}	
 
 .section-nav li:hover .tooltip {
@@ -216,9 +223,10 @@ nav {
 	left: 10px;
 	opacity: 0;
 	visibility: hidden;
-	mix-blend-mode: difference;
 	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 	}
+
+
 
 /* hide scrollbar 
 ::-webkit-scrollbar {
