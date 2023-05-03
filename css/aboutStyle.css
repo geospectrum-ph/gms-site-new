@@ -31,6 +31,7 @@ body {
 	top: 4.8%;
 	padding-left: 12px;
 	transform: translateY(-50%);
+	mix-blend-mode: difference;
 	}
 
 .responsive {
@@ -717,11 +718,7 @@ section {
 	height: 100%;
 	width: 400px;
 	margin-top: 52px;
-<<<<<<< Updated upstream
-	margin-left: 150px;
-=======
 	margin-left: 180px;
->>>>>>> Stashed changes
 	font-family: Century Gothic;
 	font-size: 12px;
 	font-weight: bold;
