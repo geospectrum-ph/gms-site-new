@@ -61,11 +61,6 @@ section {
 	}	
 	
 	
-<<<<<<< Updated upstream
-
-	
-=======
->>>>>>> Stashed changes
 /********************/	
 /* Page Map Numbers */
 /********************/
@@ -374,132 +369,7 @@ nav {
 	}		
 
 
-<<<<<<< Updated upstream
-
-@media screen and (min-width: 1201px) {
-
-.logo {
-	z-index: 15;
-	position: fixed;
-	top: 5.00%;
-	padding-left: 12px;
-	transform: translateY(-50%);
-	/*mix-blend-mode: difference;*/
-	}
-	
-/* Landing Cover */
-
-#splitview-container {
-    position: relative;
-    width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
-	background-image: url(../Images/bgCover.png);
-	background-size: cover;
-	background-position: center;
-  
-/*  this is where the magic happens:  */
-	background-attachment: fixed;
-	}
-
-.img-comp-container {
-	position: absolute;
-	top: 32%;
-	left: 24%;
-	}
-
-.img-comp-img  {
-	position: absolute;
-	width: auto;
-	height: auto;
-	overflow:hidden;
-	}
-
-.img-comp-img img {
-	display: block;
-	width: 600px;
-	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
-	}
-
-.slider {
-	position: absolute;
-	z-index:9;
-	cursor: ew-resize;
-	/*set the appearance of the slider:*/
-	width: 25px;
-	height: 1000px;
-	margin-top: 500px;
-	background-color: transparent;
-	opacity: 0.9;
-	border: 0px solid #ffffff;
-    transform: rotate(30deg) translateY(-50%);
-}
-	
-.byline { 
-	position: relative;
-	display: block;
-	height: 100%;
-	top: 260px;
-	left: 50px;
-	width: 220px;
-	font-family: Century Gothic;
-	font-weight: bold;
-	color: #cccccc;
-	text-align: right;
-	font-size: 22px; 
-	letter-spacing: .2vw;
-	line-height: 2.5vw;
-	border: 0px dotted white;
-	}
-	
-.captionService { 
-	position: relative;
-	display: block;
-	top: 400px;
-	left: 52%;
-	width: 250px;
-	font-family: sitefont;
-	color: #cccccc;
-	font-size: 1vw; 
-	letter-spacing: 1px;
-	text-align: left;
-	padding-bottom: 0px;
-	line-height: 3vh;
-	border: 0px dotted white;
-	}		
-		
-#linkWhiteA {
-	display: block;
-	height: 100%;
-	margin-top: 500px;
-	margin-left: -90px;
-	font-family: Century Gothic;
-	font-size: 12px;
-	font-weight: bold;
-	color: #cccccc;
-	letter-spacing: 2px;
-	padding-left: 0px;
-	}
-	
-#linkWhiteA a {
-	padding: 9px;
-	box-shadow: inset 0 0 0 0 #ffffff;
-	color: #cccccc;
-	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-	text-decoration: none;
-	border-radius: 16px;
-	}
-	
-#linkWhiteA a:hover {
-	padding: 9px;
-	box-shadow: inset 110px 0 0 0 #990099;
-	color: #cccccc;	
-	}	
-			
-/*********************/	
-=======
 /*********************/
->>>>>>> Stashed changes
 /* Default Body Text */	
 /*********************/
 	
@@ -568,13 +438,8 @@ nav {
 	text-align: right;
 	}
 	
-<<<<<<< Updated upstream
-	
-/********************************/
-=======
 
 /********************************/	
->>>>>>> Stashed changes
 /* Default Buttons and Links    */
 /********************************/	
 
@@ -610,11 +475,6 @@ nav {
 	}
 	
 	
-<<<<<<< Updated upstream
-/**************************/	
-/* Top Navigation Bar     */
-/**************************/
-=======
 
 @media screen and (min-width: 1401px) {
 
@@ -804,7 +664,6 @@ nav {
 	
 	
 /* Top Navigation Bar     */
->>>>>>> Stashed changes
 
 #navbar {
 	z-index: 10;
@@ -823,15 +682,9 @@ nav {
 	font-family: Century Gothic;
 	color: #cccccc;
 	text-align: center;
-<<<<<<< Updated upstream
-	padding: 20px;
-	text-decoration: none;
-	font-size: 20px;
-=======
 	padding: 25px;
 	text-decoration: none;
 	font-size: 17px;
->>>>>>> Stashed changes
 	letter-spacing: 1px;
 	}
 
@@ -840,10 +693,6 @@ nav {
 	}
 	
 
-<<<<<<< Updated upstream
-/****************/	
-=======
->>>>>>> Stashed changes
 /* Sidebar Menu */
 
 #sidenav {
@@ -949,13 +798,7 @@ nav {
 	}
  
 
-<<<<<<< Updated upstream
-/*************************/
 /* Products and Services */
-/*************************/
-=======
-/* Products and Services */
->>>>>>> Stashed changes
 
 #productWrapper { 
 	text-align: center;
@@ -966,19 +809,10 @@ nav {
 	align-items: center;
 	justify-content: center;
 	margin-top: -30px;
-<<<<<<< Updated upstream
-	background-color: #b9b7b7;
-	background-image: url(../Images/bg.png);
-	background-size: cover;
-	background-position: center;
-  
-/*  this is where the magic happens:  */
-=======
 	background-color: #969696;
 	background-image: url(../Images/bg.png);
 	background-size: cover;
 	background-position: center;
->>>>>>> Stashed changes
 	background-attachment: fixed;
 	}
 	
@@ -1008,12 +842,8 @@ nav {
 	overflow: hidden;
 	transition: .5s;
 	margin: 0 2%;
-<<<<<<< Updated upstream
-	box-shadow: 0 5px 10px rgba(146,146,146,.2);
-=======
 	background-color:#969696;
 	box-shadow: 0 5px 10px rgba(102,102,102,.2);
->>>>>>> Stashed changes
 	line-height: 0;
 	}
 
@@ -1284,10 +1114,6 @@ nav {
 	color: #cccccc;
 	}	
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 
 /* FAQs */
 
@@ -1449,8 +1275,6 @@ nav {
 	font-family: siteFont, Tahoma;
 	letter-spacing: 1px; 
 	}		
-<<<<<<< Updated upstream
-=======
 	
 	
 /* Footer */
@@ -1467,7 +1291,6 @@ nav {
 	background-position: center;
 	background-attachment: fixed;
 	}
->>>>>>> Stashed changes
 	
 .footer {
 	max-width: 100%;
