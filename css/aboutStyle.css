@@ -877,7 +877,7 @@ section {
 .values li {
 	display: inline;
 	text-decoration-line: underline;  
-	text-decoration-style: dashed;
+	text-decoration-style: solid;
 	padding-right: 40px;
 	}	
 	
@@ -1287,6 +1287,10 @@ ul.expertise {
 	display: flex;
 	flex-direction: column;
 	padding-top: 50px;
+	font-size: 12px;
+	color: #cccccc;
+	font-weight: bold;
+	letter-spacing: 3px;
 	border-top: 0px solid #444;
 	}
 	
