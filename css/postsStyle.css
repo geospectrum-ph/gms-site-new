@@ -1089,68 +1089,7 @@ button:active {
 	font-family: siteFont, Tahoma;
 	letter-spacing: 1px; 
 	}
-
 	
-/* Address              */
-
-#addressWrapper { 
-	display: block;
-	background-color: #403F3E;
-	width: 100%;
-	height: 115vh;
-	padding-top: 125px;
-	padding-bottom: 100px;
-	border-left: 0px dotted #eeeeee; 
-	}	
-	
-.visit { 
-	display: block;
-	font-family: Century Gothic, Tahoma;
-	color: #cccccc;
-	font-size: 80px; 
-	font-weight: bold;
-	text-align: left;	
-	margin-left: 50px;
-	margin-top: -20px;
-	}
-	
-.address-container {
-	width: 1100px;
-	position: relative;
-	}
-	
-.map { 
-	margin-top: 30px;
-	margin-left: 0px;
-	padding: 10px;
-	border: 1px dotted #cccccc;
-	}
-	
-.homeTitle {
-	width: 80%;
-	font-family: sitefont;
-	color: #cccccc;
-	font-size: 30px;  
-	font-weight: bold;
-	margin-top: 250px;
-	letter-spacing: 3px;
-	text-align: left;
-	margin-left: 0px;
-	margin-bottom: 15px;
-	padding-bottom: 10px;
-	border-bottom: 1px dotted #cccccc;
-	}
-	
-.addressText {
-	font-family: sitefont;
-	color: #cccccc;
-	font-size: 16px;  
-	margin-top: 0px;
-	letter-spacing: 2px;
-	text-align: left;
-	margin-left: 50px;
-	margin-bottom: 75px;
-	}		
 	
 /**********/	
 /* Footer */
