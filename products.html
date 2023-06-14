@@ -49,7 +49,7 @@
 
 <div class="logo" style="">
 	<a href="home.html">
-	<img src="logos/logo_gms.png" class="logo" style="height: 40px;	width: 300px;" border="0"></a>
+	<img src="logos/logo_gms.png" class="logo" style="" border="0"></a>
 </div>
 
 <!-- Start Topbar Navigation -->
@@ -83,6 +83,17 @@
 								<div id="linkWhiteFooter" style=""><a href="mailto:info@geospectrum.com.ph"> EMAIL US &nbsp;&nbsp;<img src="Images/button_sphere_plus.png" id="sphereFooter" class="responsive" style="margin-left:0px;"></a> </div>
 							</div>				
 						</div>
+						
+						<div class="col-3" style="margin-top:0px;">					
+							<span class="footerHeading" style="">About Us</span><br />
+								<ul style="">
+									<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission and Vision</a></li>
+									<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core Values</a></li> 
+									<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our People</a></li> 
+									<li class="menuFooterList"><a href="about.html#responsibility" style="text-decoration:none;">Our Corporate Responsibility</a></li>
+									<li class="menuFooterList"><a href="about.html#clientWrapper" style="text-decoration:none;">Our Clients</a></li>
+								</ul> <br /><br />
+						</div>
 			
 						<div class="col-3" style="margin-top:0px; border:0px dotted #ccc;">				
 							<span class="footerHeading">Products</span><br />
@@ -92,16 +103,6 @@
 									<li class="menuFooterList"><a href="products.html#analyticsWrapper" style="text-decoration:none;">Analytics Services & Software</a></li>
 									<li class="menuFooterList"><a href="products.html#applications" style="text-decoration:none;">Applications</a></li>
 								</ul><br /><br />				
-						</div>
-						
-						<div class="col-3" style="margin-top:0px;">					
-							<span class="footerHeading" style="">About Us</span><br />
-								<ul style="">
-									<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission and Vision</a></li>
-									<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core Values</a></li> 
-									<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our People</a></li>
-									<li class="menuFooterList"><a href="about.html#clientWrapper" style="text-decoration:none;">Our Clients</a></li>
-								</ul> <br /><br />
 						</div>
 					</div>		
 				</div>
@@ -115,7 +116,7 @@
 						<div class="col-3" style="margin-top:30px;">
 							<span class="footerHeading" style="">Visit Us </span><br />
 								<ul style="">
-									<li class="textFooter">Unit 1604 OMM-CITRA Bldg.,</li>
+									<li class="textFooter">Unit 1604 OMM Bldg.,</li>
 									<li class="textFooter">39 San Miguel Avenue,<br />
 									Ortigas Center,</li>
 									<li class="textFooter">Pasig City, Philippines</li> 
@@ -182,9 +183,9 @@
 			</div>
 			
 			<div class="col-8 col-s-8" style="">
-				<div id="answer" style=""><strong>GEOSPECTRUM</strong> caters to the growing need for accurate, up-to-date and timely geospatial information to support decision making and planning activities. We distributes high resolution, high cadence (monthly, weekly and daily revisit) satellite imagery and value-added products that address a wide range of applications. <br /><br />		
+				<div id="answer" style=""><strong>GEOSPECTRUM</strong> caters to the growing need for accurate, up-to-date and timely geospatial information to support decision making and planning activities. We distributes high resolution, high cadence (monthly, weekly and daily revisit) satellite imagery and value-added products that address a wide range of applications.	</div> <br /><br />		
 
-				<div id="linkWhiteA" style=""><a href="#productsMore">READ MORE &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" style="width:34px; height:34px; vertical-align:middle;"> </a></div>
+				<div id="linkWhiteA" style=""><a href="#productsMore">READ MORE &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" id="sphere"> </a></div>
 			</div>
 		
 		</div>		
@@ -194,8 +195,8 @@
 <!-- Start Products More -->
 <center><section id="productsMore">
 	<div id="productsMore-container">
-		<div class="reveal" style="">		
-			<span class="productsNeed" style="">Whether you are: </span>
+		<div style="">		
+			<span class="productsNeed" class="reveal" style="">Whether you are: </span>
 				<ul class="need">
 					<li>from the agricultural sector looking for timely satellite imagery for crop monitoring;</li>
 					<li>from the government needing spatial data for better resource management;</li>
@@ -210,9 +211,11 @@
 
 <!-- Start Optical Satellite Imagery -->
 <center><section id="imageryWrapper">
-		<div class="reveal" style="">		
+		<div style="">
+		
+		<div class="productTitle">OPTICAL SATELLITE IMAGERY</div>
 						
-	<div class="imagery-container">
+	<div class="imagery-container" class="reveal" id="imageSpacer">
 			<div class="row">			
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
@@ -229,8 +232,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product01.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style=""><span style="">PlanetScope's constellation of approximately 200 Dove satellites provides a daily and continuous view of the Earth's surface with 3.7m medium-resolution imagery, enabling a comprehensive perspective of the world from above. </div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -262,22 +267,10 @@
 									</ul><br />	
 									</div>									
 								</div>					
-						</div></div>	
+						</div>
+					</div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style=""><span style="">PlanetScope's constellation of approximately 200 Dove satellites provides a daily and continuous view of the Earth's surface with 3.7m medium-resolution imagery, enabling a comprehensive perspective of the world from above. </div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
-			</div>
+			</div>	
 	</div> 		
 						
 	<div class="imagery-container">
@@ -285,7 +278,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">01.02</span></div>
 					<div class="imageryTitle" style="">PLANET TASKING WITH SKYSAT</div>	
 				</div>				
@@ -297,8 +290,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product02.png" style="width:100%;"></div>	
+					
+					<div class="imageryDesc" style=""><span style="">Planet Tasking offers near-real-time data at 50 cm resolution, enabling proactive identification of hotspots, event anticipation, and confident mission-critical decision-making. </div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -335,19 +330,6 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style=""><span style="">Planet Tasking offers near-real-time data at 50 cm resolution, enabling proactive identification of hotspots, event anticipation, and confident mission-critical decision-making. </div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
 			</div>
 	</div> 		
 						
@@ -356,7 +338,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">01.03</span></div>
 					<div class="imageryTitle" style="">PLANETARY VARIABLES</div>	
 				</div>				
@@ -368,8 +350,12 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product03.png" style="width:100%;"></div>	
+					
+					<div class="imageryDesc" style="">Earth’s hydrological and biological systems shift on a daily basis with immense complexity. Satellite data from Planet can help track some of the vital characteristics that define the health of our world, including water, vegetation, temperature, and forest carbon. <br /><br />
+					
+					Planetary Variables render complex Earth observation data from various constellations into actionable measurements, nearly everywhere on the Earth’s landmass. Powered by state-of-the-art remote sensing techniques and honed by a team of award-winning scientists, Planetary Variables provide users with robust measurements of the Earth’s surface.</div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -401,21 +387,6 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">Earth’s hydrological and biological systems shift on a daily basis with immense complexity. Satellite data from Planet can help track some of the vital characteristics that define the health of our world, including water, vegetation, temperature, and forest carbon. <br /><br />
-					
-					Planetary Variables render complex Earth observation data from various constellations into actionable measurements, nearly everywhere on the Earth’s landmass. Powered by state-of-the-art remote sensing techniques and honed by a team of award-winning scientists, Planetary Variables provide users with robust measurements of the Earth’s surface.</div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
 			</div>
 	</div>
 	
@@ -424,7 +395,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">01.04</span></div>
 					<div class="imageryTitle" style="">TANAGER</div>	
 				</div>				
@@ -436,8 +407,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product04.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">Planet's forthcoming hyperspectral satellite constellation is intended to provide customers with a level of detail that is unprecedented, enabling them to uncover social, environmental, and climate risks. The Hyperspectral Offering, which is set to launch in 2023, will help businesses and governments change the way they perceive human activities and their economic and environmental effects. <br /><br /></div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -469,20 +442,7 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">Planet's forthcoming hyperspectral satellite constellation is intended to provide customers with a level of detail that is unprecedented, enabling them to uncover social, environmental, and climate risks. The Hyperspectral Offering, which is set to launch in 2023, will help businesses and governments change the way they perceive human activities and their economic and environmental effects. <br /><br /></div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
-			</div>
+			</div>	
 	</div>
 	
 	<div class="imagery-container">
@@ -490,7 +450,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">01.05</span></div>
 					<div class="imageryTitle" style="">MULTI-SPECTRAL</div>	
 				</div>				
@@ -502,8 +462,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product05.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">Satellogic's multispectral sensor is equipped with four bands (red, green, blue, and near-infrared), covering a range of wavelengths from 450 to 900 nanometers. The camera's ground sampling distance (GSD) is 1 meter, and its swath width is 5 kilometers. <br /><br /></div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -540,20 +502,7 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">Satellogic's multispectral sensor is equipped with four bands (red, green, blue, and near-infrared), covering a range of wavelengths from 450 to 900 nanometers. The camera's ground sampling distance (GSD) is 1 meter, and its swath width is 5 kilometers. <br /><br /></div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
-			</div>
+			</div>	
 	</div>
 	
 	<div class="imagery-container">
@@ -561,7 +510,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">01.06</span></div>
 					<div class="imageryTitle" style="">HYPER-SPECTRAL</div>	
 				</div>				
@@ -573,8 +522,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product06.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">Satellogic’s hyperspectral cameras gather imagery data with a resolution of 25 meters while orbiting the Earth at an altitude of approximately 475 kilometers. The cameras capture data in 29 spectral bands ranging from visible to near-infrared wavelengths (460 - 830nm), and the resulting imagery is ortho-rectified and ready for use in Geographic Information Systems (GIS). <br /><br /></div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -611,20 +562,7 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">Satellogic’s hyperspectral cameras gather imagery data with a resolution of 25 meters while orbiting the Earth at an altitude of approximately 475 kilometers. The cameras capture data in 29 spectral bands ranging from visible to near-infrared wavelengths (460 - 830nm), and the resulting imagery is ortho-rectified and ready for use in Geographic Information Systems (GIS). <br /><br /></div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
-			</div>
+			</div>	
 	</div>
 	 
 </section></center>
@@ -632,9 +570,11 @@
 
 <!-- Start Non-Optical Satellite Imagery -->
 <center><section id="imageryNOWrapper">
-		<div class="reveal" style="">		
+		<div class="reveal" style="">	
+		
+		<div class="productTitle">NON-OPTICAL SATELLITE IMAGERY</div>	
 						
-	<div class="imageryNO-container">
+	<div class="imageryNO-container" id="imageSpacer">
 			<div class="row">			
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
@@ -651,8 +591,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product07.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style=""><span style="">ICEYE is revolutionizing synthetic aperture radar (SAR) technology with its small and agile SAR satellites, which are capable of revisiting the same location on Earth daily and even sub-daily. Unlike traditional SAR satellites, ICEYE's satellites are small and carry unique antennas that enable them to scan areas up to 50,000 km² in lower resolution and zoom into areas at a much higher resolution. With the world's largest SAR constellation, ICEYE provides unlimited global access and the highest frequency revisits on the market, measured in hours instead of days. </div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -683,19 +625,6 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style=""><span style="">ICEYE is revolutionizing synthetic aperture radar (SAR) technology with its small and agile SAR satellites, which are capable of revisiting the same location on Earth daily and even sub-daily. Unlike traditional SAR satellites, ICEYE's satellites are small and carry unique antennas that enable them to scan areas up to 50,000 km² in lower resolution and zoom into areas at a much higher resolution. With the world's largest SAR constellation, ICEYE provides unlimited global access and the highest frequency revisits on the market, measured in hours instead of days. </div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
 			</div>
 	</div> 		
 						
@@ -704,7 +633,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">02.02</span></div>
 					<div class="imageryTitle" style="">ALOS 2</div>	
 				</div>				
@@ -716,8 +645,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product08.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">ALOS-2, also known as "DAICHI-2," is an improved version of the ALOS Daichi mission launched in 2006. ALOS-2's state-of-the-art Synthetic Aperture Radar can observe day and night and in all weather conditions and archiving images since 2009. </div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -749,19 +680,6 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">ALOS-2, also known as "DAICHI-2," is an improved version of the ALOS Daichi mission launched in 2006. ALOS-2's state-of-the-art Synthetic Aperture Radar can observe day and night and in all weather conditions and archiving images since 2009. </div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
 			</div>
 	</div> 
 	 
@@ -770,9 +688,11 @@
 
 <!-- Start Analytics Services and Software -->
 <center><section id="analyticsWrapper">
-		<div class="reveal" style="">		
+		<div class="reveal" style="">	
+		
+		<div class="productTitle">ANALYTICS SERVICES AND SOFTWARE</div>	
 						
-	<div class="analytics-container">
+	<div class="analytics-container" id="imageSpacer">
 			<div class="row">			
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
@@ -789,8 +709,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product09.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">AW3D Standard is the world's best global DEM. More than 3 million satellite imageries are used to create the most comprehensive high resolution digital 3D imagery today. Global coverage, short delivery, low cost. Disaster prevention, construction sims, etc. </div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -824,20 +746,7 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">AW3D Standard is the world's best global DEM. More than 3 million satellite imageries are used to create the most comprehensive high resolution digital 3D imagery today. Global coverage, short delivery, low cost. Disaster prevention, construction sims, etc. </div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
-			</div>
+			</div>	
 	</div> 		
 						
 	<div class="analytics-container">
@@ -845,7 +754,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">03.02</span></div>
 					<div class="imageryTitle" style="">AW3D BUILDING</div>	
 				</div>				
@@ -857,8 +766,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product10.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style=""><span style="">AW3D Building vector data series stands out in the market as a highly scalable, cost-effective, reliable, and user-friendly vector geodata product that is well-suited for project management. </div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -890,19 +801,6 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style=""><span style="">AW3D Building vector data series stands out in the market as a highly scalable, cost-effective, reliable, and user-friendly vector geodata product that is well-suited for project management. </div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
 			</div>
 	</div> 		
 						
@@ -911,7 +809,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">03.03</span></div>
 					<div class="imageryTitle" style="">AW3D ORTHO IMAGERY</div>	
 				</div>				
@@ -923,8 +821,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product11.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">The world's highest quality orthorectified imagery comprises high-resolution pictures of any place on the planet.</div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -952,20 +852,7 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">The world's highest quality orthorectified imagery comprises high-resolution pictures of any place on the planet.</div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
-			</div>
+			</div>	
 	</div>
 	
 	<div class="analytics-container">
@@ -973,7 +860,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">03.04</span></div>
 					<div class="imageryTitle" style="">AW3D AIRPORT</div>	
 				</div>				
@@ -985,8 +872,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product12.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">AW3D offers comprehensive datasets of eTOD (electric Terrain & Obstacle Data) that have been generated from high-resolution satellite imagery. This data is essential for airplane take-off and landing operations and also for managing airport facilities optimized for aviation standards. <br /><br /></div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -1012,20 +901,7 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">AW3D offers comprehensive datasets of eTOD (electric Terrain & Obstacle Data) that have been generated from high-resolution satellite imagery. This data is essential for airplane take-off and landing operations and also for managing airport facilities optimized for aviation standards. <br /><br /></div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
-			</div>
+			</div>	
 	</div>
 	
 	<div class="analytics-container">
@@ -1033,7 +909,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">03.05</span></div>
 					<div class="imageryTitle" style="">AW3D TELECOM</div>	
 				</div>				
@@ -1045,8 +921,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product13.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">AW3D Telecom has been created specifically for the purpose of radio network planning and optimization, with a primary focus on its usefulness for the telecommunications industry. <br /><br /></div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -1070,19 +948,6 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">AW3D Telecom has been created specifically for the purpose of radio network planning and optimization, with a primary focus on its usefulness for the telecommunications industry. <br /><br /></div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
 			</div>
 	</div>
 	
@@ -1091,7 +956,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">03.06</span></div>
 					<div class="imageryTitle" style="">SPACEKNOW</div>	
 				</div>				
@@ -1103,8 +968,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product14.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">SpaceKnow provides global coverage of the earth through cutting-edge technology giving you access to view specific locations and monitor trends in our planet, empowering decision-makers with ultra-large-scale planetary analysis. <br /><br /></div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -1144,19 +1011,6 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">SpaceKnow provides global coverage of the earth through cutting-edge technology giving you access to view specific locations and monitor trends in our planet, empowering decision-makers with ultra-large-scale planetary analysis. <br /><br /></div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
 			</div>
 	</div>
 	
@@ -1165,7 +1019,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">03.07</span></div>
 					<div class="imageryTitle" style="">SEEDS FOR LGU</div>	
 				</div>				
@@ -1177,8 +1031,10 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div style="border: 1px dotted #cccccc;"><img src="Images/product15.png" style="width:100%;"></div>	
+												
+					<div class="imageryDesc" style="">The Social Economic Environmental and Demographic Systems for LGU, or SEEDs for LGU, is a web GIS portal that provides Local Government Units (LGUs) a tool to effectively utilize spatial and textual information about and within their locality.  It aims to provide a comprehensive visualization and analysis of data gathered from existing LGU data repositories, enabling them to query and analyze their locational information and assist them in providing efficient social services and enhancing development planning. <br /><br /></div>
 				</div>				
 				<div class="col-3" style="">
 					<div> 
@@ -1205,19 +1061,6 @@
 								</div>					
 						</div></div>	
 				</div>				
-			</div>				
-			<div class="row">			
-				<div class="col-2" id="imgServices" style="">
-					<div>&nbsp;</div>	
-				</div>				
-				
-				<div class="col-7" style="">							
-					<div class="imageryDesc" style="">The Social Economic Environmental and Demographic Systems for LGU, or SEEDs for LGU, is a web GIS portal that provides Local Government Units (LGUs) a tool to effectively utilize spatial and textual information about and within their locality.  It aims to provide a comprehensive visualization and analysis of data gathered from existing LGU data repositories, enabling them to query and analyze their locational information and assist them in providing efficient social services and enhancing development planning. <br /><br /></div>
-				</div>				
-				
-				<div class="col-3" style="">
-					<div>&nbsp;</div>
-				</div>				
 			</div>
 	</div>
 	
@@ -1226,7 +1069,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="border-top: 1px dotted #cccccc;">
 					<div id="number" class="" style=""><span class="imagery">03.08</span></div>
 					<div class="imageryTitle" style="">PATIENT CONSULTATION INFORMATION SYSTEM</div>	
 				</div>				
@@ -1238,7 +1081,7 @@
 				<div class="col-2" style="">
 					<div>&nbsp;</div>	
 				</div>				
-				<div class="col-7" style="">
+				<div class="col-7" style="" id="image">
 					<div class="imageryDesc" style="">Patient Consultation Information Systems, or PCIS, is a web portal and desktop application that provides medical professionals tools that target efficiency in data management for their patients. <br /><br />
 					</div>	
 				</div>				
@@ -1311,6 +1154,17 @@
 				</div>				
 			</div>
 			
+			<div class="col-3" style="margin-top:0px;">					
+				<span class="footerHeading" style="">About Us</span><br />
+					<ul style="">
+						<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission and Vision</a></li>
+						<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core Values</a></li> 
+						<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our People</a></li>
+						<li class="menuFooterList"><a href="about.html#responsibility" style="text-decoration:none;">Our Corporate Responsibility</a></li>
+						<li class="menuFooterList"><a href="about.html#clientWrapper" style="text-decoration:none;">Our Clients</a></li>
+					</ul> <br /><br />
+			</div>
+			
 			<div class="col-3" style="margin-top:0px; border:0px dotted #ccc;">				
 				<span class="footerHeading">Products</span><br />
 					<ul style="">
@@ -1319,16 +1173,6 @@
 						<li class="menuFooterList"><a href="products.html#analyticsWrapper" style="text-decoration:none;">Analytics Services & Software</a></li>
 						<li class="menuFooterList"><a href="products.html#applications" style="text-decoration:none;">Applications</a></li>
 					</ul><br /><br />				
-			</div>
-			
-			<div class="col-3" style="margin-top:0px;">					
-				<span class="footerHeading" style="">About Us</span><br />
-					<ul style="">
-						<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission and Vision</a></li>
-						<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core Values</a></li> 
-						<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our People</a></li>
-						<li class="menuFooterList"><a href="about.html#clientWrapper" style="text-decoration:none;">Our Clients</a></li>
-					</ul> <br /><br />
 			</div>
 		</div>		
 	</div>
@@ -1342,7 +1186,7 @@
 			<div class="col-3" style="margin-top:30px;">
 				<span class="footerHeading" style="">Visit Us </span><br />
 					<ul style="">
-						<li class="textFooter">Unit 1604 OMM-CITRA Bldg.,</li>
+						<li class="textFooter">Unit 1604 OMM Bldg.,</li>
 						<li class="textFooter">39 San Miguel Avenue,<br />
 						Ortigas Center,</li>
 						<li class="textFooter">Pasig City, Philippines</li> 
