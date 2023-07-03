@@ -36,38 +36,6 @@ body {
 .responsive {
 	max-width: 100%;
 	height: auto;
-	}	
-	
-	
-/**************************/	
-/* Top Navigation Bar     */
-/**************************/
-
-#navbar {
-	z-index: 10;
-	background-color: #303030;
-	position: fixed;
-	top: -100px;
-	width: 100%;
-	display: block;
-	transition: top 0.3s;
-	box-shadow: 0 1px 10px #000000;
-	}
-
-#navbar a {
-	float: right;
-	display: block;
-	font-family: Century Gothic;
-	color: #cccccc;
-	text-align: center;
-	padding: 20px;
-	text-decoration: none;
-	font-size: 17px;
-	letter-spacing: 1px;
-	}
-
-#navbar a:hover {
-	color: #990099;
 	}
 
 	
@@ -78,7 +46,6 @@ body {
 #number {
 	z-index: +1;
 	position: relative;
-	mix-blend-mode: difference;
 	font-family: Century Gothic;
 	font-size: 30px;
 	font-weight: bold;
@@ -94,7 +61,7 @@ body {
 	padding-top: 110px; 
 	padding-bottom: 20px; 
 	text-align: right;
-	color: #cccccc;
+	color: #333333;
 	border: 0px solid #333;
 	}
 	
@@ -126,7 +93,7 @@ body {
 	font-size: 12px;
 	font-weight: bold;
 	top: 50%;
-	padding-left: 10px;
+	padding-left: 0px;
 	transform: translateY(-50%);
 	}
 	
@@ -499,7 +466,6 @@ section {
 	.col-s-12 {width: 100%;}
 }
 
-
 @media screen and (min-width: 1201px) {		
 
 .logo {
@@ -511,8 +477,35 @@ section {
 	transform: translateY(-50%);
 	height: 40px;	
 	width: 300px;
-	mix-blend-mode: difference;
+	mix-blend-mode: normal;
+	}	
+
+#navbar {
+	z-index: 10;
+	background-color: #303030;
+	position: fixed;
+	top: -100px;
+	width: 100%;
+	display: block;
+	transition: top 0.3s;
+	box-shadow: 0 1px 10px #000000;
 	}
+
+#navbar a {
+	float: right;
+	display: block;
+	font-family: Century Gothic;
+	color: #cccccc;
+	text-align: center;
+	padding: 22px;
+	text-decoration: none;
+	font-size: 17px;
+	letter-spacing: 1px;
+	}
+
+#navbar a:hover {
+	color: #990099;
+	}	
 			
 /* Social Media Button */
 
@@ -1217,12 +1210,12 @@ button:active {
 	text-align: left;
 	margin-left: 50px;
 	margin-bottom: 75px;
-	}		
-	
+	}	
+
 	
 /**********/	
 /* Footer */
-/**********/
+/**********/	
 	
 #footer {
 	max-width: 100%;
@@ -1234,8 +1227,6 @@ button:active {
 	background-image: url(../Images/bgFooter.png);
 	background-size: cover;
 	background-position: center;
-  
-/*  this is where the magic happens:  */
 	background-attachment: fixed;
 	}
 	
@@ -1250,8 +1241,6 @@ button:active {
 	background-image: url(../Images/bgFooter.png);
 	background-size: cover;
 	background-position: center;
-  
-/*  this is where the magic happens:  */
 	background-attachment: fixed;
 	}
 	
@@ -1264,27 +1253,46 @@ button:active {
 	font-family: siteFont, Tahoma;
 	}
 	
+#number .sitemap {
+	display: block;
+	padding-top: 80px; 
+	padding-left: 2%;
+	font-size: 30px;
+	}
+	
 .footerHeading {
 	width: 95%;
 	display: block;
 	color: #cccccc;
 	background-color: rgb(0,0,0,.5);
 	padding: 10px;
-	font-family: Century Gothic, siteFont;
+	font-family: "Century Gothic", Helvetica, siteFont;
 	font-variant: small-caps;
-	font-size: 22px;
+	font-size: 28px;
+	font-weight: bold;
 	letter-spacing: 2px;
 	line-height: 36px;
 	text-decoration: none;
 	border-bottom: .25px solid #999999;
-	padding-bottom: 10px;
+	margin-bottom: 1px;
+	}
+	
+.footerHeading a {
+	width: 95%;
+	letter-spacing: 2px;
+	}
+	
+.footerHeading a:hover {
+	width: 95%;
+	letter-spacing: 2px;
+	background-color: #990099;
 	}
 	
 .menuFooterList {
 	width: 95%;
 	padding: 20px 10px;
 	font-family: siteFont;
-	font-size: 12px;
+	font-size: 16px;
 	text-decoration: none;
 	letter-spacing: 2px;
 	background-color: rgb(0,0,0,.5);
@@ -1307,7 +1315,7 @@ button:active {
 	}
 	
 #linkWhiteFooter {
-	font-family: Century Gothic;
+	font-family: "Century Gothic", Helvetica;
 	font-weight: bold;
 	font-size: 18px;
 	color: #666666;
@@ -1353,7 +1361,7 @@ button:active {
 	margin-left: 0px;
 	color: #cccccc;
 	text-decoration: none;
-	padding-left: 5px;
+	padding-left: 25px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	}
@@ -1364,27 +1372,52 @@ button:active {
 	}
 	
 .email {
-	width: 75%;
-	margin-left: 15%;
-	padding: 20px 20px 40px 40px;
+	width: 95%;
+	margin-bottom: 30px;
+	padding: 20px 20px 40px 20px;
 	background-color: rgb(0,0,0,.5);
 	border-bottom: 1px dotted #cccccc;
 	}
 	
 .emailQ {
-	font-size: 50px;
-	font-family: Century Gothic;
+	font-size: 48px;
+	font-family: "Century Gothic", Helvetica;
 	font-variant: small-caps;
 	font-weight: bold;
 	color: #cccccc;
 	padding-bottom: 20px;
+	line-height: 50px;
 	}
 	
 .emailT {
-	font-family: Century Gothic;
+	display: block;
+	position: relative;
+	font-family: ""Century Gothic", Helvetica", Helvetica;
 	font-size: 18px;
 	font-weight: bold;
 	color: #cccccc;
+	padding-top: 20px;
+	}	
+	
+	
+/* Back to Top */
+
+.back-to-top {
+	z-index: -1;
+	position: fixed;
+	bottom: 20px;
+	right: 5px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: rgba(51, 51, 51, 1.0);
+	font-size: .75vw;
+	font-weight: bold;
+	padding-right: 0px;
+	display: none;
+	}
+
+.back-to-top:hover {    
+    background-color: #303030;
 	}
 
 	

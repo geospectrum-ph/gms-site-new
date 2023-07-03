@@ -81,7 +81,7 @@ body {
 #number .sitemap {
 	display: block;
 	padding-top: 100px; 
-	padding-left: 1%;
+	padding-left: 5%;
 	}
 
 #numberIndicator {
@@ -415,10 +415,6 @@ section {
 	width: 300px;
 	mix-blend-mode: normal;
 	}	
-	
-/**************************/	
-/* Top Navigation Bar     */
-/**************************/
 
 #navbar {
 	z-index: 10;
@@ -1429,7 +1425,7 @@ ul.expertise {
 	display: inline;
 	text-decoration-line: underline;  
 	text-decoration-style: dashed;
-	padding-right: 40px;
+	padding-right: 10px;
 	}
 	
 #subHeadingLightC {
@@ -1450,10 +1446,11 @@ ul.expertise {
 	font-size: 80px; 
 	font-weight: bold; 
 	}	
+
 	
 /**********/	
 /* Footer */
-/**********/
+/**********/	
 	
 #footer {
 	max-width: 100%;
@@ -1470,6 +1467,7 @@ ul.expertise {
 	
 .footer {
 	max-width: 100%;
+	min-height: 100vh;
 	padding-top: 50px;
 	display: block;
 	font-family: siteFont, Tahoma;
@@ -1490,28 +1488,11 @@ ul.expertise {
 	font-family: siteFont, Tahoma;
 	}
 	
-.email {
-	width: 75%;
-	margin-left: 15%;
-	padding: 20px 20px 40px 40px;
-	background-color: rgb(0,0,0,.5);
-	border-bottom: 1px dotted #cccccc;
-	}
-	
-.emailQ {
-	font-size: 50px;
-	font-family: Century Gothic;
-	font-variant: small-caps;
-	font-weight: bold;
-	color: #cccccc;
-	padding-bottom: 20px;
-	}
-	
-.emailT {
-	font-family: Century Gothic;
-	font-size: 18px;
-	font-weight: bold;
-	color: #cccccc;
+#number .sitemap {
+	display: block;
+	padding-top: 80px; 
+	padding-left: 2%;
+	font-size: 30px;
 	}
 	
 .footerHeading {
@@ -1520,21 +1501,33 @@ ul.expertise {
 	color: #cccccc;
 	background-color: rgb(0,0,0,.5);
 	padding: 10px;
-	font-family: Century Gothic, siteFont;
+	font-family: "Century Gothic", Helvetica, siteFont;
 	font-variant: small-caps;
-	font-size: 22px;
+	font-size: 28px;
+	font-weight: bold;
 	letter-spacing: 2px;
 	line-height: 36px;
 	text-decoration: none;
 	border-bottom: .25px solid #999999;
-	padding-bottom: 10px;
+	margin-bottom: 1px;
+	}
+	
+.footerHeading a {
+	width: 95%;
+	letter-spacing: 2px;
+	}
+	
+.footerHeading a:hover {
+	width: 95%;
+	letter-spacing: 2px;
+	background-color: #990099;
 	}
 	
 .menuFooterList {
 	width: 95%;
 	padding: 20px 10px;
 	font-family: siteFont;
-	font-size: 12px;
+	font-size: 16px;
 	text-decoration: none;
 	letter-spacing: 2px;
 	background-color: rgb(0,0,0,.5);
@@ -1557,7 +1550,7 @@ ul.expertise {
 	}
 	
 #linkWhiteFooter {
-	font-family: Century Gothic;
+	font-family: "Century Gothic", Helvetica;
 	font-weight: bold;
 	font-size: 18px;
 	color: #666666;
@@ -1598,42 +1591,62 @@ ul.expertise {
 	letter-spacing: 2px;
 	}
 	
-.textButtonFaq a:hover {
-	box-shadow: inset 100px 0 0 0 #990099;
-	color: white;
-	}
-	
 .textFooterTiny {
 	font-size: 11px;
 	margin-left: 0px;
 	color: #cccccc;
 	text-decoration: none;
-	padding-left: 5px;
+	padding-left: 25px;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	letter-spacing: 2px;
 	}
 	
-#allRights {
-	padding-left: 100px;
+.textButtonFaq a:hover {
+	box-shadow: inset 100px 0 0 0 #990099;
+	color: white;
 	}
 	
-/***************/	
+.email {
+	width: 95%;
+	margin-bottom: 30px;
+	padding: 20px 20px 40px 20px;
+	background-color: rgb(0,0,0,.5);
+	border-bottom: 1px dotted #cccccc;
+	}
+	
+.emailQ {
+	font-size: 48px;
+	font-family: "Century Gothic", Helvetica;
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #cccccc;
+	padding-bottom: 20px;
+	line-height: 50px;
+	}
+	
+.emailT {
+	display: block;
+	position: relative;
+	font-family: ""Century Gothic", Helvetica", Helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	color: #cccccc;
+	padding-top: 20px;
+	}	
+	
+	
 /* Back to Top */
-/***************/	
+
 .back-to-top {
 	z-index: -1;
 	position: fixed;
 	bottom: 20px;
-	right: 7px;
+	right: 5px;
 	text-decoration: none;
 	color: #ffffff;
 	background-color: rgba(51, 51, 51, 1.0);
 	font-size: .75vw;
 	font-weight: bold;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
 	padding-right: 0px;
 	display: none;
 	}
