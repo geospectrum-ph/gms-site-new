@@ -447,7 +447,7 @@ section {
 
 
 
-@media screen and (min-width: 1201px) {		
+@media screen and (min-width: 801px) {			
 
 .logo {
 	display: block;
@@ -1325,6 +1325,869 @@ section {
 /************************************/	
 /* End of screen min-height 1201px  */
 /************************************/
+
+
+@media screen and (max-width: 800px) {
+
+.logo {
+	z-index: 15;
+	position: fixed;
+	top: 2vh;
+	padding-left: 1.5vw;
+	width: 30vw;
+	height: 3.7vw;
+	}
+
+#navbar {
+	z-index: 10;
+	background-color: #303030;
+	position: fixed;
+	top: -120px;
+	width: 100%;
+	display: block;
+	transition: top 0.3s;
+	box-shadow: 0 1px 10px #000000;
+	}
+
+#navbar a {
+	float: right;
+	display: block;
+	font-family: "Century Gothic", Helvetica;
+	color: #cccccc;
+	text-align: center;
+	padding: 2.3vh;
+	margin-right: 2vw;
+	text-decoration: none;
+	font-size: 2vw;
+	letter-spacing: 1px;
+	}
+
+#navbar a:hover {
+	color: #990099;
+	}
+	
+
+/* Sidebar Menu */
+
+#sidenav {
+	z-index: 10;
+	display: block;
+	height: 100%;
+	width: 40px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background-color: #303030;
+	overflow: hidden;
+	box-shadow: 0 1px 10px #000000;
+	}
+	
+.menuIcon {
+	display: block;
+	margin-left: 7px;
+	margin-top: -5px;
+	font-size: 24px; 
+	cursor: pointer; 
+	color: #cccccc;
+	}
+
+.menuText {
+	display: block;
+	font-family: Century Gothic;
+	font-size: 8px; 
+	Letter-spacing: 1px;
+	margin-left: 5px;
+	color:#cccccc;
+	}
+	
+#verticalConnect {
+	display: none;	 
+	}
+	
+		
+/* Social Media Button */
+
+#socMed {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8vh;
+	background: #303030;
+	}
+
+.btnsocMed {
+	height: 20px;
+	width: 20px;
+	margin-bottom: 3vh;
+	border-radius: 3px;
+	background: #303030;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    box-shadow: -1px -1px 5px #666666, 5px 5px 15px #111111;
+	font-size: 12px;
+	color: #990099;
+	text-decoration: none;
+	}
+
+.btnsocMed:hover {
+    box-shadow: 0px 0px 3px #666666, 2px 2px 5px #111111;
+	}
+	
+.btnsocMed:active {
+    box-shadow: -2px -2px 5px #666666, 5px 5px 15px #111111;;
+	}
+	
+#verticalContact {
+	height: 130px;
+	font-size: 12px;
+	text-align: center;
+	writing-mode: vertical-lr; 
+	position: absolute; 
+	font-family: Century Gothic;
+	background-color:#990099;
+	color:#ffffff;
+	letter-spacing: 3px;
+	margin-top: 68vh;
+	margin-left: 0px;
+	padding: 10px 10px 0px 13px;
+	width: 50px;
+	text-decoration: none;
+	border-bottom: 5px solid #c0c0c0;
+	}		
+		
+
+/* Default Body Text */	
+	
+#bodyTextDark {
+	font-family: siteFont, Tahoma;
+	font-size: 18px;
+	color: #333333;
+	letter-spacing: 1px;
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 50px;
+	text-align: right;
+	}
+		
+#bodyTextLight {
+	font-family: siteFont, Tahoma;
+	font-size: 18px;
+	color: #cccccc;
+	letter-spacing: 1px;
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 50px;
+	text-align: right;
+	}
+	
+#verticalText {
+	writing-mode: vertical-lr; 
+	position:absolute; 
+	font-family:  Century Gothic;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 30px;
+	letter-spacing: 3px; 
+	padding-left: 10px;
+	}
+	
+
+/* Buttons and Links    */
+
+#sphere {
+	width: 35px;
+	height: 35px;
+	vertical-align: middle; 
+	text-align: right;
+	}
+
+#linkWhite {
+	font-family: Century Gothic;
+	font-size: 12px;
+	font-weight: bold;
+	color: #cccccc;
+	letter-spacing: 2px;
+	padding-left: 0px;
+	}
+	
+#linkWhite a {
+	box-shadow: inset 0 0 0 0 #ffffff;
+	color: #cccccc;
+	margin: 0 -.25rem;
+	padding: 0 .25rem;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	text-decoration: none;
+	border-radius: 16px;
+	}
+	
+#linkWhite a:hover {
+	box-shadow: inset 200px 0 0 0 #990099;
+	color: #cccccc;
+	padding: 5px;
+	}	
+	
+#linkDark { 
+	font-family:  Century Gothic;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-align: right;
+	}
+	
+#linkDark a {
+	padding: 9px;
+	box-shadow: inset 0 0 0 0 #333333;
+	color: #333333;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	text-decoration: none;
+	border-radius: 16px;
+	}
+	
+#linkDark a:hover {
+	box-shadow: inset 170px 0 0 0 #990099;
+	color: #cccccc;
+	padding: 9px;
+	border: 0px dotted #333333;
+	}
+
+.aboutButton {
+	font-family: Century Gothic;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	letter-spacing: 2px;
+	padding-top: 30px;
+	text-align: center;
+	}
+	
+.aboutButton a {
+	padding: 9px;
+	box-shadow: inset 0 0 0 0 #ffffff;
+	color: #333333;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	text-decoration: none;
+	border-radius: 16px;
+	border: 0px solid #cccccc;
+	}
+	
+.aboutButton a:hover {
+	padding: 9px;
+	box-shadow: inset 155px 0 0 0 #990099;
+	color: white;
+	}
+
+
+/******************/
+/* Products       */
+/******************/
+
+#products {
+	display: block;
+	color: #ffffff;
+	background-color: #1D3973;
+	overflow: hidden;
+	height: 120vh;
+	width: 100vw;
+	}
+	
+#subHeading {
+	display: block;
+	margin-top: 25vh;
+	text-align: right;
+	font-size: 1.5vw;	
+	color: #cccccc;
+	letter-spacing: .5vw;
+	}
+	
+#question { 
+	margin-top: ;
+	text-align: right;
+	padding-left: 0px;
+	font-family: Century Gothic, Tahoma;
+	color: #cccccc;
+	font-size: 6vw; 
+	font-weight: bold;
+	line-height: 50px;
+	}
+	
+#answer {
+	font-family: sitefont, Tahoma;
+	color: #cccccc;
+	width: 90%;
+	font-size: 2vw;  
+	margin-top: 42.5vh;
+	text-align: left;
+	padding-left: 1vw;
+	letter-spacing: .2vw;
+	}
+	
+#linkWhiteA {
+	display: block;
+	margin-top: 3vh;
+	text-align: left;
+	padding-left: .5vw;
+	font-family: Century Gothic;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: #cccccc;
+	letter-spacing: .2vw;
+	}
+	
+#linkWhiteA a {
+	padding: 1.25vw;
+	box-shadow: inset 0 0 0 0 #ffffff;
+	color: #cccccc;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	text-decoration: none;
+	border-radius: 2vw;
+	}
+	
+#linkWhiteA a:hover {
+	padding: 1.25vw;
+	box-shadow: inset 50vw 0 0 0 #990099;
+	color: #cccccc;
+	}
+	
+	
+/* Our Products         */
+
+#productsMore { 
+	width: 100%;
+	height: 150vh;
+	display: block;
+	background-color: #787878;
+	background-image: url(../Images/bgProductsMore.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	}	
+	
+#productsMore-container {
+	width: 700px;
+	position: relative;
+	padding-top: 20px;
+	}
+	
+.productsNeed {
+	display: block;
+	font-family: sitefont, Tahoma;
+	color: #333333;
+	font-size: 3vw;  
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 30px;
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-shadow: 0px 0px 5px #ffffff;
+	}	
+	
+.need li {
+	display: block;
+	padding: 20px 10px;
+	text-decoration: none;
+	background-color: rgb(0,0,0,.7);
+	margin-bottom: 1px;
+	padding-left: 40px;
+	font-family: sitefont, Tahoma;
+	color: #cccccc;
+	font-size: 2vw;  
+	letter-spacing: 2px;
+	line-height: 30px;
+	text-align: left;
+	padding-bottom: 20px;
+	}	
+		
+
+/* Optical Satellite Imageries */
+
+#imageryWrapper { 
+	width: 100vw;
+	min-height: 100vh;
+	display: block;
+	position: relative;
+	background-color: #4C4C4C;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 150px 500px;
+	background-position-x: 55%;
+	background-attachment: fixed;
+	padding-bottom: 100px;
+	}	
+	
+.imagery-container {
+	display: block;
+	max-width: 100%;
+	width: 700px;
+	}
+	
+.productTitle { 
+	display: block;
+	position: relative;
+	padding-top: 50px;
+	padding-left: 40px;
+	font-family: Century Gothic, Tahoma;
+	color: #cccccc;
+	font-size: 5vw; 
+	font-weight: bold;
+	text-align: left;	
+	border: 0px dotted #cccccc;
+	overflow: hidden;
+	}
+	
+.imageryTitle { 
+	display:block;
+	font-family: siteFont;
+	color: #cccccc;
+	font-size: 22px; 
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-bottom: 20px;
+	text-align: right;	
+	border: 0px dotted #cccccc;
+	overflow: hidden;
+	}
+	
+.imageryType { 
+	font-family: Century Gothic, Tahoma;
+	color: #333333;
+	font-size: 80px; 
+	font-weight: bold;
+	text-align: center;	
+	}
+	
+.imageryDesc { 
+	position: relative;
+	top: 1%;
+	left: 1%;
+	font-family: sitefont, Tahoma;
+	color: #cccccc;
+	font-size: 2vw;  
+	margin-left: 0px;
+	padding: 20px 50px 0px 20px;
+	letter-spacing: 1px;
+	text-align: left;
+	padding-bottom: 50px;
+	}
+	
+	
+/* Non-Optical Satellite Imageries */
+
+#imageryNOWrapper { 
+	width: 100vw;
+	min-height: 100vh;
+	display: block;
+	position: relative;
+	background-color: #333233;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 150px 500px;
+	background-position-x: 15%;
+	background-attachment: fixed;
+	padding-bottom: 100px;
+	}	
+	
+.imageryNO-container {
+	display: block;
+	max-width: 100%;
+	width: 700px;
+	}
+		
+
+/* Analytics Services and Software */
+
+#analyticsWrapper { 
+	width: 100vw;
+	min-height: 100vh;
+	display: block;
+	position: relative;
+	background-color: #7E7C7F;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 150px 500px;
+	background-position-x: 15%;
+	background-attachment: fixed;
+	padding-bottom: 100px;
+	}	
+	
+.analytics-container {
+	display: block;
+	max-width: 100%;
+	width: 700px;
+	}
+	
+	
+/* Start defining the Accordion */ 
+
+.accordion {
+	width: 150px;
+	font-family: siteFont, Tahoma;
+	letter-spacing: 1px;
+	display: block;
+	color: #cccccc;
+	cursor: pointer;
+	padding-top: 18px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 1.75vw;
+	transition: 0.4s;
+	}
+
+#pageMenuColumn .accordion:after {
+	content: '\25bc'; 
+	font-family: Century Gothic;
+	font-size: 12px;
+	color: #990099;
+	font-weight: bold;
+	float: right;
+	margin-top: 0px;
+	}
+
+#pageMenuColumn .active:after {
+	content: "\25b2";
+	}
+
+.panel {
+	width: 150px;
+	border-bottom: 1px dotted #cccccc;
+	padding: 0px 25px 0px 0px;
+	background-color: transparent;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-out;
+	}
+	
+.panelText {
+	font-size: 1.5vw; 
+	color: #cccccc;
+	text-align: left; 
+	letter-spacing: 1px;	
+	}	
+
+.panelText li {
+	margin-left: 1rem;
+	list-style-type: circle;
+	}
+			
+			
+/* Products Applications*/
+
+#applications { 
+	width: 100%;
+	height: 130vh;
+	display: block;
+	background-color: #787878;
+	background-image: url(../Images/bgPlanetSatellite.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	}	
+	
+#applications-container {
+	width: 700px;
+	position: relative;
+	padding-top: 50px;
+	}
+	
+.appsTitle {
+	display: block;
+	font-family: sitefont, Tahoma;
+	color: #cccccc;
+	font-size: 24px;  
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 30px;
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	}	
+	
+#appsText li {
+	display: block;
+	padding: 20px 10px;
+	text-decoration: none;
+	background-color: rgb(0,0,0,.7);
+	margin-bottom: 1px;
+	margin-right: 1px;
+	padding-left: 20px;
+	font-family: sitefont, Tahoma;
+	color: #cccccc;
+	font-size: 18px;  
+	letter-spacing: 2px;
+	line-height: 30px;
+	text-align: left;
+	padding-bottom: 20px;
+	}		
+	
+
+/* Industries */
+
+#industryWrapper {
+	width: 100vw;
+	min-height: 50vh;
+	display: block;
+	background-color: #D9D7DA;
+	font-family: siteFont, Tahoma;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	}
+
+#industry-container {
+	display: block;
+	width: 1100px;
+	font-family: siteFont, Tahoma;
+	text-align: left;
+	}
+	
+.offerTitle {
+	display: block;	
+	font-family: siteFont, Tahoma;
+	font-weight: bold;
+	font-size: 18px;
+	color: #333333;
+	letter-spacing: 1px;
+	text-align: center; 
+	padding-top: 20px;
+	}
+	
+.offerDesc {
+	display: block;	
+	font-family: siteFont, Tahoma;
+	font-size: 14px;
+	color: #333333;
+	letter-spacing: 1px;
+	text-align: justify; 
+	padding-top: 10px;
+	}	
+	
+.icon {
+	display: block;	
+	position: relative; 
+	height: 100%;
+	margin-left: 115px;
+	}
+	
+	
+/* Footer                       */
+	
+#footer {
+	max-width: 100%;
+	padding-top: 0px;
+	display: block;
+	font-family: siteFont, Tahoma;
+	padding-left: 25px;
+	background-color: #010A26;
+	background-image: url(../Images/bgFooter.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	}
+	
+.footer {
+	max-width: 100%;
+	min-height: 100vh;
+	padding-top: 50px;
+	display: block;
+	font-family: siteFont, Tahoma;
+	padding-left: 25px;
+	background-color: #010A26;
+	background-image: url(../Images/bgFooter.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	}
+	
+.footer-container {
+	display: block;
+	max-width: 1100px;
+	position: relative;
+	margin: auto;
+	color: #cccccc;
+	font-family: siteFont, Tahoma;
+	}
+	
+#number .sitemap {
+	display: block;
+	padding-top: 80px; 
+	padding-left: 2%;
+	font-size: 3vw;
+	}
+	
+.footerHeading {
+	width: 95%;
+	display: block;
+	color: #cccccc;
+	background-color: rgb(0,0,0,.5);
+	padding: 10px;
+	font-family: "Century Gothic", Helvetica, siteFont;
+	font-variant: small-caps;
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 36px;
+	text-decoration: none;
+	border-bottom: .25px solid #999999;
+	margin-bottom: 1px;
+	}
+	
+.footerHeading a {
+	width: 95%;
+	letter-spacing: 2px;
+	}
+	
+.footerHeading a:hover {
+	width: 95%;
+	letter-spacing: 2px;
+	background-color: #990099;
+	}
+	
+.menuFooterList {
+	width: 95%;
+	padding: 20px 10px;
+	font-family: siteFont;
+	font-size: 1.75vw;
+	text-decoration: none;
+	letter-spacing: 2px;
+	background-color: rgb(0,0,0,.5);
+	margin-bottom: 1px;
+	}
+	
+.menuFooterList a {
+	width: 90%;
+	padding: 10px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	}
+	
+.menuFooterList a:hover {
+	width: 90%;
+	padding: 10px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	background-color: #990099;
+	}
+	
+#linkWhiteFooter {
+	font-family: "Century Gothic", Helvetica;
+	font-weight: bold;
+	font-size: 18px;
+	color: #666666;
+	letter-spacing: 2px;
+	}
+	
+#linkWhiteFooter a {
+	box-shadow: inset 0 0 0 0 #ffffff;
+	color: #cccccc;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	text-decoration: none;
+	border: 0px solid #cccccc;
+	border-radius: 25px;
+	padding: 6px;
+	}
+	
+#linkWhiteFooter a:hover {
+	box-shadow: inset 200px 0 0 0 #990099;
+	color: #cccccc;
+	padding: 6px;
+	border: 0px dotted #cccccc;
+	}
+	
+#sphereFooter {
+	width: 34px;
+	height: 34px;
+	margin-top: -2px;
+	text-align: ;
+	}
+	
+.textFooter {
+	font-size: 12px;
+	margin-left: 0px;
+	color: #cccccc;
+	text-decoration: none;
+	padding-bottom: 5px;
+	padding-left: 25px;
+	letter-spacing: 2px;
+	}
+	
+.textFooterTiny {
+	font-size: 11px;
+	margin-left: 0px;
+	color: #cccccc;
+	text-decoration: none;
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	}
+	
+.textButtonFaq a:hover {
+	box-shadow: inset 100px 0 0 0 #990099;
+	color: white;
+	}
+	
+.email {
+	width: 95%;
+	margin-bottom: 30px;
+	padding: 20px 20px 40px 20px;
+	background-color: rgb(0,0,0,.5);
+	border-bottom: 1px dotted #cccccc;
+	}
+	
+.emailQ {
+	font-size: 5vw;
+	font-family: "Century Gothic", Helvetica;
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #cccccc;
+	padding-bottom: 20px;
+	line-height: 50px;
+	}
+	
+.emailT {
+	display: block;
+	position: relative;
+	font-family: ""Century Gothic", Helvetica", Helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	color: #cccccc;
+	padding-top: 20px;
+	}	
+	
+	
+/* Back to Top */
+
+.back-to-top {
+	z-index: -1;
+	position: fixed;
+	bottom: 20px;
+	right: 5px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: rgba(51, 51, 51, 1.0);
+	font-size: .75vw;
+	font-weight: bold;
+	padding-right: 0px;
+	display: none;
+	}
+
+.back-to-top:hover {    
+    background-color: #303030;
+	}
+	
+
+
+	
+} 
+/************************************/	
+/* End of screen max-width: 800px  */
+/************************************/
+	
 	
 /*****************/	
 /* Other Devices */
@@ -1505,9 +2368,8 @@ section {
 	width: 100%;
 	}	
 
-/******************/
+
 /* Products       */
-/******************/
 
 #products {
 	display: block;
@@ -1520,8 +2382,9 @@ section {
 	
 #subHeading {
 	display: block;
-	margin-top: 100px;
+	margin-top: 120px;
 	margin-left: 40px;
+	text-align: left;
 	font-size: 14px;	
 	color: #cccccc;
 	letter-spacing: 3px;
@@ -1531,6 +2394,7 @@ section {
 	padding-left: 40px;
 	margin-top: 0px;
 	padding-right: 50px;
+	text-align: left;
 	font-family: Century Gothic, Tahoma;
 	color: #cccccc;
 	font-size: 40px; 
@@ -1546,7 +2410,7 @@ section {
 	width: 65%;
 	font-size: 14px;  
 	line-height: 20px;
-	margin-top: -70px;
+	margin-top: 30px;
 	margin-left: 70px;
 	letter-spacing: 2px;
 	text-align: left;
@@ -1556,7 +2420,7 @@ section {
 	display: block;
 	position: relative;
 	height: 100%;
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-left: 60px;
 	font-family: Century Gothic;
 	font-size: 10px;
@@ -1619,9 +2483,13 @@ section {
 	line-height: 30px;
 	text-align: left;
 	padding-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	text-shadow: 0px 0px 5px #ffffff;
-	}	
+	}
+
+.need {
+		margin-top: -20px;
+	}
 	
 .need li {
 	display: block;
@@ -1665,13 +2533,14 @@ section {
 .productTitle { 
 	display: block;
 	position: absolute;
-	width: 80%;
+	width: 90%;
 	padding-top: 50px;
-	margin-left: 40px;
+	margin-left: 0px;
 	padding-bottom: 0px;
 	font-family: Century Gothic, Tahoma;
 	color: #cccccc;
 	font-size: 28px; 
+	line-height: 32px;
 	font-weight: bold;
 	text-align: left;	
 	border: 0px dotted #cccccc;
@@ -2147,7 +3016,9 @@ section {
 
 
 }
-
+/************************************/	
+/* End of screen max-width 600px  */
+/************************************/
 
 
 
