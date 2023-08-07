@@ -350,6 +350,7 @@
 													<label for="Email Address"> Email Address *<br /><input id="Input_EAa" type="email" placeholder="Email Address"/></label>
 													<label for="Contact Number"> Contact Number<br /><input id="Input_CNa" type="text" placeholder="Contact Number"/></label>
 													<label for="Subject"> Subject<br /><input id="Input_Sua" type="text" placeholder="Job Application" readonly /></label>
+													<label for="Position"> Position<br /><input id="Input_Poa" type="text" placeholder="Position"/></label>
 													<label for="Message"> Cover Letter *<br /><textarea id="Input_Mea" type="text" placeholder="Cover Letter"></textarea></label>
 													<div class="panel">By hitting the submit button on this form, you have read and agreed to the Privacy Policy of Geospectrum.</div>
 													<input
@@ -361,6 +362,7 @@
 															document.getElementById('Input_EAa').value,
 															document.getElementById('Input_CNa').value,
 															'Job Application',
+															document.getElementById('Input_Poa').value,
 															document.getElementById('Input_Mea').value
 															)">
 												</form>				
@@ -636,12 +638,12 @@ function openCity(evt, cityName) {
 <!-- Form Handler -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
-	function sendEmail(Full_Name_A, Email_Address_A, Contact_Number_A, Subject_A, Message_A) {
+	function sendEmail(Full_Name_A, Email_Address_A, Contact_Number_A, Subject_A, Position_A, Message_A) {
 		Email.send({
 			SecureToken: "b3a61f50-37cf-4a00-a5f0-98e37af1b275",
 			To: 'info@geospectrum.com.ph',
 			From: 'it.support@geospectrum.com.ph',
-			Subject: "\"" + Subject_A + "\" from: " + Full_Name_A,
+			Subject: "\"" + Subject_A + "\" for " + Position_A + "\" from: " + Full_Name_A,
 			Body: "\"" + Message_A + "\"<br><br>From: <br>" + Full_Name_A + "<br>" + Email_Address_A + "<br>" + Contact_Number_A,
 		})
 			.then(function (message) {
