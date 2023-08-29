@@ -855,7 +855,8 @@ section {
 	background-image: url(../Images/bgAbout.png);
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
 	}	
 	
 #values-container {
@@ -2096,7 +2097,8 @@ ul.expertise {
 	background-image: url(../Images/bgAbout.png);
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
 	}	
 	
 #values-container {
@@ -2289,7 +2291,7 @@ ul.expertise {
 /************************/
 
 #peopleSpacer {
-	width: 100%%; 
+	width: 100%; 
 	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -3315,7 +3317,8 @@ ul.expertise {
 	background-image: url(../Images/bgAbout.png);
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
 	padding-top: 50px;
 	}	
 	
