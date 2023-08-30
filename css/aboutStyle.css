@@ -409,8 +409,8 @@ section {
 	position: fixed;
 	top: 2.35vh;
 	padding-left: 1vw;
-	height: 6vh;	
-	width: 25vw;
+	height: 5vh;	
+	width: auto;
 	}	
 	
 /* Top Navigation Bar     */
