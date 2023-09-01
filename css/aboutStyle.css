@@ -712,8 +712,8 @@ section {
 	font-family: sitefont, Tahoma;
 	color: #cccccc;
 	width: 95%;
-	font-size: 1.65vw;  
-	margin-top: 40.5vh;
+	font-size: 1.30vw;  
+	margin-top: 43.5vh;
 	text-align: left;
 	padding-left: 1vw;
 	letter-spacing: .2vw;
@@ -1411,7 +1411,7 @@ ul.expertise {
 	}	
 	
 .otherClients {
-	width: 105%;
+	width: 130%;
 	margin-left: 50px;
 	display: flex;
 	flex-direction: column;
@@ -1429,6 +1429,9 @@ ul.expertise {
 	text-decoration-style: dashed;
 	padding-right: 10px;
 	}
+	.otherClients img{
+		box-shadow: 5px 7px #636363;
+	} 
 	
 #subHeadingLightC {
 	font-size: 18px; 
@@ -1610,8 +1613,8 @@ ul.expertise {
 	
 .email {
 	width: 95%;
-	margin-bottom: 30px;
-	padding: 20px 20px 40px 20px;
+	/* margin-bottom: 30px; */
+	padding: 20px 20px 67px 20px;
 	background-color: rgb(0,0,0,.5);
 	border-bottom: 1px dotted #cccccc;
 	}
@@ -2674,7 +2677,7 @@ ul.expertise {
 	}	
 	
 .otherClients {
-	width: 105%;
+	width: 130%;
 	margin-left: 50px;
 	display: flex;
 	flex-direction: column;
@@ -2691,6 +2694,7 @@ ul.expertise {
 	text-decoration-line: underline;  
 	text-decoration-style: dashed;
 	padding-right: 10px;
+	
 	}
 	
 #subHeadingLightC {
@@ -2870,7 +2874,7 @@ ul.expertise {
 	}
 	
 .email {
-	width: 95%;
+	width: 85%;
 	margin-bottom: 30px;
 	padding: 20px 20px 40px 20px;
 	background-color: rgb(0,0,0,.5);
@@ -3789,7 +3793,7 @@ ul.expertise {
 	
 .otherClients {
 	width: 80%;
-	margin-left: 50px;
+	margin-left: 40px;
 	display: flex;
 	flex-direction: column;
 	padding-top: 50px;
@@ -3810,8 +3814,12 @@ ul.expertise {
 	}	
 	.otherClients ul {
 		columns: 1;
+		padding-left: 20px;
  
 		 }	
+		 .otherClients img{
+			box-shadow: 5px 7px #636363;
+		} 
 /* Footer */
 	
 #footer {
@@ -3852,7 +3860,7 @@ ul.expertise {
 #visit {
 	display: block;
 	position: relative;
-	margin-top: -60px;
+	/* margin-top: -60px; */
 	}	
 	
 #call {
@@ -3870,8 +3878,8 @@ ul.expertise {
 	}
 	
 .email {
-	width: 65%;
-	margin-left: 15%;
+	width: 85%;
+	/* margin-left: 15%; */
 	margin-bottom: 20px;
 	padding: 20px 20px 40px 20px;
 	background-color: rgb(0,0,0,.5);
@@ -4023,6 +4031,10 @@ ul.expertise {
 
 
 
+.textfooter {
+	font-size: 12px;
+	}
+	
 
 
 

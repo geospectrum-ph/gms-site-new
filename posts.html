@@ -2,24 +2,27 @@
 <html>
 
 <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
-<meta charset="UTF-8"/>
+<meta charset="UTF-8" />
 <!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="Geospectrum, marketing, services, geospatial, data, satellite, imagery, ">
-<meta name="description" content="GEOSPECTRUM Marketing Services is a Filipino-owned business entity that caters to the growing need for accurate, up-to-date and timely information to support decision making and planning activities. GEOSPECTRUM distributes high resolution satellite imagery and value-added products that address a wide range of applications.">
+<meta name="description"
+	content="GEOSPECTRUM Marketing Services is a Filipino-owned business entity that caters to the growing need for accurate, up-to-date and timely information to support decision making and planning activities. GEOSPECTRUM distributes high resolution satellite imagery and value-added products that address a wide range of applications.">
 <meta name="author" content="Geospectrum Marketing Services">
 
-<link rel="icon" href="Images/geospectrum.ico">  
+<link rel="icon" href="Images/geospectrum.ico">
 <link rel="shortcut icon" href="Images/geospectrum.ico">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <link rel="stylesheet" type="text/css" href="css/postsStyle.css">
-<link rel="stylesheet" href="CSS/slider.css" type="text/css" >
-
+<link rel="stylesheet" href="CSS/slider.css" type="text/css">
 
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+
+<!-- Alert Message -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- Auto Slideshow -->
 <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -35,335 +38,538 @@
 
 <body>
 
-<div id="numberIndicator">
-	<nav class="section-nav">
-		<ol>
-			<li><a href="#latestWrapper">00</a><span class="tooltip">Contact</span></li>
-			<li><a href="#previousWrapper">01</a><span class="tooltip">Previous</span></li>
-			<li><a href="#careerWrapper">02</a><span class="tooltip">Career</span></li>
-			<li><a href="#footer">03</a><span class="tooltip">Sitemap</span></li>
-		</ol>
-	</nav>
-</div>
+	<div id="numberIndicator">
+		<nav class="section-nav">
+			<ol>
+				<li><a href="#latestWrapper">00</a><span class="tooltip">Contact</span></li>
+				<li><a href="#previousWrapper">01</a><span class="tooltip">Previous</span></li>
+				<li><a href="#careerWrapper">02</a><span class="tooltip">Career</span></li>
+				<li><a href="#footer">03</a><span class="tooltip">Sitemap</span></li>
+			</ol>
+		</nav>
+	</div>
 
-<div class="logo" style="">
-	<a href="home.html">
-	<img src="logos/logo_gms.png" class="logo" style="" border="0"></a>
-</div> 
+	<div class="logo" style="">
+		<a href="home.html">
+			<img src="logos/logo_gms.png" class="logo" style="" border="0"></a>
+	</div>
 
-<!-- Start Topbar Navigation -->
-<div id="navbar" style="">
-  <a href="home.html">&nbsp;</a>
-  <a href="posts.html">POSTS</a>
-  <a href="products.html">PRODUCTS</a>
-  <a href="about.html">ABOUT US</a>
-</div>
-<!-- End Topbar Navigation -->
+	<!-- Start Topbar Navigation -->
+	<div id="navbar" style="">
+		<a href="home.html">&nbsp;</a>
+		<a href="posts.html">POSTS</a>
+		<a href="products.html">PRODUCTS</a>
+		<a href="about.html">ABOUT US</a>
+	</div>
+	<!-- End Topbar Navigation -->
 
-<!-- Start Sidebar Navigation -->
-<section id="sidenav" style="padding-top:10px;">
-<div id="myNav" class="overlay">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<div class="overlay-content">
-	
-		<div class="d-flex flex-column justify-content-center w-100 h-100">
-			<div class="d-flex flex-column justify-content-center align-items-center">	
-			<!-- Start Overlay Menu -->
-			<section class="footer" style="padding-top:100px;">
+	<!-- Start Sidebar Navigation -->
+	<section id="sidenav" style="padding-top:10px;">
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
 
-				<div class="row">
-					<div class="footer-container">
-						<div class="col-4" style="margin-top:0px;">
-							<div class="email">
-								<span class="emailQ"> Got a question? </span><br />
-								<span class="emailT"> Drop us a line and we will get in touch.</span><br />
+				<div class="d-flex flex-column justify-content-center w-100 h-100">
+					<div class="d-flex flex-column justify-content-center align-items-center">
+						<!-- Start Overlay Menu -->
+						<section class="footer" style="padding-top:100px;">
 
-								<div id="linkWhiteFooter" style=""><a href="mailto:info@geospectrum.com.ph"> EMAIL US
-										&nbsp;&nbsp;<img src="Images/button_sphere_plus.png" id="sphereFooter" class="responsive"
-											style="margin-left:0px;"></a> </div>
+							<div class="row">
+								<div class="footer-container">
+									<div class="col-4" style="margin-top:0px;">
+										<div class="email">
+											<span class="emailQ"> Got a question? </span><br />
+											<span class="emailT"> Drop us a line and we will get in touch.</span><br />
+
+											<div id="linkWhiteFooter" style=""><a href="mailto:info@geospectrum.com.ph"> EMAIL US
+													&nbsp;&nbsp;<img src="Images/button_sphere_plus.png" id="sphereFooter" class="responsive"
+														style="margin-left:0px;"></a> </div>
+										</div>
+									</div>
+
+									<div class="col-4" style="margin-top:0px;">
+										<span class="footerHeading" style=""><a href="about.html" style="text-decoration:none;">About
+												Us</a></span>
+										<ul style="">
+											<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission
+													and Vision</a></li>
+											<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core
+													Values</a></li>
+											<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our
+													People</a></li>
+											<li class="menuFooterList"><a href="about.html#clientWrapper" style="text-decoration:none;">Our
+													Clients</a></li>
+										</ul> <br /><br />
+									</div>
+
+									<div class="col-4" style="margin-top:0px; border:0px dotted #ccc;">
+										<span class="footerHeading"><a href="products.html"
+												style="text-decoration:none;">Products</a></span>
+										<ul style="">
+											<li class="menuFooterList"><a href="products.html#imageryWrapper"
+													style="text-decoration:none;">Optical Satellite Imagery</a></li>
+											<li class="menuFooterList"><a href="products.html#imageryNOWrapper"
+													style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
+											<li class="menuFooterList"><a href="products.html#analyticsWrapper"
+													style="text-decoration:none;">Analytics Services & Software</a></li>
+											<li class="menuFooterList"><a href="products.html#applications"
+													style="text-decoration:none;">Applications</a></li>
+										</ul><br /><br />
+									</div>
+
+
+
+
+
+									<div class="col-4" style=" border:0px dotted #ccc;">
+										<span class="footerHeading"><a href="posts.html" style="text-decoration:none;">Posts</a></span>
+										<ul style="">
+											<li class="menuFooterList"><a href="posts.html#previousWrapper"
+													style="text-decoration:none;">Events</a></li>
+											<li class="menuFooterList"><a href="posts.html#careerWrapper"
+													style="text-decoration:none;">Career</a>
+											</li>
+										</ul><br /><br />
+									</div>
+
+
+
+
+									
+									<div class="col-4" id="visit" style="border:0px dotted #ccc;">
+										<span class="footerHeading"><a style="text-decoration:none;">Visit Us</a></span>
+										<ul style="">
+											<li class="menuFooterList textfooter"><span style="text-decoration:none;">
+												&nbsp 	Unit 1604 OMM Bldg., <br/>
+												&nbsp  39 San Miguel Avenue,<br/>
+												&nbsp  Ortigas Center,<br/>
+												&nbsp  Pasig City, Philippines<br/>&nbsp<br/>
+											</span>
+											</li>
+											
+										</ul><br /><br />
+									</div>
+					
+									<div class="col-4" style="border:0px dotted #ccc;">
+										<span class="footerHeading"><a style="text-decoration:none;">Call Us</a></span>
+										<ul style="">
+											<li class="menuFooterList textfooter"><span style="text-decoration:none;">
+												&nbsp +63917-7915536 <br/>
+												&nbsp +63920-9113418<br/>
+												&nbsp +(632)-8637-8026<br/>&nbsp<br/>&nbsp<br/>
+											</span>
+											</li>
+											
+										</ul><br /><br /><br /><br /><br /> <br /><br />
+									</div>
+								</div>
 							</div>
-						</div>
-
-						<div class="col-4" style="margin-top:0px;">
-							<span class="footerHeading" style=""><a href="about.html" style="text-decoration:none;">About
-									Us</a></span>
-							<ul style="">
-								<li class="menuFooterList"><a href="about.html#vision" style="text-decoration:none;">Our Mission
-										and Vision</a></li>
-								<li class="menuFooterList"><a href="about.html#values" style="text-decoration:none;">Our Core
-										Values</a></li>
-								<li class="menuFooterList"><a href="about.html#people" style="text-decoration:none;">Our
-										People</a></li>
-								<li class="menuFooterList"><a href="about.html#clientWrapper" style="text-decoration:none;">Our
-										Clients</a></li>
-							</ul> <br /><br />
-						</div>
-
-						<div class="col-4" style="margin-top:0px; border:0px dotted #ccc;">
-							<span class="footerHeading"><a href="products.html"
-									style="text-decoration:none;">Products</a></span>
-							<ul style="">
-								<li class="menuFooterList"><a href="products.html#imageryWrapper"
-										style="text-decoration:none;">Optical Satellite Imagery</a></li>
-								<li class="menuFooterList"><a href="products.html#imageryNOWrapper"
-										style="text-decoration:none;">Non-Optical Satellite Imagery</a></li>
-								<li class="menuFooterList"><a href="products.html#analyticsWrapper"
-										style="text-decoration:none;">Analytics Services & Software</a></li>
-								<li class="menuFooterList"><a href="products.html#applications"
-										style="text-decoration:none;">Applications</a></li>
-							</ul><br /><br />
-						</div>
 
 
+							<div class="row">
+								<div class="footer-container">
+									<div class="col-6" style="margin-top: 50px;">
+										<a href="home.html"><img src="logos/logo_gmsRowWhite.png" style="height:15px; width:165px;"
+												border="0"></a><br /><br />
+									</div>
+									<div class="col-6" style="margin-top: 50px;">
+										<a class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
+										<a class="textFooterTiny" style="">Terms of Use</a>
+										<span class="textFooterTiny"
+											style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All
+											Rights Reserved</span><br /><br />
+									</div>
+								</div>
+							</div>
+							<div align="right"><a href="#" class="back-to-top"><img src="Images/top.png" alt="Top Page"
+										class="responsive"></a></div>
+						</section>
+						<!-- End Overlay Menu -->
 
-						
-
-						<div class="col-4" style=" border:0px dotted #ccc;">
-							<span class="footerHeading"><a href="posts.html" style="text-decoration:none;">Posts</a></span>
-							<ul style="">
-								<li class="menuFooterList"><a href="posts.html#previousWrapper"
-										style="text-decoration:none;">Events</a></li>
-								<li class="menuFooterList"><a href="posts.html#careerWrapper"
-										style="text-decoration:none;">Career</a>
-								</li>
-							</ul><br /><br />
-						</div>
-
-
-
-
-						<div class="col-4" style="" id="visit">
-							<span class="footerHeading">Visit Us </span><br />
-							<ul style="">
-								<li class="textFooter">Unit 1604 OMM Bldg.,</li>
-								<li class="textFooter">39 San Miguel Avenue,<br />
-									Ortigas Center,</li>
-								<li class="textFooter">Pasig City, Philippines</li>
-							</ul><br /><br />
-						</div>
-
-						<div class="col-4" style="" id="call">
-							<span class="footerHeading" style="">Call Us </span><br />
-							<ul style="">
-								<li class="textFooter">+63917-7915536</li>
-								<li class="textFooter">+63920-9113418</li>
-								<li class="textFooter">+(632)-8637-8026</li>
-							</ul><br /><br /><br /><br /><br />
-						</div>
 					</div>
 				</div>
 
-
-				<div class="row">
-					<div class="footer-container">
-						<div class="col-6" style="margin-top: 50px;">
-							<a href="home.html"><img src="logos/logo_gmsRowWhite.png" style="height:15px; width:165px;"
-									border="0"></a><br /><br />
-						</div>
-						<div class="col-6" style="margin-top: 50px;">
-							<a class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
-							<a class="textFooterTiny" style="">Terms of Use</a>
-							<span class="textFooterTiny"
-								style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All
-								Rights Reserved</span><br /><br />
-						</div>
-					</div>
-				</div>
-				<div align="right"><a href="#" class="back-to-top"><img src="Images/top.png" alt="Top Page"
-							class="responsive"></a></div>
-			</section>
-			<!-- End Overlay Menu -->
-				
 			</div>
 		</div>
-		
-	</div>
-</div>
-	
+
 		<span class="menuIcon" style="" onclick="openNav()">&#9776;</span>
-		<span class="menuText" style="">MENU</span>			
+		<span class="menuText" style="">MENU</span>
 		<span id="verticalConnect">connect with us</span>
-		
-	<div id="socMed">
-		<a href="https://web.facebook.com/GeospectrumPH/" class="btnsocMed" target="_blank"><i class="fa fa-facebook" style="color: #cccccc;"></i></a>	
-		<a href="https://ph.linkedin.com/company/geospectrum-ph" class="btnsocMed" target="_blank"><i class="fa fa-linkedin" style="color: #cccccc;"></i></a>	
-		<a href="mailto:info@geospectrum.com.ph?Subject=Inquire" class="btnsocMed" target="_blank"><i class="fa fa-google" style="color: #cccccc;"></i></a>		 
-		<a href="contact.html" id="verticalContact">CONTACT US</a>
-	</div>
-</div>
-</section>
-<!-- End Sidebar Navigation -->
 
-<!-- Start Latest -->
-<section id="latestWrapper">	
-	<div class="row">
-		<div class="col-6" style="margin-top:0px;">
-			<div id="number" class=""><span class="aboutUs" style="visibility:hidden;">00</span></div>		
-			<div id="subHeading" style="">LATEST</div>			
-			<div id="question" style="">WHAT'S HAPPENING</div>				
+		<div id="socMed">
+			<a href="https://web.facebook.com/GeospectrumPH/" class="btnsocMed" target="_blank"><i class="fa fa-facebook"
+					style="color: #cccccc;"></i></a>
+			<a href="https://ph.linkedin.com/company/geospectrum-ph" class="btnsocMed" target="_blank"><i
+					class="fa fa-linkedin" style="color: #cccccc;"></i></a>
+			<a href="mailto:info@geospectrum.com.ph?Subject=Inquire" class="btnsocMed" target="_blank"><i class="fa fa-google"
+					style="color: #cccccc;"></i></a>
+			<a href="contact.html" id="verticalContact">CONTACT US</a>
 		</div>
-		
-		<div class="col-6" style="margin-top:0px;">
-			<div id="answer" style="">With #PlanetExplore23 now concluded, we want to thank Planet Labs for organizing this truly remarkable gathering of Earth observation leaders, innovators, and enthusiasts. The exchange of innovative ideas and cutting-edge knowledge has undoubtedly advanced the field of geospatial data and analytics.	</div> <br /><br />		
-
-			<div id="linkWhiteA" style=""><a href="#previousWrapper">READ MORE &nbsp;<img src="Images/button_sphere_plus.png" class="responsive" id="sphere"> </a></div>
 		</div>
-	</div>
-</section>
-<!-- End Latest -->
+	</section>
+	<!-- End Sidebar Navigation -->
 
-<!-- Start Previous -->
-<center><section id="previousWrapper">
-	<div class="previous-container">	
-		<div class="row">	
-			
-			<div class="col-4 col-s-4" style=";">						
-				<div id="number"><span class="previous" style="">01</span></div>	
-				<div id="previousTitle" style="">EVENTS</div>
-				<!-- <div id="previousText" style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</div><br />				 -->
+	<!-- Start Latest -->
+	<section id="latestWrapper">
+		<div class="row">
+			<div class="col-6" style="margin-top:0px;">
+				<div id="number" class=""><span class="aboutUs" style="visibility:hidden;">00</span></div>
+				<div id="subHeading" style="">LATEST</div>
+				<div id="question" style="">WHAT'S HAPPENING</div>
 			</div>
-			
-			<div class="col-8 col-s-8" style="">	
-				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGeospectrumPH&tabs=timeline&width=400&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="400" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>				<!-- <div class="eventsWrapper">
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						
-						<div class="eventsDate"> 12-13 APR 2023 </div>
-						<div class="eventsTitle">Culpa qui Officia Deserunt Mollit</div> 
-						<div  class="eventsBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-				</div>					 -->
+
+			<div class="col-6" style="margin-top:0px;">
+				<div id="answer" style="">With #PlanetExplore23 now concluded, we want to thank Planet Labs for organizing this
+					truly remarkable gathering of Earth observation leaders, innovators, and enthusiasts. The exchange of
+					innovative ideas and cutting-edge knowledge has undoubtedly advanced the field of geospatial data and
+					analytics. </div> <br /><br />
+
+				<div id="linkWhiteA" style=""><a href="#previousWrapper">READ MORE &nbsp;<img
+							src="Images/button_sphere_plus.png" class="responsive" id="sphere"> </a></div>
 			</div>
-		
 		</div>
-	</div>  
-</section></center>
-<!-- End Inquiry Form -->	
+	</section>
+	<!-- End Latest -->
 
-<!-- Start Career -->		
-<section id="careerWrapper">
+	<!-- Start Previous -->
+	<center>
+		<section id="previousWrapper">
+			<div class="previous-container">
+				<div class="row">
 
-	<div class="row">
-		<div id="career-container" class="reveal">
-		
-			<div class="">						
-				<div id="number" class=""><span class="career" style="">02</span></div>				
-				<span class="careerTitle" style="color: #cccccc;">CAREER</span>		
-				<span class="careerQuestion" style="color: #cccccc;">BE A PART OF OUR TEAM!</span>		
-			</div>     	
-				<div width="0px" height="0px" scrolling="no"> 
+					<div class="col-4 col-s-4" style=";">
+						<div id="number"><span class="previous" style="">01</span></div>
+						<div id="previousTitle" style="">EVENTS</div>
+						<!-- <div id="previousText" style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</div><br />				 -->
+					</div>
+
+					<div class="col-8 col-s-8" style="">
+						<!-- <iframe
+							src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGeospectrumPH&tabs=timeline&width=400&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+							width="400" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+							allowfullscreen="true"
+							allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+							 -->
+
+						<div class="eventsWrapper">
+
+
+							<div class="eventsTitle"></div>
+
+							<div class="eventsDate reveal"> 26 AUGUST 2023 </div>
+							<span class="accordionEvents" style="" id="text_title"><p>It's time to introduce the exciting innovation in Maritime Tech
+								from our international partner </p><span id="spaceknow"> SpaceKnow</span>.</span>
+							<div class="panelEv reveal">
+								<div id="text" style=""> &nbsp &nbsp &nbsp &nbsp Spotting ships across expansive oceans and seas has perpetually
+									presented difficulties. However, our cutting-edge machine-learning algorithms have successfully
+									overcome these challenges. SpaceKnow's AI algorithms exhibit the capability to swiftly identify
+									civilian vessels, patrol crafts, and even warships using satellite imagery in almost real time. This
+									functionality proves invaluable, particularly in scenarios where a ship opts not to broadcast its AIS
+									signal intentionally. Our extensive monitoring system relies on both high-resolution optical and
+									Synthetic Aperture Radar (SAR) data, encompassing various resolutions, and can be availed as an
+									automated monitoring service. Image source: ICEYE Oy. All rights reserved.
+									<br /> <br />#MayonVolcano #SAR #Albay #ICEYE #Geospectrumph<br />
+								</div>
+								<br />
+							</div>
+							<div><img class="event_img reveal" src="images/events_spaceknow.jpg"  />
+							</div>
+							<br />
+
+
+							<div class="eventsDate reveal"> 08 AUGUST 2023 </div>
+							<span class="accordionEvents" style="">Philippine Space Week 2023</span>
+							<div class="panelEv reveal">
+								<div style="">&nbsp &nbsp &nbsp &nbsp Join us in celebrating the Philippine Space Week 2023, led by
+									the Philippine Space Agency. From today until August 14, we are excited to showcase a series of
+									informative and captivating satellite images sourced from our esteemed international partners. These
+									images will exemplify the diverse applications of satellite technology, reshaping our world
+									perspective.<br /><br /> Stay connected with us on our social media channels and #JoinTheMission in
+									advocating space awareness as we celebrate #PhilippineSpaceWeek 🚀🛰
+									<br /> <br />#GeospectrumPH #PhSpaceWeek #yamangkalawakan<br />
+								</div><br />
+							</div>
+							<div><img class="event_img reveal" src="images/events_spaceweek.jpg" />
+							</div>
+							<br />
+
+							<div class="eventsDate reveal"> 11 JULY 2023 </div>
+							<span class="accordionEvents" style="">Geospectrum is Celebrating Freedom and the birth of our
+								Nation</span>
+							<div class="panelEv reveal">
+								<div style="">&nbsp &nbsp &nbsp &nbsp In commemoration of our National Day of Independence,
+									Geospectrum is celebrating
+									freedom and the birth of our nation with a multidimensional map showcasing the first eight
+									provinces in the Philippines that fought against Spanish colonial rule. These provinces are
+									Manila, Cavite, Bulacan, Pampanga, Nueva Ecija, Laguna, Tarlac, and Batangas. The featured image
+									depicts the digital elevation data of the provinces sourced from AW3D.
+									We take pride in being a Filipino-owned company and remain steadfast in our mission to assist the
+									country in its developmental plans and overcome various challenges. Mabuhay ang lahing
+									Pilipino!<br /><br />
+									Image source: Data processed from AW3D<br /><br />
+									#IndependenceDay #HappyIndependenceDay #ArawNgKalayaan #125thIndependenceDay #Kalayaan2023
+									#Trending #GeospectrumPH<br /><br /></div>
+							</div>
+							<div><img class="event_img reveal" src="images/events_independence.jpg"
+								 /> </div>
+
+									<br />
+							<div class="eventsDate reveal"> 09 MAY 2023 </div>
+							<span class="accordionEvents" style="">National Geodetic Engineering Summit and Geodetic Engineering
+								Students Conference 2023</span>
+							<div class="panelEv reveal">
+								<div style="">&nbsp &nbsp &nbsp &nbsp Geospectrum is proud to sponsor the National Geodetic Engineering Summit and
+									Geodetic Engineering Students Conference 2023 organized by the UP Geodetic Engineering Club. Mr.
+									Miguel del Rosario, Geospectrum's Business Development and Marketing Officer took to the stage
+									to showcase the value that daily satellite imagery and geospatial analytics can bring to a
+									practicing geodetic engineer. Remote sensing using satellite imagery is a safe, timely, and
+									cost-effective way to observe activities and changes in our world.
+									<br /><br /> #NatGESxGESC2023 #geospectrumph<br /><br />
+								</div>
+							</div><br />
+							<div class="container profile mb-4 reveal">
+								<div class="profile-img-list">
+									<div class="profile-img-list-item main"><a class="profile-img-list-link"><span
+												class="profile-img-content" style="background-image: url(images/events_natges1.jpg)"></span></a>
+									</div>
+									<div class="profile-img-list-item main"><a class="profile-img-list-link"><span
+												class="profile-img-content" style="background-image: url(images/events_natges2.jpg)"></span></a>
+									</div>
+								</div>
+							</div>
+							<br />
+
+							<div class="eventsDate reveal"> 13 APRIL 2023 </div>
+							<span class="accordionEvents" style="">Geospectrum Marketing Services Participated in the
+								#PlanetExplore23</span>
+							<div class="panelEv reveal">
+								<div style="">&nbsp &nbsp &nbsp &nbsp Geospectrum Marketing Services is excited to have participated in the incredible
+									#PlanetExplore23 event in Washington, D.C., organized by Planet, the world's leading provider of
+									global daily Earth data.
+									<br /><br /> The first day was a blast, with top Earth observation leaders and enthusiasts
+									coming together
+									for inspiration, education, and networking opportunities. We're honored to be part of this
+									dynamic community of like-minded individuals, united by our shared passion for exploring and
+									understanding Earth data from satellite imagery.<br /><br />
+								</div>
+							</div><br />
+							<div class="container profile mb-4 reveal">
+								<div class="profile-img-list">
+									<div class="profile-img-list-item main"><a class="profile-img-list-link"><span
+												class="profile-img-content"
+												style="background-image: url(images/events_explore1.jpg)"></span></a>
+									</div>
+									<div class="profile-img-list-item main"><a class="profile-img-list-link"><span
+												class="profile-img-content"
+												style="background-image: url(images/events_explore2.jpg)"></span></a>
+									</div>
+								</div>
+							</div>
+
+							<br />
+							<div class="eventsDate reveal"> 31 MAR 2023 </div>
+							<span class="accordionEvents" style="">Geospectrum Marketing Services Hosted a Successful
+								Workshop</span>
+							<div class="panelEv reveal">
+								<div style="">&nbsp &nbsp &nbsp &nbsp Geospectrum Marketing Services proudly hosted a successful workshop yesterday, March
+									30, in partnership with Planet Labs and the Philippine Space Agency (PhilSA). Held at PhilSA's
+									Conference Room in the CyberOne Building in Eastwood City, Quezon City, the workshop focused on
+									the latest technology updates and use cases for space technology.<br /><br />
+									Geospectrum Marketing Services, Planet Labs, and the Philippine Space Agency (PhilSA) are
+									committed to utilizing space data and technology to enhance the well-being of every Filipino. As
+									technology continues to evolve, and climate change, as well as maritime disputes, present new
+									risks and challenges, our organizations are dedicated to collaborating in researching and
+									developing innovative platforms and products derived from satellite imagery.<br /><br />
+									The workshop provided a forum for addressing questions, concerns, suggestions, and ideas on how
+									Planet satellite daily imagery and Geospectrum's geospatial expertise can assist the Philippine
+									Space Agency in fulfilling its mandate and programs. Geospectrum is honored to have this
+									opportunity and we look forward to utilizing the insights we gained to support our partners in
+									their future endeavors.<br /><br />
+								</div>
+							</div><br />
+							<div class="container profile mb-4 reveal">
+								<div class="profile-img-list">
+									<div class="profile-img-list-item main"><a class="profile-img-list-link"><span
+												class="profile-img-content"
+												style="background-image: url(images/events_workshop1.jpg)"></span></a>
+									</div>
+									<div class="profile-img-list-item main"><a class="profile-img-list-link"><span
+												class="profile-img-content"
+												style="background-image: url(images/events_workshop2.jpg)"></span></a>
+									</div>
+								</div>
+							</div>
+
+							<br />
+							<div class="eventsDate reveal"> 13 MAR 2023 </div>
+							<span class="accordionEvents" style="">Philippine Army Technology Day 2023 </span>
+							<div class="panelEv reveal">
+								<div class="text">&nbsp &nbsp &nbsp &nbsp What a successful showcase of satellite imagery and AI Machine Learning software we
+									had! It was fantastic to see Army Commanding General Lt. Gen. Romeo S. Brawner, Jr.,
+									and our esteemed military personnel at Technology Day 2023, in celebration with the 126th
+									Founding Anniversary of the Philippine Army. We demonstrate the capabilities of high frequency,
+									global coverage imagery of Planet, and how we can access valuable data from any location on
+									Earth, day or night, even through clouds from ICEYE. In addition, we demonstrated how we can
+									make critical information about the Earth more accessible and affordable with EarthEye Space, as
+									well as the world's most precise digital elevation model from AW3D. We also featured the
+									state-of-the-art AI-based Imagery Intelligence software, the SpaceKnow Guardian.<br /><br />
+									This is a significant step for us in our mission to assist the country in surveilling and
+									monitoring crucial military areas and assets. We would like to express our gratitude to everyone
+									who visited our booth. We look forward to the next opportunity to collaborate with the
+									Philippine Army.<br /><br />
+								</div>
+
+							</div><br />
+							<div class="container profile mb-4 reveal">
+								<div class="profile-img-list">
+									<div class="profile-img-list-item main"><a class="profile-img-list-link"><span
+												class="profile-img-content" style="background-image: url(images/events_army1.jpg)"></span></a>
+									</div>
+									<div class="profile-img-list-item main"><a class="profile-img-list-link"><span
+												class="profile-img-content" style="background-image: url(images/events_army2.jpg)"></span></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+		</section>
+	</center>
+	<!-- End Inquiry Form -->
+
+	<!-- Start Career -->
+	<section id="careerWrapper">
+
+		<div class="row">
+			<div id="career-container" class="reveal">
+
+				<div class="">
+					<div id="number" class=""><span class="career" style="">02</span></div>
+					<span class="careerTitle" style="color: #cccccc;">CAREER</span>
+					<span class="careerQuestion" style="color: #cccccc;">BE A PART OF OUR TEAM!</span>
+				</div>
+				<div width="0px" height="0px" scrolling="no">
 					<div class="faqAccordion">
-						
-						<span class="positionName" style="color: #cccccc;">Business Development Specialist</span>
-							<div class="careerText">						
-								As our Business Development Specialist, you will play a vital and creative role in growing our client audience and attraction across several verticals who will benefit from our products satellite remote sensing. Working closely with our wider teams across tech and non-tech.<br /><br />
-								
-								Reposibilities:<br /><br />
-								
-									<ul style="">
-										<li class="">Develop & monitor our sales pipelines, maturing existing leads;</li>
-										<li class="">Identify & generate new leads;</li>
-										<li class="">Focus on the completion and success of finalising new contracts;</li>
-										<li class="">Building your network to develop and connect with new potential customers and acquaintances within our sector;</li>
-										<li class="">Present demos to potential and existing clients and product lead;</li>
-										<li class="">Act as our customer representative for new clients;</li>
-										<li class="">Communicate regularly with marketing and remote sensing teams to sync with market needs and our capabilities;</li>
-									</ul><br />
-								
-								Qualifications:<br /><br />
-								
-									<ul style="">
-										<li class="">A degree in business, engineering, marketing or related;</li>
-										<li class="">Proven record of delivering successful results with remote sensing products, ideally within Mining, Forestry, Agriculture and/or Aquaculture;</li>
-										<li class="">Good understanding of satellite remote sensing principles;</li>
-										<li class="">Highly motivated and passionate about science-based, sustainable solutions for our country.</li>
-									</ul><br />
-							</div>	
-						
-						<span class="accordionFaq" style=""><button type="button"><a href="#applicationWrapper" style="text-decoration:none;">I WANT TO APPLY!</a></button></span>
-							<div class="panelFaq">	
-							<div class="careerText" style="Text-align:center;">						
-								<br /><br />Complete this form to join our growing team.&nbsp;  Please read our Privacy Policy.<br /><br />
-							</div>								
+
+						<span class="positionName" style="color: #cccccc;">Assistant Remote Sensing Specialist</span>
+						<div class="careerText">
+							<!-- As our Business Development Specialist, you will play a vital and creative role in growing our client
+							audience and attraction across several verticals who will benefit from our products satellite remote
+							sensing. Working closely with our wider teams across tech and non-tech.
+							 -->
+							<br /><br />
+
+							Reposibilities:<br /><br />
+
+							<ul style="">
+								<li class="">Analyze data obtained from aircraft, satellites, or ground-based platforms using
+									image analysis software and GIS to create geospatial databases and maps</li>
+								<li class="">Research and/or develop image analysis processes and methodologies for various
+									use cases/applications</li>
+								<li class="">Develop and/or maintain geospatial information databases</li>
+								<li class="">Produce high-quality maps that integrate data from different sources</li>
+								<li class="">Create appropriate symbology, map elements, and layout design</li>
+								<li class="">Provide technical support to end users </li>
+								<li class="">Advise management on technical aspects of system performance and operation</li>
+							</ul><br />
+
+							Qualifications:<br /><br />
+
+							<ul style="">
+								<li class="">Bachelor’s Degree in Geography, Geodetic Engineering, Information Technology or
+									any related courses.</li>
+								<li class="">Has a basic understanding of GIS and geospatial technologies</li>
+								<li class="">Understands Image Processing, Remote Sensing principles, and Image Analysis</li>
+								<li class="">Able to use relevant computer applications and productivity software</li>
+								<li class="">Demonstrable ability to multi-task and adhere to deadlines</li>
+								<li class="">Effective written and verbal communication and interpersonal skills</li>
+								<li class="">Ability to interact with technical and non-technical customers and teammates to
+									understand their technical issues, frame potential solutions and develop
+									collaborative projects</li>
+							</ul><br />
+						</div>
+
+						<span class="accordionApply" style=""><button type="button"><a href="#applicationWrapper"
+									style="text-decoration:none;">I WANT TO APPLY!</a></button></span>
+						<div class="panelFaq">
+							<div class="careerText" style="Text-align:center;">
+								<br /><br />Complete this form to join our growing team.&nbsp; Please read our Privacy
+								Policy.<br /><br />
+							</div>
 
 							<!-- Start Application Form -->
-							<center><section id="applicationWrapper">
-								<div class="application-container">	
-									<div class="row">
-										
-										<div class="col-6 col-s-6" style=";">					
-		
-										<div id="policy" style="">
-										<div class="accordion" id="linkWhite" style="">PRIVACY POLICY &nbsp;</div> 
-											<div class="panelBlock" style="">
-												<span class="panel">
-												  One of our main priorities at Geospectrum Marketing Services, is the privacy of our visitors. It is our policy to respect your privacy regarding any information we may collect from you across our website, https://www.geospectrum.com.ph , and other sites we own and operate. This Privacy Policy document contains types of information that is collected and recorded by Geospectrum Marketing Services (hereinafter, "us", "we", or https://www.geospectrum.com.ph) and how we use it.<br /><br />
-												  
-												  Geospectrum Marketing Services only ask for personal information when we truly need it to provide a service to you. Geospectrum Marketing Services collect your data by fair and lawful means, with your knowledge and consent. You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you your desired products/services. We only retain collected information for as long as necessary to provide you with your requested products/services.<br /><br />
-												  
-												  Geospectrum Marketing Services don’t share any personally identifying information publicly or with third-parties, except when required to be disclose to government entities and in compliance with applicable laws and regulations.<br /><br />
-												  
-												  Your personal information can only be accessed by Geospectrum Marketing Services’ authorized management ONLY.<br /><br />
-												  
-												  This Privacy Policy applies only to information we collect through the Website and does not apply to our collection of information from other sources. Geospectrum Marketing Services’ Privacy Policy does not apply to other advertisers or websites.<br /><br />
-												  
-												  Geospectrum Marketing Services may change its Privacy Policy from time to time, though most changes are likely to be minor, and in Geospectrum Marketing Services’ sole discretion. We encourages visitors to frequently check this page for any changes to its Privacy Policy.<br /><br />
-												  
-												  Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, please feel free to contact us with the contact details provided in Contact Us page.<br /><br />
-												  
-												  This policy is effective as of 1 July 2019.<br /><br />
-												</span>
+							<center>
+								<section id="applicationWrapper">
+									<div class="application-container">
+										<div class="row">
+
+											<div class="col-6 col-s-6" style=";">
+
+												<div id="policy" style="">
+													<div class="accordion" id="linkWhite" style="">PRIVACY POLICY &nbsp;</div>
+													<div class="panelBlock" style="">
+														<span class="panel">
+															One of our main priorities at Geospectrum Marketing Services, is the privacy of our
+															visitors. It is our policy to respect your privacy regarding any information we may
+															collect from you across our website, https://www.geospectrum.com.ph , and other sites we
+															own and operate. This Privacy Policy document contains types of information that is
+															collected and recorded by Geospectrum Marketing Services (hereinafter, "us", "we", or
+															https://www.geospectrum.com.ph) and how we use it.<br /><br />
+
+															Geospectrum Marketing Services only ask for personal information when we truly need it to
+															provide a service to you. Geospectrum Marketing Services collect your data by fair and
+															lawful means, with your knowledge and consent. You are free to refuse our request for your
+															personal information, with the understanding that we may be unable to provide you your
+															desired products/services. We only retain collected information for as long as necessary
+															to provide you with your requested products/services.<br /><br />
+
+															Geospectrum Marketing Services don’t share any personally identifying information publicly
+															or with third-parties, except when required to be disclose to government entities and in
+															compliance with applicable laws and regulations.<br /><br />
+
+															Your personal information can only be accessed by Geospectrum Marketing Services’
+															authorized management ONLY.<br /><br />
+
+															This Privacy Policy applies only to information we collect through the Website and does
+															not apply to our collection of information from other sources. Geospectrum Marketing
+															Services’ Privacy Policy does not apply to other advertisers or websites.<br /><br />
+
+															Geospectrum Marketing Services may change its Privacy Policy from time to time, though
+															most changes are likely to be minor, and in Geospectrum Marketing Services’ sole
+															discretion. We encourages visitors to frequently check this page for any changes to its
+															Privacy Policy.<br /><br />
+
+															Your continued use of our website will be regarded as acceptance of our practices around
+															privacy and personal information. If you have any questions about how we handle user data
+															and personal information, please feel free to contact us with the contact details provided
+															in Contact Us page.<br /><br />
+
+															This policy is effective as of 1 July 2019.<br /><br />
+														</span>
+													</div>
+												</div>
+
 											</div>
-											</div>	
-												
-											</div>
-											
-											<div class="col-6 col-s-6" style="">	
-												<form id = "applicationform" method="POST">
-													<label for="Full Name"> Full Name *<br /><input id="Input_FNa" type="text" placeholder="Full Name"/></label>
-													<label for="Email Address"> Email Address *<br /><input id="Input_EAa" type="email" placeholder="Email Address"/></label>
-													<label for="Contact Number"> Contact Number<br /><input id="Input_CNa" type="text" placeholder="Contact Number"/></label>
-													<label for="Subject"> Subject<br /><input id="Input_Sua" type="text" placeholder="Job Application" readonly /></label>
-													<label for="Position"> Position<br /><input id="Input_Poa" type="text" placeholder="Position"/></label>
-													<label for="Message"> Cover Letter *<br /><textarea id="Input_Mea" type="text" placeholder="Cover Letter"></textarea></label>
-													<div class="panel">By hitting the submit button on this form, you have read and agreed to the Privacy Policy of Geospectrum.</div>
-													<input
-														type="button"
-														class="button"
-														value="SUBMIT"
-														onclick="sendEmail(
+
+											<div class="col-6 col-s-6" style="">
+												<form id="applicationform" method="POST">
+													<label for="Full Name"> Full Name *<br /><input id="Input_FNa" type="text"
+															placeholder="Full Name" /></label>
+													<label for="Email Address"> Email Address *<br /><input id="Input_EAa" type="email"
+															placeholder="Email Address" /></label>
+													<label for="Contact Number"> Contact Number<br /><input id="Input_CNa" type="text"
+															placeholder="Contact Number" /></label>
+													<label for="Subject"> Subject<br /><input id="Input_Sua" type="text"
+															placeholder="Job Application" readonly /></label>
+													<label for="Position"> Position<br /><input id="Input_Poa" type="text"
+															placeholder="Position" /></label>
+													<label for="Message"> Cover Letter *<br /><textarea id="Input_Mea" type="text"
+															placeholder="Cover Letter"></textarea></label>
+													<div class="panel">By hitting the submit button on this form, you have read and agreed to the
+														Privacy Policy of Geospectrum.</div>
+													<input type="button" class="button" value="SUBMIT" onclick="sendEmail(
 															document.getElementById('Input_FNa').value,
 															document.getElementById('Input_EAa').value,
 															document.getElementById('Input_CNa').value,
@@ -371,22 +577,23 @@
 															document.getElementById('Input_Poa').value,
 															document.getElementById('Input_Mea').value
 															)">
-												</form>				
+												</form>
 											</div>
-									
+
+										</div>
 									</div>
-								</div>  
-							</section></center>
-							<!-- End Application Form -->	
-								
-							</div>
-					
+								</section>
+							</center>
+							<!-- End Application Form -->
+
+						</div>
+
 					</div>
 				</div>
+			</div>
 		</div>
-	</div>
-</section>
-<!-- End Career -->
+	</section>
+	<!-- End Career -->
 	<!-- Start Footer -->
 	<section id="footer" style="">
 
@@ -440,22 +647,31 @@
 					</ul><br /><br />
 				</div>
 
-				<div class="col-4" style="" id="visit">
-					<span class="footerHeading">Visit Us </span><br />
+			
+				<div class="col-4" id="visit" style="border:0px dotted #ccc;">
+					<span class="footerHeading"><a style="text-decoration:none;">Visit Us</a></span>
 					<ul style="">
-						<li class="textFooter">Unit 1604 OMM Bldg.,</li>
-						<li class="textFooter">39 San Miguel Avenue,<br />
-							Ortigas Center,</li>
-						<li class="textFooter">Pasig City, Philippines</li>
+						<li class="menuFooterList textfooter"><span  style="text-decoration:none;">
+							&nbsp 	Unit 1604 OMM Bldg., <br/>
+							&nbsp  39 San Miguel Avenue,<br/>
+							&nbsp  Ortigas Center,<br/>
+							&nbsp  Pasig City, Philippines<br/>&nbsp<br/>
+						</span>
+						</li>
+						
 					</ul><br /><br />
 				</div>
 
-				<div class="col-4" style="" id="call">
-					<span class="footerHeading" style="">Call Us </span><br />
+				<div class="col-4" style="border:0px dotted #ccc;">
+					<span class="footerHeading"><a style="text-decoration:none;">Call Us</a></span>
 					<ul style="">
-						<li class="textFooter">+63917-7915536</li>
-						<li class="textFooter">+63920-9113418</li>
-						<li class="textFooter">+(632)-8637-8026</li>
+						<li class="menuFooterList textfooter"><span style="text-decoration:none;">
+							&nbsp  +63917-7915536 <br/>
+							&nbsp +63920-9113418<br/>
+							&nbsp +(632)-8637-8026<br/>&nbsp<br/>&nbsp<br/>
+						</span>
+						</li>
+						
 					</ul><br /><br /><br /><br /><br /> <br /><br />
 				</div>
 			</div>
@@ -492,82 +708,82 @@
 
 <!-- For Top Navigation Bar -->
 <script>
-// When the user scrolls down 20px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
+	// When the user scrolls down 20px from the top of the document, slide down the navbar
+	window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-}
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("navbar").style.top = "0";
+		} else {
+			document.getElementById("navbar").style.top = "-100px";
+		}
+	}
 </script>
 
 <!-- For menu curtain or overlay on navigation bar -->
 <script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+	function openNav() {
+		document.getElementById("myNav").style.width = "100%";
+	}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+	function closeNav() {
+		document.getElementById("myNav").style.width = "0%";
+	}
 </script>
 
 <!-- For accordion -->
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+	var acc = document.getElementsByClassName("accordion");
+	var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("mousedown", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("mousedown", function () {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
 </script>
 
 
 <!-- For FAQ accordion -->
 <script>
-var acc = document.getElementsByClassName("accordionFaq");
-var i;
+	var acc = document.getElementsByClassName("accordionApply");
+	var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("mousedown", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("mousedown", function () {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
 </script>
 
 <!-- For back to top -->
-<script>            
-	jQuery(document).ready(function() {
+<script>
+	jQuery(document).ready(function () {
 		var offset = 220;
 		var duration = 500;
-		jQuery(window).scroll(function() {
+		jQuery(window).scroll(function () {
 			if (jQuery(this).scrollTop() > offset) {
 				jQuery('.back-to-top').fadeIn(duration);
 			} else {
 				jQuery('.back-to-top').fadeOut(duration);
 			}
 		});
-				
-		jQuery('.back-to-top').click(function(event) {
+
+		jQuery('.back-to-top').click(function (event) {
 			event.preventDefault();
-			jQuery('html, body').animate({scrollTop: 0}, duration);
+			jQuery('html, body').animate({ scrollTop: 0 }, duration);
 			return false;
 		})
 	});
@@ -575,72 +791,159 @@ for (i = 0; i < acc.length; i++) {
 
 <!-- For section reveal -->
 <script>
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+	function reveal() {
+		var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 50;
+		for (var i = 0; i < reveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = reveals[i].getBoundingClientRect().top;
+			var elementVisible = 50;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
+			if (elementTop < windowHeight - elementVisible) {
+				reveals[i].classList.add("active");
+			} else {
+				reveals[i].classList.remove("active");
+			}
+		}
+	}
 
-window.addEventListener("scroll", reveal);
+	window.addEventListener("scroll", reveal);
 </script>
 
 <!-- For section indicator -->
 <script>
-window.addEventListener("DOMContentLoaded", () => {
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			const id = entry.target.getAttribute("id");
-			if (entry.intersectionRatio > 0) {
-				document
-					.querySelector(`nav li a[href="#${id}"]`)
-					.parentElement.classList.add("active");
-			} else {
-				document
-					.querySelector(`nav li a[href="#${id}"]`)
-					.parentElement.classList.remove("active");
-			}
+	window.addEventListener("DOMContentLoaded", () => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				const id = entry.target.getAttribute("id");
+				if (entry.intersectionRatio > 0) {
+					document
+						.querySelector(`nav li a[href="#${id}"]`)
+						.parentElement.classList.add("active");
+				} else {
+					document
+						.querySelector(`nav li a[href="#${id}"]`)
+						.parentElement.classList.remove("active");
+				}
+			});
+		});
+
+		// Track all sections that have an `id` applied
+		document.querySelectorAll("section[id]").forEach((section) => {
+			observer.observe(section);
 		});
 	});
-
-	// Track all sections that have an `id` applied
-	document.querySelectorAll("section[id]").forEach((section) => {
-		observer.observe(section);
-	});
-});
 </script>
 
 
 <!-- For vertical tabs-->
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
 </script>
+
+<!-- For FAQ accordion -->
+<script>
+	var acc = document.getElementsByClassName("accordionEvents");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("mousedown", function () {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
+</script>
+
+<!-- Alert Box -->
+<script src="sweetalert2.all.min.js"></script>
 
 <!-- Form Handler -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
 	function sendEmail(Full_Name_A, Email_Address_A, Contact_Number_A, Subject_A, Position_A, Message_A) {
+
+		// Form Validation
+		let fNameID = document.forms["applicationform"]["Input_FNa"].value;
+		if (fNameID == "") {
+			Swal.fire({
+				icon: 'error',
+				title: 'Name Required',
+				text: 'Full Name must be filled out',
+				showConfirmButton: false,
+				timer: 1400
+			})
+			return false;
+		}
+
+		let emailID = document.forms["applicationform"]["Input_EAa"].value;
+		atpos = emailID.indexOf("@");
+		dotpos = emailID.lastIndexOf(".");
+		if (atpos < 1 || (dotpos - atpos < 2)) {
+			Swal.fire({
+				icon: 'error',
+				title: 'Incorrect Email',
+				text: 'Please enter correct email format',
+				showConfirmButton: false,
+				timer: 1400
+			})
+			document.myForm.Input_EAa.focus();
+			return false;
+		}
+		var valnumbers = /^[0-9]+$/;
+		let NumberID = document.forms["applicationform"]["Input_CNa"].value;
+		if (!NumberID.match(valnumbers)) {
+			Swal.fire({
+				icon: 'error',
+				title: 'Incorrect Number',
+				text: 'Contact Number must be filled out with correct format',
+				showConfirmButton: false,
+				timer: 1600
+			})
+			return false;
+		}
+
+
+		let positionID = document.forms["applicationform"]["Input_Poa"].value;
+		if (positionID == "") {
+			Swal.fire({
+				icon: 'error',
+				title: 'Position Required',
+				text: 'Position must be filled out',
+				showConfirmButton: false,
+				timer: 1400
+			})
+			return false;
+		}
+
+		let messageID = document.forms["applicationform"]["Input_Mea"].value;
+		if (messageID == "") {
+			Swal.fire({
+				icon: 'error',
+				title: 'Cover letter Required',
+				text: 'Message must be filled out',
+				showConfirmButton: false,
+				timer: 1500
+			})
+			return false;
+		}
+
 		Email.send({
 			SecureToken: "b3a61f50-37cf-4a00-a5f0-98e37af1b275",
 			To: 'info@geospectrum.com.ph',
@@ -649,10 +952,16 @@ function openCity(evt, cityName) {
 			Body: "\"" + Message_A + "\"<br><br>From: <br>" + Full_Name_A + "<br>" + Email_Address_A + "<br>" + Contact_Number_A,
 		})
 			.then(function (message) {
-				alert("mail sent successfully")
+				Swal.fire({
+					icon: 'success',
+					title: 'Mail sent successfully',
+					text: 'Thank you',
+					showConfirmButton: false,
+					timer: 1500
+				})
 			})
-			.then(function (){
-				document.getElementById('contactform').reset();
+			.then(function () {
+				document.getElementById('applicationform').reset();
 			});
 	}
 </script>
