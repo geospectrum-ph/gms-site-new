@@ -455,8 +455,8 @@ section {
 	position: fixed;
 	top: 2.35vh;
 	padding-left: 1vw;
-	height: 6vh;	
-	width: 25vw;
+	height: 5vh;	
+	width: auto;
 	}	
 	
 /* Top Navigation Bar     */
@@ -1271,8 +1271,8 @@ section {
 	
 .email {
 	width: 95%;
-	margin-bottom: 30px;
-	padding: 20px 20px 40px 20px;
+	/* margin-bottom: 30px; */
+	padding: 20px 20px 67px 20px;
 	background-color: rgb(0,0,0,.5);
 	border-bottom: 1px dotted #cccccc;
 	}
@@ -2132,7 +2132,7 @@ section {
 	}
 	
 .email {
-	width: 95%;
+	width: 85%;
 	margin-bottom: 30px;
 	padding: 20px 20px 40px 20px;
 	background-color: rgb(0,0,0,.5);
@@ -2844,7 +2844,7 @@ section {
 #visit {
 	display: block;
 	position: relative;
-	margin-top: -60px;
+	/* margin-top: -60px; */
 	}	
 	
 #call {
@@ -2862,8 +2862,8 @@ section {
 	}
 	
 .email {
-	width: 65%;
-	margin-left: 15%;
+	width: 85%;
+	/* margin-left: 15%; */
 	margin-bottom: 20px;
 	padding: 20px 20px 40px 20px;
 	background-color: rgb(0,0,0,.5);
@@ -3023,7 +3023,10 @@ section {
 
 
 
-
+.textfooter {
+	font-size: 12px;
+	}
+	
 
 
 

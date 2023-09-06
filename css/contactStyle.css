@@ -129,7 +129,7 @@ nav {
 	text-decoration: none;
 	display: block;
 	padding: .125rem 0;
-	color: #990099;
+	color: #ffffff;
 	font-weight: 500;
 	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
 	}
@@ -459,8 +459,8 @@ section {
 	position: fixed;
 	top: 2.35vh;
 	padding-left: 1vw;
-	height: 6vh;	
-	width: 25vw;
+	height: 5vh;	
+	width: auto;
 	mix-blend-mode: difference;
 	}	
 	
@@ -694,7 +694,7 @@ section {
 #contactWrapper {
 	display: block;
 	color: #ffffff;
-	background-color: #c0c0c0;
+	background-color: #ffffff;
 	overflow: hidden;
 	height: 100vh;
 	width: 100%;
@@ -1359,8 +1359,8 @@ button:active {
 	
 .email {
 	width: 95%;
-	margin-bottom: 30px;
-	padding: 20px 20px 40px 20px;
+	/* margin-bottom: 30px; */
+	padding: 20px 20px 67px 20px;
 	background-color: rgb(0,0,0,.5);
 	border-bottom: 1px dotted #cccccc;
 	}
@@ -1684,7 +1684,7 @@ button:active {
 #contactWrapper {
 	display: block;
 	color: #ffffff;
-	background-color: #c0c0c0;
+	background-color: #ffffff;
 	overflow: hidden;
 	height: 100vh;
 	width: 100%;
@@ -2353,7 +2353,7 @@ button:active {
 	}
 	
 .email {
-	width: 95%;
+	width: 85%;
 	margin-bottom: 30px;
 	padding: 20px 20px 40px 20px;
 	background-color: rgb(0,0,0,.5);
@@ -2638,7 +2638,7 @@ button:active {
 #contactWrapper {
 	display: block;
 	color: #ffffff;
-	background-color: #c0c0c0;
+	background-color: #ffffff;
 	overflow: hidden;
 	height: 110vh;
 	width: 100%;
@@ -3320,7 +3320,7 @@ button:active {
 	}
 	
 .email {
-	width: 95%;
+	width: 85%;
 	margin-bottom: 30px;
 	padding: 20px 20px 40px 20px;
 	background-color: rgb(0,0,0,.5);
@@ -3562,7 +3562,7 @@ button:active {
 #contactWrapper {
 	display: block;
 	color: #ffffff;
-	background-color: #c0c0c0;
+	background-color: #ffffff;
 	overflow: hidden;
 	height: 100%;
 	width: 90%;
@@ -3712,7 +3712,7 @@ button:active {
 	padding: 10px;
 	}	
 
-3
+
 /* Start defining the Accordion */ 	
 
 .accordion {
@@ -4219,7 +4219,7 @@ button:active {
 #visit {
 	display: block;
 	position: relative;
-	margin-top: -60px;
+	/* margin-top: -60px; */
 	}	
 	
 #call {
@@ -4237,8 +4237,8 @@ button:active {
 	}
 	
 .email {
-	width: 65%;
-	margin-left: 15%;
+	width: 85%;
+	/* margin-left: 15%; */
 	margin-bottom: 20px;
 	padding: 20px 20px 40px 20px;
 	background-color: rgb(0,0,0,.5);
@@ -4392,7 +4392,10 @@ button:active {
 
 
 
-
+.textfooter {
+	font-size: 12px;
+	}
+	
 
 
 
