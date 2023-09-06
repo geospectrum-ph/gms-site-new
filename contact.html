@@ -37,7 +37,7 @@
 </head>
 
 <body>
-
+	<div id="preloader"></div>
 	<div id="numberIndicator">
 		<nav class="section-nav">
 			<ol>
@@ -653,6 +653,17 @@
 
 <!-- Alert Box -->
 <script src="sweetalert2.all.min.js"></script>
+
+<!-- Preloader -->
+<script>
+	function closepreloader(){
+							document.getElementById("preloader").style.display = 'none';
+					}
+					window.addEventListener("load",function(){
+							setTimeout(closepreloader, 700);
+							
+					});
+	</script>
 
 <!-- Form Handler -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>

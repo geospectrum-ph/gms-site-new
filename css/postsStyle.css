@@ -3384,7 +3384,15 @@ button:active {
 
 
 
-
+	
+		#preloader{
+			background: #ffffff url(../Images/logo.gif) no-repeat center center;
+			height: 100vh;
+			width: 100%;
+			position: fixed;
+			z-index: 100 ;
+			/* background-size: 50px 50px; */
+		}
 
 
 
