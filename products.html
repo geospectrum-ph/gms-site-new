@@ -34,7 +34,7 @@
 </head>
 
 <body>
-
+	<div id="preloader"></div>
 	<div id="numberIndicator">
 		<nav class="section-nav">
 			<ol>
@@ -233,22 +233,56 @@
 	<!-- Start Products More -->
 	<center>
 		<section id="productsMore">
-			<div id="productsMore-container">
-				<div style="">
-					<span class="productsNeed" class="reveal" style="">Whether you are: </span>
-					<ul class="need">
-						<li>from the agricultural sector looking for timely satellite imagery for crop monitoring;</li>
-						<li>from the government needing spatial data for better resource management;</li>
-						<li>from the academe trying to do innovative research that will contribute to the development of our
-							country; or</li>
-						<li>from any sector that needs relevant and accurate geospatial data to be used for your applications,</li>
-					</ul>
-					<span class="productsNeed" style=""><strong
-							style="background:black; color:white; padding:5px;">Geospectrum,</strong> together with its global
-						partners, offers a wide range of products that are tailor fit according to your needs.</span><br />
+
+			<!-- <div id="productsMore-container">
+		<div style="">		
+			<span class="productsNeed" class="reveal" style="">Whether you are: </span>
+				<ul class="need">
+					<li>from the agricultural sector looking for timely satellite imagery for crop monitoring;</li>
+					<li>from the government needing spatial data for better resource management;</li>
+					<li>from the academe trying to do innovative research that will contribute to the development of our country; or</li>
+					<li>from any sector that needs relevant and accurate geospatial data to be used for your applications,</li>
+				</ul>			 
+			<span class="productsNeed" style=""><strong style="background:black; color:white; padding:5px;">Geospectrum,</strong> together with its global partners, offers a wide range of products that are tailor fit according to your needs.</span><br />					
+		</div>	
+	</div>   -->
+
+			<span class="productsNeed" class="reveal">Whether you are: </span>
+			<div class="container_mid">
+				<div class="grid-item reveal">
+					<img src="Images/offer_agri.png" style="width:35%;"></img><br>
+					From the agricultural sector looking for timely satellite imagery for crop monitoring
+				</div>
+				<div class="grid-item reveal">
+					<img src="Images/offer_governm.png" style="width:35%;"></img><br>
+					From the government needing spatial data for better resource management
+					<!-- <br>&nbsp -->
+				</div>
+				<div class="grid-item reveal">
+					<img src="Images/offer_academe.png" style="width:35%;"></img><br>
+					From the academe trying to do innovative research that will contribute to the development of our country
+				</div>
+
+				<div class="grid-item reveal">
+					<img src="Images/offer_sector.png" style="width:35%;"></img><br>
+					From any sector that needs relevant and accurate geospatial data to be used for your applications
+					<br>&nbsp
+				</div>
+
+						<div class="before">
+				<span class="productGeoText"><strong class="reveal" style="background:black; color:white; padding:5px;">Geospectrum,</strong>
+					together with its global partners, offers a wide <br>range of products that are tailor fit according to your
+					needs.</span>
 				</div>
 			</div>
+			<br>
+			<div class="after">
+				<span class="productGeoText"><strong class="reveal" style="background:black; color:white; padding:5px;">Geospectrum,</strong>
+					together with its global partners, offers a wide <br>range of products that are tailor fit according to your
+					needs.</span>
+				</div>
 		</section>
+
 	</center>
 	<!-- End Products More -->
 
@@ -1397,6 +1431,17 @@
 		document.getElementById("myNav").style.width = "0%";
 	}
 </script>
+
+<!-- Preloader -->
+<script>
+	function closepreloader(){
+							document.getElementById("preloader").style.display = 'none';
+					}
+					window.addEventListener("load",function(){
+							setTimeout(closepreloader, 700);
+							
+					});
+	</script>
 
 <!-- For back to top -->
 <script>

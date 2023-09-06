@@ -114,7 +114,7 @@
 </head>
 
 <body>
-
+	<div id="preloader"></div>
 	<div id="numberIndicator">
 		<nav class="section-nav">
 			<ol>
@@ -969,6 +969,16 @@
 	window.addEventListener("scroll", reveal);
 </script>
 
+<!-- Preloader -->
+<script>
+	function closepreloader(){
+							document.getElementById("preloader").style.display = 'none';
+					}
+					window.addEventListener("load",function(){
+							setTimeout(closepreloader, 900);
+							
+					});
+	</script>
 
 <!-- For section indicator -->
 <script>

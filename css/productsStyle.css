@@ -787,6 +787,44 @@ section {
 		
 /* Our Products         */
 
+.before{
+	clear: both;
+	display: none;
+}
+.container_mid{
+	display: grid;
+	grid-template-columns: auto auto  ;
+	background-color: #ffffff ; opacity:0.9;
+	margin: auto;
+  width: 50%;
+	padding: 40px;
+	gap: 20px 80px;
+	border-radius: 15px;
+	}
+
+.grid-item{
+	display: grid;
+	text-align: center;
+	/* text-align: justify; */
+	place-items: center;
+  /* text-justify: inter-word; */
+	font-size: 17px;
+
+}
+.grid-item img {
+	transition: transform .2s;
+}
+.grid-item img:hover {
+  transform: scale(1.2);
+	
+}
+.productGeoText{
+	/* padding-top: 520px; */
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 0px 0px 5px #ffffff;
+}
+
 #productsMore { 
 	width: 100%;
 	height: 100vh;
@@ -810,14 +848,14 @@ section {
 	display: block;
 	font-family: sitefont, Tahoma;
 	color: #333333;
-	font-size: 24px;  
+	font-size: 35px;  
 	font-weight: bold;
 	letter-spacing: 2px;
 	line-height: 30px;
-	text-align: left;
-	padding-top: 50px;
+	text-align: center;
+	padding-top: 110px;
 	padding-bottom: 50px;
-	text-shadow: 0px 0px 5px #ffffff;
+	/* text-shadow: 0px 0px 5px #ffffff; */
 	}	
 	
 .need li {
@@ -1328,6 +1366,18 @@ section {
 
 
 @media screen and (max-width: 800px) {
+.after{
+	display: none;
+}
+	.container_mid{
+		background-color: #ffffff ; opacity:0.9;
+		margin: auto;
+		width: 80%;
+		padding: 40px;
+		gap: 20px 80px;
+		border-radius: 15px;
+		margin-left: 25px;
+		}
 
 .logo {
 	z-index: 15;
@@ -1672,6 +1722,7 @@ section {
 	}
 	
 .productsNeed {
+	margin-left: 30px;
 	display: block;
 	font-family: sitefont, Tahoma;
 	color: #333333;
@@ -2454,6 +2505,36 @@ section {
 	}
 		
 /* Our Products         */
+.after{
+	clear: both;
+	display: none;
+}
+.container_mid{
+	display: grid;
+	background-color: #ffffff ; opacity:0.9;
+	margin: auto;
+  width: 80%;
+	padding: 40px;
+	gap: 20px 80px;
+	border-radius: 15px;
+	margin-left: 25px;
+	}
+	.productGeoText{
+	
+		font-family: sitefont, Tahoma;
+		color: #333333;
+		font-size: 20px;  
+		font-weight: bold;
+		letter-spacing: 2px;
+		line-height: 30px;
+		text-align: left;
+		padding-top: 20px;
+		margin-bottom: 0px;
+		text-shadow: 0px 0px 5px #ffffff;
+	}
+.productGeoText br {
+		display: none;
+	}
 
 #productsMore { 
 	width: 100%;
@@ -2483,6 +2564,7 @@ section {
 	line-height: 30px;
 	text-align: left;
 	padding-top: 20px;
+	margin-left: 30px;
 	margin-bottom: 0px;
 	text-shadow: 0px 0px 5px #ffffff;
 	}
@@ -3028,9 +3110,28 @@ section {
 	}
 	
 
+	@media screen and (max-width: 1440px) {
 
+.productsNeed {
 
+	font-weight: bold;
+	line-height: 30px;
+	padding-top: 20px;
+	margin-bottom: 0px;
+	text-shadow: 0px 0px 5px #ffffff;
+	}
 
+	}
+
+	
+	#preloader{
+		background: #ffffff url(../Images/logo.gif) no-repeat center center;
+		height: 100vh;
+		width: 100%;
+		position: fixed;
+		z-index: 100 ;
+		/* background-size: 50px 50px; */
+	}
 
 
 

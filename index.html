@@ -113,7 +113,7 @@ function initComparisons() {
 </head>
 
 <body>
-
+	<div id="preloader"></div>
 <div id="numberIndicator">
 	<nav class="section-nav">
 		<ol>
@@ -305,11 +305,27 @@ function initComparisons() {
 					<img src="Images/taal_before.png" class="responsive">
 				</div>
 			</div>				
+			<br/>
 			<div class="eventsWrapper">
-				<div class="accordionEvents" style=""><span class="eventsDate"> 12-13 APR 2023 : &nbsp;&nbsp;&nbsp; #PlanetExplore23 Concluded </span></div> 
+				<div class="accordionEvents" style=""><span class="eventsDate"> 08-14 AUG 2023 : &nbsp;&nbsp;&nbsp;
+						Philippine Space Week 2023 </span></div>
 				<div class="panelFaq" style="">
-					<span class="eventsBody">With #PlanetExplore23 now concluded, we want to thank Planet Labs for organizing this truly remarkable gathering of Earth observation leaders, innovators, and enthusiasts. The exchange of innovative ideas and cutting-edge knowledge has undoubtedly advanced the field of geospatial data and analytics.</span>	
-				
+					<span class="eventsBody">Join us in celebrating the Philippine Space Week 2023, led by the Philippine Space
+						Agency. From today until August 14, we are excited to showcase a series of informative and captivating
+						satellite images sourced from our esteemed international partners. These images will exemplify the diverse
+						applications of satellite technology, reshaping our world perspective.</span>
+					<div id="linkWhiteP" style="">
+						<a href="posts.html"> READ MORE &nbsp;<img src="Images/button_sphere_plus.png" id="sphere"
+								style="width:25px; height:25px;"></a>
+					</div>
+				</div>
+				<div class="accordionEvents" style=""><span class="eventsDate"> 12-13 APR 2023 : &nbsp;&nbsp;&nbsp;
+						#PlanetExplore23 Concluded </span></div>
+				<div class="panelFaq" style="">
+					<span class="eventsBody">With #PlanetExplore23 now concluded, we want to thank Planet Labs for organizing
+						this truly remarkable gathering of Earth observation leaders, innovators, and enthusiasts. The exchange of
+						innovative ideas and cutting-edge knowledge has undoubtedly advanced the field of geospatial data and
+						analytics.</span>
 				<div id="linkWhiteP" style="">
 					<a href="posts.html"> READ MORE &nbsp;<img src="Images/button_sphere_plus.png" id="sphere" style="width:25px; height:25px;" ></a>
 				</div>
@@ -869,6 +885,16 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 </script>
 
+<!-- Preloader -->
+<script>
+	function closepreloader(){
+							document.getElementById("preloader").style.display = 'none';
+					}
+					window.addEventListener("load",function(){
+							setTimeout(closepreloader, 900);
+							
+					});
+	</script>
 
 <!-- For section indicator -->
 <script>

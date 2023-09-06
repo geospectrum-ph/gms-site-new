@@ -33,7 +33,7 @@
 </head>
 
 <body>
-
+	<div id="preloader"></div>
 <div id="numberIndicator">
 	<nav class="section-nav">
 		<ol>
@@ -929,6 +929,17 @@ $slideNavPrev.click(function (e) {
   goToPreviousSlide(slideOut, slideIn, slideInAll);
 });
 </script>
+
+<!-- Preloader -->
+<script>
+	function closepreloader(){
+							document.getElementById("preloader").style.display = 'none';
+					}
+					window.addEventListener("load",function(){
+							setTimeout(closepreloader, 700);
+							
+					});
+	</script>
 
 <!-- For section indicator -->
 <script>

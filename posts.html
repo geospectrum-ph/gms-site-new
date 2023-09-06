@@ -37,7 +37,7 @@
 </head>
 
 <body>
-
+	<div id="preloader"></div>
 	<div id="numberIndicator">
 		<nav class="section-nav">
 			<ol>
@@ -258,7 +258,7 @@
 
 							<div class="eventsDate reveal"> 26 AUGUST 2023 </div>
 							<span class="accordionEvents" style="" id="text_title"><p>It's time to introduce the exciting innovation in Maritime Tech
-								from our international partner </p><span id="spaceknow"> SpaceKnow</span>.</span>
+								from our international partner </p><a href="https://spaceknow.com" target="_blank"><span id="spaceknow"> SpaceKnow</span></a>.</span>
 							<div class="panelEv reveal">
 								<div id="text" style=""> &nbsp &nbsp &nbsp &nbsp Spotting ships across expansive oceans and seas has perpetually
 									presented difficulties. However, our cutting-edge machine-learning algorithms have successfully
@@ -281,7 +281,7 @@
 							<span class="accordionEvents" style="">Philippine Space Week 2023</span>
 							<div class="panelEv reveal">
 								<div style="">&nbsp &nbsp &nbsp &nbsp Join us in celebrating the Philippine Space Week 2023, led by
-									the Philippine Space Agency. From today until August 14, we are excited to showcase a series of
+									the <a id="spaceknow" href="https://philsa.gov.ph/">Philippine Space Agency</a>. From today until August 14, we are excited to showcase a series of
 									informative and captivating satellite images sourced from our esteemed international partners. These
 									images will exemplify the diverse applications of satellite technology, reshaping our world
 									perspective.<br /><br /> Stay connected with us on our social media channels and #JoinTheMission in
@@ -344,7 +344,7 @@
 								#PlanetExplore23</span>
 							<div class="panelEv reveal">
 								<div style="">&nbsp &nbsp &nbsp &nbsp Geospectrum Marketing Services is excited to have participated in the incredible
-									#PlanetExplore23 event in Washington, D.C., organized by Planet, the world's leading provider of
+									#PlanetExplore23 event in Washington, D.C., organized by <a id="spaceknow" href="https://www.planet.com/">Planet</a>, the world's leading provider of
 									global daily Earth data.
 									<br /><br /> The first day was a blast, with top Earth observation leaders and enthusiasts
 									coming together
@@ -372,7 +372,7 @@
 								Workshop</span>
 							<div class="panelEv reveal">
 								<div style="">&nbsp &nbsp &nbsp &nbsp Geospectrum Marketing Services proudly hosted a successful workshop yesterday, March
-									30, in partnership with Planet Labs and the Philippine Space Agency (PhilSA). Held at PhilSA's
+									30, in partnership with <a id="spaceknow" href="https://www.planet.com/">Planet Labs</a> and the <a id="spaceknow" href="https://philsa.gov.ph/">Philippine Space Agency (PHILSA)</a>. Held at PhilSA's
 									Conference Room in the CyberOne Building in Eastwood City, Quezon City, the workshop focused on
 									the latest technology updates and use cases for space technology.<br /><br />
 									Geospectrum Marketing Services, Planet Labs, and the Philippine Space Agency (PhilSA) are
@@ -409,7 +409,7 @@
 									and our esteemed military personnel at Technology Day 2023, in celebration with the 126th
 									Founding Anniversary of the Philippine Army. We demonstrate the capabilities of high frequency,
 									global coverage imagery of Planet, and how we can access valuable data from any location on
-									Earth, day or night, even through clouds from ICEYE. In addition, we demonstrated how we can
+									Earth, day or night, even through clouds from <a id="spaceknow" href="https://www.iceye.com/">ICEYE</a>. In addition, we demonstrated how we can
 									make critical information about the Earth more accessible and affordable with EarthEye Space, as
 									well as the world's most precise digital elevation model from AW3D. We also featured the
 									state-of-the-art AI-based Imagery Intelligence software, the SpaceKnow Guardian.<br /><br />
@@ -870,6 +870,17 @@
 		});
 	}
 </script>
+
+<!-- Preloader -->
+<script>
+	function closepreloader(){
+							document.getElementById("preloader").style.display = 'none';
+					}
+					window.addEventListener("load",function(){
+							setTimeout(closepreloader, 700);
+							
+					});
+	</script>
 
 <!-- Alert Box -->
 <script src="sweetalert2.all.min.js"></script>
