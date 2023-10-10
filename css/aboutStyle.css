@@ -107,7 +107,7 @@ nav {
 
 /* ScrollSpy active styles (see JS for activation) */
 .section-nav li.active>a {
-	color: #990099;
+	color: #ffffff;
 	font-weight: bold;
 }
 
@@ -126,7 +126,7 @@ nav {
 	text-decoration: none;
 	display: block;
 	padding: .125rem 0;
-	color: #990099;
+	color: #ffffff;
 	font-weight: 500;
 	transition: all 50ms ease-in-out;
 	/* 💡 This small transition makes setting of the active state smooth */
