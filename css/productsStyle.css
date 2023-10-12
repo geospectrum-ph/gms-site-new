@@ -828,7 +828,7 @@ section {
 	height: 120vh;
 	display: block;
 	background-color: #787878;
-	background-image: url(../Images/bgProductsMore.png);
+	background-image: url(../Images/bgProductsMore.webp);
 	background-size: cover;
 	background-position: center;
   
@@ -952,7 +952,7 @@ section {
 	height: 100vh;
 	display: block;
 	background-color: #787878;
-	background-image: url(../Images/bgPlanetSatellite.png);
+	background-image: url(../Images/bgPlanetSatellite.webp);
 	background-size: cover;
 	background-position: center;
   
@@ -1158,7 +1158,7 @@ section {
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
 	background-color: #010A26;
-	background-image: url(../Images/bgFooter.png);
+	background-image: url(../Images/bgFooter.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -1172,7 +1172,7 @@ section {
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
 	background-color: #010A26;
-	background-image: url(../Images/bgFooter.png);
+	background-image: url(../Images/bgFooter.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -1707,7 +1707,7 @@ section {
 	height: 150vh;
 	display: block;
 	background-color: #787878;
-	background-image: url(../Images/bgProductsMore.png);
+	background-image: url(../Images/bgProductsMore.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -1933,7 +1933,7 @@ section {
 	height: 130vh;
 	display: block;
 	background-color: #787878;
-	background-image: url(../Images/bgPlanetSatellite.png);
+	background-image: url(../Images/bgPlanetSatellite.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2033,7 +2033,7 @@ section {
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
 	background-color: #010A26;
-	background-image: url(../Images/bgFooter.png);
+	background-image: url(../Images/bgFooter.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2047,7 +2047,7 @@ section {
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
 	background-color: #010A26;
-	background-image: url(../Images/bgFooter.png);
+	background-image: url(../Images/bgFooter.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2539,7 +2539,7 @@ section {
 	height: 100%;
 	display: block;
 	background-color: #787878;
-	background-image: url(../Images/bgProductsMore.png);
+	background-image: url(../Images/bgProductsMore.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2738,7 +2738,7 @@ section {
 	height: 100%;
 	display: block;
 	background-color: #787878;
-	background-image: url(../Images/bgPlanetSatellite.png);
+	background-image: url(../Images/bgPlanetSatellite.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2893,7 +2893,7 @@ section {
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
 	background-color: #010A26;
-	background-image: url(../Images/bgFooter.png);
+	background-image: url(../Images/bgFooter.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2906,7 +2906,7 @@ section {
 	font-family: siteFont, Tahoma;
 	padding-left: 25px;
 	background-color: #010A26;
-	background-image: url(../Images/bgFooter.png);
+	background-image: url(../Images/bgFooter.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;

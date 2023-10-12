@@ -933,7 +933,7 @@ section {
 		height: 100%;
 		display: block;
 		background-color: #112959;
-		background-image: url(../Images/bgAbout.png);
+		background-image: url(../Images/bgAbout.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: scroll;
@@ -1549,7 +1549,7 @@ section {
 		font-family: siteFont, Tahoma;
 		padding-left: 25px;
 		background-color: #010A26;
-		background-image: url(../Images/bgFooter.png);
+		background-image: url(../Images/bgFooter.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -1563,7 +1563,7 @@ section {
 		font-family: siteFont, Tahoma;
 		padding-left: 25px;
 		background-color: #010A26;
-		background-image: url(../Images/bgFooter.png);
+		background-image: url(../Images/bgFooter.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -2183,7 +2183,7 @@ section {
 		height: 120vh;
 		display: block;
 		background-color: #112959;
-		background-image: url(../Images/bgAbout.png);
+		background-image: url(../Images/bgAbout.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: scroll;
@@ -2814,7 +2814,7 @@ section {
 		font-family: siteFont, Tahoma;
 		padding-left: 25px;
 		background-color: #010A26;
-		background-image: url(../Images/bgFooter.png);
+		background-image: url(../Images/bgFooter.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -2828,7 +2828,7 @@ section {
 		font-family: siteFont, Tahoma;
 		padding-left: 25px;
 		background-color: #010A26;
-		background-image: url(../Images/bgFooter.png);
+		background-image: url(../Images/bgFooter.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -3407,7 +3407,7 @@ section {
 		height: 120vh;
 		display: block;
 		background-color: #112959;
-		background-image: url(../Images/bgAbout.png);
+		background-image: url(../Images/bgAbout.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: scroll;
@@ -3923,7 +3923,7 @@ section {
 		font-family: siteFont, Tahoma;
 		padding-left: 25px;
 		background-color: #010A26;
-		background-image: url(../Images/bgFooter.png);
+		background-image: url(../Images/bgFooter.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -3936,7 +3936,7 @@ section {
 		font-family: siteFont, Tahoma;
 		padding-left: 25px;
 		background-color: #010A26;
-		background-image: url(../Images/bgFooter.png);
+		background-image: url(../Images/bgFooter.webp);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
