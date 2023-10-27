@@ -19,7 +19,7 @@ body {
 
 @font-face {
 	font-family: siteFont;
-	src: url(../Fonts/KozGoPro-Regular.otf);
+	src: url(../Fonts/texgyreheros-regular.otf);
 }
 
 .responsive {
@@ -1699,7 +1699,7 @@ section {
 	.email {
 		width: 95%;
 		/* margin-bottom: 30px; */
-		padding: 20px 20px 67px 20px;
+		padding: 20px 20px 90px 20px;
 		background-color: rgb(0, 0, 0, .5);
 		border-bottom: 1px dotted #cccccc;
 	}
@@ -4139,4 +4139,34 @@ section {
 	position: fixed;
 	z-index: 100;
 	/* background-size: 50px 50px; */
+}
+
+/* Social Media Icons */
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../Fonts/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+	font-weight: normal;
+	font-style: normal
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+	content: "\f09a"
+}
+
+.fa-linkedin:before {
+	content: "\f0e1"
+}
+
+.fa-google:before {
+	content: "\f1a0"
 }
