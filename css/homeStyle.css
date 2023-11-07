@@ -24,7 +24,13 @@ video {
 	
 @font-face {
 	font-family: siteFont;
-	src: url(../Fonts/KozGoPro-Regular.otf);
+	src: url(../Fonts/texgyreheros-regular.otf);
+	/* font-family: 'kozuka_gothic_pror';
+	src: url('../Fonts/kozgopro-regular-webfont.woff2') format('woff2'),
+			 url('../Fonts/kozgopro-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal; */
+
 	}
 
 .responsive {
@@ -486,7 +492,7 @@ nav {
     width: 100vw;
     min-height: 110vh;
     overflow: hidden;
-	background-image: url(../Images/bgCover.png);
+	background-image: url(../Images/bgCover.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -1444,7 +1450,7 @@ a.modal-open {
 	
 .email {
 	width: 95%;
-	padding: 20px 20px 67px 20px;
+	padding: 20px 20px 90px 20px;
 	background-color: rgb(0,0,0,.5);
 	border-bottom: 1px dotted #cccccc;
 	}
@@ -2001,7 +2007,7 @@ a.modal-open {
     width: 100vw;
     height: 170vh;
     overflow: hidden;
-	background-image: url(../Images/bgCover.png);
+	background-image: url(../Images/bgCover.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2905,7 +2911,7 @@ a.modal-open {
     width: 100%;
     height: 100%;
     overflow: hidden;
-	background-image: url(../Images/bgCover.png);
+	background-image: url(../Images/bgCover.webp);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -3635,3 +3641,35 @@ font-size: 12px;
 	/* background-size: 50px 50px; */
 }
 	
+
+/* Social Media Icons */
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../Fonts/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+	font-weight: normal;
+	font-style: normal
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+	content: "\f09a"
+}
+
+.fa-linkedin:before {
+	content: "\f0e1"
+}
+
+.fa-google:before {
+	content: "\f1a0"
+}
+
+
