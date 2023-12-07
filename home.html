@@ -1,116 +1,114 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
-	<meta charset="UTF-8" />
-	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords"
-		content="Geospectrum, marketing, services, geospatial, data, GIS, Map satellite, imagery, digitize, optical satellite imagery, remote sensing, Synthetic Aperture Radar, SAR, satellite, imaging, ortho, drone, analytics, mapping Philippines, eartheye, ICEYE, AW3D, Planet, SpaceKnow, Satellite image price">
-	<meta name="description"
-		content="Distribute up-to-date satellite imagery and an interoperable analytics platform in the Philippines.">
-	<meta name="author" content="Geospectrum Marketing Services">
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
+<meta charset="UTF-8" />
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords"
+	content="Geospectrum, marketing, services, geospatial, data, GIS, Map satellite, imagery, digitize, optical satellite imagery, remote sensing, Synthetic Aperture Radar, SAR, satellite, imaging, ortho, drone, analytics, mapping Philippines, eartheye, ICEYE, AW3D, Planet, SpaceKnow, Satellite image price, ">
+<meta name="description"
+	content="Distribute up-to-date satellite imagery and an interoperable analytics platform in the Philippines.">
+<meta name="author" content="Geospectrum Marketing Services">
 
-	<link rel="icon" href="Images/geospectrum.ico">
-	<link rel="shortcut icon" href="Images/geospectrum.ico">
+<link rel="icon" href="Images/geospectrum.ico" type="image/x-icon">
+<link rel="shortcut icon" href="Images/geospectrum.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-	<link rel="stylesheet" type="text/css" href="css/homeStyle.css">
-	<link rel="stylesheet" href="CSS/slider.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/homeStyle.css">
+<link rel="stylesheet" href="CSS/slider.css" type="text/css">
 
-	<script type="text/javascript" src="js/jquery.stellar.min.js" defer></script>
+<script type="text/javascript" src="js/jquery.stellar.min.js" defer></script>
 
-	<!-- Auto Slideshow -->
-	<script src="https://www.w3schools.com/lib/w3.js" defer></script>
+<!-- Auto Slideshow -->
+<script src="https://www.w3schools.com/lib/w3.js" defer></script>
 
-	<!-- Back-to-Top -->
-	<script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"
-		defer></script>
+<!-- Back-to-Top -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" defer></script>
 
-	<!-- Split Screen Cover -->
-	<script>
-		function initComparisons() {
-			var x, i;
-			/*find all elements with an "overlay" class:*/
-			x = document.getElementsByClassName("img-comp-overlay");
-			for (i = 0; i < x.length; i++) {
-				/*once for each "overlay" element:
-				pass the "overlay" element as a parameter when executing the compareImages function:*/
-				compareImages(x[i]);
+<!-- Split Screen Cover -->
+<script>
+	function initComparisons() {
+		var x, i;
+		/*find all elements with an "overlay" class:*/
+		x = document.getElementsByClassName("img-comp-overlay");
+		for (i = 0; i < x.length; i++) {
+			/*once for each "overlay" element:
+			pass the "overlay" element as a parameter when executing the compareImages function:*/
+			compareImages(x[i]);
+		}
+		function compareImages(img) {
+			var slider, img, clicked = 0, w, h;
+			/*get the width and height of the img element*/
+			w = img.offsetWidth;
+			h = img.offsetHeight;
+			/*set the width of the img element to 50%:*/
+			img.style.width = (w / 2) + "px";
+			/*create slider:*/
+			slider = document.createElement("DIV");
+			slider.setAttribute("class", "slider");
+			/*insert slider*/
+			img.parentElement.insertBefore(slider, img);
+			/*position the slider in the middle:*/
+			slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+			slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+
+			/*execute a function when the mouse button is pressed:*/
+			slider.addEventListener("mousemove", slideReady);
+
+			/*or touched (for touch screens:*/
+			slider.addEventListener("touchstart", slideReady);
+			/*and released (for touch screens:*/
+			window.addEventListener("touchend", slideFinish);
+			function slideReady(e) {
+				/*prevent any other actions that may occur when moving over the image:*/
+				e.preventDefault();
+				/*the slider is now clicked and ready to move:*/
+				clicked = 1;
+				/*execute a function when the slider is moved:*/
+				window.addEventListener("mousemove", slideMove);
+				window.addEventListener("touchmove", slideMove);
 			}
-			function compareImages(img) {
-				var slider, img, clicked = 0, w, h;
-				/*get the width and height of the img element*/
-				w = img.offsetWidth;
-				h = img.offsetHeight;
-				/*set the width of the img element to 50%:*/
-				img.style.width = (w / 2) + "px";
-				/*create slider:*/
-				slider = document.createElement("DIV");
-				slider.setAttribute("class", "slider");
-				/*insert slider*/
-				img.parentElement.insertBefore(slider, img);
-				/*position the slider in the middle:*/
-				slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-				slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-
-				/*execute a function when the mouse button is pressed:*/
-				slider.addEventListener("mousemove", slideReady);
-
-				/*or touched (for touch screens:*/
-				slider.addEventListener("touchstart", slideReady);
-				/*and released (for touch screens:*/
-				window.addEventListener("touchend", slideFinish);
-				function slideReady(e) {
-					/*prevent any other actions that may occur when moving over the image:*/
-					e.preventDefault();
-					/*the slider is now clicked and ready to move:*/
-					clicked = 1;
-					/*execute a function when the slider is moved:*/
-					window.addEventListener("mousemove", slideMove);
-					window.addEventListener("touchmove", slideMove);
-				}
-				function slideFinish() {
-					/*the slider is no longer clicked:*/
-					clicked = 0;
-				}
-				function slideMove(e) {
-					var pos;
-					/*if the slider is no longer clicked, exit this function:*/
-					if (clicked == 0) return false;
-					/*get the cursor's x position:*/
-					pos = getCursorPos(e)
-					/*prevent the slider from being positioned outside the image:*/
-					if (pos < 0) pos = 0;
-					if (pos > w) pos = w;
-					/*execute a function that will resize the overlay image according to the cursor:*/
-					slide(pos);
-				}
-				function getCursorPos(e) {
-					var a, x = 0;
-					e = (e.changedTouches) ? e.changedTouches[0] : e;
-					/*get the x positions of the image:*/
-					a = img.getBoundingClientRect();
-					/*calculate the cursor's x coordinate, relative to the image:*/
-					x = e.pageX - a.left;
-					/*consider any page scrolling:*/
-					x = x - window.pageXOffset;
-					return x;
-				}
-				function slide(x) {
-					/*resize the image:*/
-					img.style.width = x + "px";
-					/*position the slider:*/
-					slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-				}
+			function slideFinish() {
+				/*the slider is no longer clicked:*/
+				clicked = 0;
+			}
+			function slideMove(e) {
+				var pos;
+				/*if the slider is no longer clicked, exit this function:*/
+				if (clicked == 0) return false;
+				/*get the cursor's x position:*/
+				pos = getCursorPos(e)
+				/*prevent the slider from being positioned outside the image:*/
+				if (pos < 0) pos = 0;
+				if (pos > w) pos = w;
+				/*execute a function that will resize the overlay image according to the cursor:*/
+				slide(pos);
+			}
+			function getCursorPos(e) {
+				var a, x = 0;
+				e = (e.changedTouches) ? e.changedTouches[0] : e;
+				/*get the x positions of the image:*/
+				a = img.getBoundingClientRect();
+				/*calculate the cursor's x coordinate, relative to the image:*/
+				x = e.pageX - a.left;
+				/*consider any page scrolling:*/
+				x = x - window.pageXOffset;
+				return x;
+			}
+			function slide(x) {
+				/*resize the image:*/
+				img.style.width = x + "px";
+				/*position the slider:*/
+				slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
 			}
 		}
-	</script>
+	}
+</script>
 
-	<title>Geospectrum | Home</title>
+<title>Geospectrum | Home</title>
 </head>
 
 <body>
@@ -137,20 +135,69 @@
 
 	<!-- Start Topbar Navigation -->
 	<div id="navbar" style="">
-		<a href="#home">&nbsp;</a>
-		<a href="posts.html">POSTS</a>
-		<a href="products.html">PRODUCTS</a>
-		<a href="about.html">ABOUT US</a>
+		<div class="wrapper">
+			<ul class="nav-links">
+				<a class="mainButton" href="posts.html">POST</a>
+				<a class="mainButton" href="products.html">PRODUCTS</a>
+				<a class="mainButton" href="about.html">ABOUT US</a>
+				<li>
+					<div class="mega-box">
+						<div class="content">
+							<div class="main">
+								<p>About Us</p>
+								<ul class="mega-links">
+									<li><a href="about.html#vision" style="text-decoration:none;">Our Mission and Vision</a></li>
+									<li><a href="about.html#values" style="text-decoration:none;">Our Core Values</a></li>
+									<li><a href="about.html#people" style="text-decoration:none;">Our People</a></li>
+									<li><a href="about.html#clientWrapper" style="text-decoration:none;">Our Clients</a></li>
+								</ul>
+							</div>
+							<div class="main">
+								<p>Products</p>
+								<ul class="mega-links">
+									<li><a href="products.html#imageryWrapper" style="text-decoration:none;">Optical Satellite Imagery</a>
+									</li>
+									<li><a href="products.html#imageryNOWrapper" style="text-decoration:none;">Non-Optical Satellite
+											Imagery</a></li>
+									<li><a href="products.html#analyticsWrapper" style="text-decoration:none;">Analytics Services &
+											Software</a></li>
+									<li><a href="products.html#applications" style="text-decoration:none;">Applications</a></li>
+								</ul>
+							</div>
+							<div class="main">
+								<p>Post</p>
+								<ul class="mega-links">
+									<li><a href="posts.html#previousWrapper" style="text-decoration:none;">Events</a></li>
+									<li><a href="posts.html#careerWrapper" style="text-decoration:none;">Career</a></li>
+								</ul>
+							</div>
+							<div class="mainContact">
+								<p>Contact Us</p>
+								<ul class="mega-links">
+									<li class="textfooter1">
+										<p> +63917-7915536 </p>
+										<p> +63920-9113418</p>
+										<p> +(632)-8637-8026</p> <br/>
+										<p> Unit 1604 OMM Bldg.,</p>
+										<p> 39 San Miguel Avenue,</p>
+										<p> Ortigas Center,</p>
+										<p> Pasig City, Philippines</p>
+									</li>
+								</ul>
+							</div>
+							<div class="mainLogo">
+								<img src="logos/logoOnly_gmsWhite.png" alt="">
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<!-- End Topbar Navigation -->
 
 
-
-
-
-
-
-	<!-- #region [ rgba(52, 73, 4, 0.15)]
+	
 	<!-- Start Sidebar Navigation -->
 	<section id="sidenav" style="padding-top:10px;">
 		<div id="myNav" class="overlay">
@@ -220,7 +267,6 @@
 											</li>
 										</ul><br /><br />
 									</div>
-
 
 
 
@@ -294,7 +340,6 @@
 			<a href="contact.html" id="verticalContact">CONTACT US</a>
 		</div>
 	</section>
-	<!-- #endregion -->
 	<!-- End Sidebar Navigation -->
 
 	<!-- Start Cover -->
@@ -303,7 +348,7 @@
 		<div class="row">
 			<div class="col-3" style="">
 				<div class="byline" style="">
-					<h1> Providing reliable geospatial data and analytics software in the Philippines.</h1>
+					<h1>Providing reliable geospatial data and analytics software in the Philippines.</h1>
 				</div>
 				<div id="linkWhiteA" style="">
 					<a href="#productWrapper"> READ MORE &nbsp;<img src="Images/button_sphere_plus.webp" alt="more" id="sphere"
@@ -313,13 +358,12 @@
 			<div class="col-6" style="">
 				<div class="img-comp-container">
 					<div class="img-comp-img">
-						<img alt="Taal Volcano After the Eruption" src="Images/taal_after.jpg" class="responsive">
+						<img src="Images/taal_after.jpg" alt="Taal Volcano After the Eruption" class="responsive">
 					</div>
 					<div class="img-comp-img img-comp-overlay">
-						<img alt="Taal Volcano Before the Eruption" src="Images/taal_before.jpg" class="responsive">
+						<img src="Images/taal_before.jpg" alt="Taal Volcano Before the Eruption" class="responsive">
 					</div>
 				</div>
-
 				<br />
 				<div class="eventsWrapper">
 					<div class="accordionEvents" style=""><span class="eventsDate"> 25-26 SEPT 2023 : &nbsp;
@@ -353,7 +397,6 @@
 							this truly remarkable gathering of Earth observation leaders, innovators, and enthusiasts. The exchange of
 							innovative ideas and cutting-edge knowledge has undoubtedly advanced the field of geospatial data and
 							analytics.</span>
-
 						<div id="linkWhiteP" style="">
 							<a href="posts.html"> READ MORE &nbsp;<img src="Images/button_sphere_plus.webp" alt="more" id="sphere"
 									style="width:25px; height:25px;"></a>
@@ -705,36 +748,12 @@
 					</div>
 
 					<div class="col-6" style="">
-						<!-- <div id="bodyTextLight" style="text-align:left; margin-top:3%;"><br />
-							We are looking for a Business Development Specialist in Remote Sensing! <br><br>
-
-							<ul style="">
-								<li class="">Analyze data obtained from aircraft, satellites, or ground-based platforms using
-									image analysis software and GIS to create geospatial databases and maps</li>
-								<li class="">Research and/or develop image analysis processes and methodologies for various
-									use cases/applications</li>
-								<li class="">Develop and/or maintain geospatial information databases</li>
-								<li class="">Produce high-quality maps that integrate data from different sources</li>
-								<li class="">Create appropriate symbology, map elements, and layout design</li>
-								<li class="">Provide technical support to end users </li>
-								<li class="">Advise management on technical aspects of system performance and operation</li>
-							</ul><br />
-							<br><br>
-						</div> -->
-
-
 						<div id="bodyTextLight" style="text-align:left; margin-top:3%;"><br />
 							We are looking for a Business Development Specialist in Remote Sensing! <br><br>
 							You will play a vital and creative role in growing our client audience and attraction across several
 							verticals who will benefit from our products satellite remote sensing. Working closely with our wider
 							teams across tech and non-tech. <br><br>
 						</div>
-						<div id="linkWhite" style="">
-							<a href="posts.html#careerWrapper"> LEARN MORE &nbsp;<img src="Images/button_sphere_plus.webp" alt="more"
-									id="sphere" class="responsive" style=""></a>
-						</div>
-
-
 						<div id="linkWhite" style="">
 							<a href="posts.html#careerWrapper"> LEARN MORE &nbsp;<img src="Images/button_sphere_plus.webp" alt="more"
 									id="sphere" class="responsive" style=""></a>
@@ -827,31 +846,30 @@
 
 					</ul><br /><br /><br /><br /><br /> <br /><br />
 				</div>
-
-
 			</div>
 
+		</div>
 
-			<div class="row">
 
-				<div class="footer-container">
-					<div class="col-6" style="margin-top: 50px;">
-						<a href="home.html"><img src="logos/logo_gmsRowWhite.webp" alt="FooterLogo"
-								style="height:15px; width:165px;" border="0"></a><br /><br />
-					</div>
-					<div class="col-6" style="margin-top: 50px;">
-						<span class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</span>
-						<span class="textFooterTiny" style="">Terms of Use</span>
-						<span class="textFooterTiny"
-							style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All
-							Rights Reserved</span><br /><br />
-					</div>
+		<div class="row">
+
+			<div class="footer-container">
+				<div class="col-6" style="margin-top: 50px;">
+					<a href="home.html"><img src="logos/logo_gmsRowWhite.webp" alt="FooterLogo" style="height:15px; width:165px;"
+							border="0"></a><br /><br />
+				</div>
+				<div class="col-6" style="margin-top: 50px;">
+					<span class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</span>
+					<span class="textFooterTiny" style="">Terms of Use</span>
+					<span class="textFooterTiny"
+						style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All
+						Rights Reserved</span><br /><br />
 				</div>
 			</div>
+		</div>
 
-			<div align="right"><a href="#" class="back-to-top"><img src="Images/top.webp" alt="Top Page"
-						class="responsive"></a>
-			</div>
+		<div align="right"><a href="#" class="back-to-top"><img src="Images/top.webp" alt="Top Page" class="responsive"></a>
+		</div>
 	</section>
 	<!-- End Footer -->
 
