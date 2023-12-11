@@ -506,7 +506,7 @@ section {
 		box-shadow: 0 1px 10px #000000;
 	}
 
-	#navbar a {
+	.mainButton {
 		float: right;
 		display: block;
 		font-family: "Century Gothic", Helvetica;
@@ -514,11 +514,11 @@ section {
 		text-align: center;
 		padding: 3vh;
 		text-decoration: none;
-		font-size: 1.3vw;
+		font-size: 1.2vw;
 		letter-spacing: 1px;
 	}
 
-	#navbar a:hover {
+	.mainButton:hover {
 		color: #990099;
 	}
 
@@ -701,6 +701,12 @@ section {
 		border-bottom: 5px solid #c0c0c0;
 	}
 
+	.wrapper ul:hover .mega-box {
+		transition: all 0.7s;
+		top: 80px;
+		opacity: 1;
+		visibility: visible;
+	}
 
 	/* Sidebar Menu */
 
@@ -1775,7 +1781,7 @@ section {
 		box-shadow: 0 1px 10px #000000;
 	}
 
-	#navbar a {
+	.mainButton{
 		float: right;
 		display: block;
 		font-family: "Century Gothic", Helvetica;
@@ -1788,7 +1794,7 @@ section {
 		letter-spacing: 1px;
 	}
 
-	#navbar a:hover {
+	.mainButton:hover {
 		color: #990099;
 	}
 
@@ -1917,6 +1923,12 @@ section {
 		color: white;
 	}
 
+	.wrapper ul:hover .mega-box {
+		transition: all 0.7s;
+		top: 60px;
+		opacity: 1;
+		visibility: visible;
+	}
 
 	/* Sidebar Menu */
 
@@ -3051,7 +3063,7 @@ section {
 		visibility: hidden;
 	}
 
-	#navbar a {
+	.mainButton {
 		float: right;
 		display: block;
 		font-family: "Century Gothic", Helvetica;
@@ -3064,7 +3076,8 @@ section {
 		padding: 22px;
 	}
 
-	#navbar a:hover {
+	.mainButton:hover {
+		padding: 25px;
 		color: #990099;
 	}
 
@@ -3075,6 +3088,12 @@ section {
 		text-align: right;
 	}
 
+	.wrapper ul:hover .mega-box {
+		transition: all 0.7s;
+		top: 50px;
+		opacity: 1;
+		visibility: visible;
+	}
 
 	/* Sidebar Menu */
 
@@ -4169,4 +4188,122 @@ section {
 
 .fa-google:before {
 	content: "\f1a0"
+}
+
+
+
+/* Dropdown Menu */
+.wrapper {
+	position: relative;
+	max-width: 90%;
+	margin: auto;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 9px 15px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.mega-box {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding: 0 30px;
+	top: 50px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nav-links li a:hover {
+	background: #990099;
+}
+
+.content {
+	background: #303030;
+	border-radius: 10px;
+	padding: 25px 40px;
+	display: flex;
+	width: 85%;
+	justify-content: space-between;
+	float: right;
+}
+
+.main {
+	width: 25%;
+	line-height: 45px;
+}
+
+.mainContact {
+	width: 10%;
+	line-height: 45px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.mainLogo {
+	width: 15%;
+}
+
+.mainLogo img {
+	width: 110%;
+	padding-top: 50px;
+}
+
+.mainProduct .mega-links li a {
+	padding: 0px;
+	padding: 0 20px;
+	color: #d9d9d9;
+	font-size: 16px;
+	display: inline-block;
+	width: 80%;
+}
+
+.main p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.main .mega-links {
+	margin-left: -42px;
+	border-left: 1px solid #ffff;
+}
+
+.main .mega-links li {
+	padding: 0 20px;
+}
+
+.main .mega-links li a {
+	padding: 0px;
+	padding: 0 20px;
+	color: #d9d9d9;
+	font-size: 16px;
+	display: inline-block;
+	width: 80%;
+}
+
+.wrapper ul:hover .mega-box {
+	transition: all 0.7s;
+	top: 75px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.textfooter1 p {
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: normal;
 }
