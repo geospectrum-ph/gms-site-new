@@ -1553,7 +1553,7 @@ a.modal-open {
 		color: #990099;
 	}
 
-	.wrapperDD ul:hover .mega-box {
+	.wrapper ul:hover .mega-box {
 		transition: all 0.7s;
 		top: 80px;
 		opacity: 1;
@@ -1853,7 +1853,7 @@ a.modal-open {
 		color: #990099;
 	}
 
-	.wrapperDD ul:hover .mega-box {
+	.wrapper ul:hover .mega-box {
 		transition: all 0.7s;
 		top: 60px;
 		opacity: 1;
@@ -2833,7 +2833,7 @@ a.modal-open {
 		color: #990099;
 	}
 
-	.wrapperDD ul:hover .mega-box {
+	.wrapper ul:hover .mega-box {
 		transition: all 0.7s;
 		top: 50px;
 		opacity: 1;
@@ -3809,7 +3809,7 @@ a.modal-open {
 
 
 /* Dropdown Menu */
-.wrapperDD {
+.wrapper {
 	position: relative;
 	max-width: 90%;
 	margin: auto;
@@ -3908,7 +3908,7 @@ a.modal-open {
 	width: 80%;
 }
 
-.wrapperDD ul:hover .mega-box {
+.wrapper ul:hover .mega-box {
 	transition: all 0.7s;
 	top: 75px;
 	opacity: 1;
