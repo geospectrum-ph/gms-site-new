@@ -1470,7 +1470,22 @@ section {
 		background-color: #303030;
 	}
 
-
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 90px;
+	right: 195px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 
 }
@@ -2373,7 +2388,22 @@ section {
 	}
 
 
-
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 95px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 }
 
@@ -2593,7 +2623,7 @@ section {
 
 	#brochureButton {
 		text-align: center;
-		float: none;
+		float: right;
 		padding-left: 30px;
 	}
 
@@ -2612,7 +2642,7 @@ section {
 		/* padding-left: 40px; */
 		margin-top: 0px;
 		/* padding-right: 50px; */
-		text-align: center;
+		text-align: right;
 		font-family: Century Gothic, Tahoma;
 		color: #cccccc;
 		font-size: 40px;
@@ -3266,7 +3296,22 @@ section {
 		background-color: #303030;
 	}
 
-
+/* The Close Button */
+.close {
+	position: absolute;
+	top:45px;
+	right: 60px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 
 }
@@ -3530,25 +3575,7 @@ section {
 	}
 }
 
-/* The Close Button */
-.close {
-	position: absolute;
-	top: 15px;
-	right: 95px;
-	color: #f1f1f1;
-	font-size: 40px;
-	font-weight: bold;
-	transition: 0.3s;
 
-
-}
-
-.close:hover,
-.close:focus {
-	color: #bbb;
-	text-decoration: none;
-	cursor: pointer;
-}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
