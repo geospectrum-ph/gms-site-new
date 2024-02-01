@@ -472,6 +472,16 @@ section {
 
 	}
 
+	.accordionEvents:after {
+		content: '\25bc';
+		font-family: "Century Gothic", Helvetica;
+		font-size: 10px;
+		color: #000000;
+		font-weight: bold;
+		float: right;
+		margin-top: 0px;
+	}
+
 	.logo {
 		display: block;
 		z-index: 15;
@@ -3414,19 +3424,15 @@ section {
 
 .main {
 	width: 25%;
-	line-height: 45px;
+	line-height: 35px;
 }
 
 .mainContact {
-	width: 10%;
+	width: 25%;
 	line-height: 45px;
 	color: #fff;
 	font-size: 20px;
 	font-weight: bold;
-}
-
-.mainLogo {
-	width: 15%;
 }
 
 .mainLogo img {

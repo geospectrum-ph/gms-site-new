@@ -2,12 +2,21 @@
 <html lang="en">
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CZ9K453WP"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-5CZ9K453WP');
+	</script>
 	<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
 	<meta charset="UTF-8" />
 	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords"
-		content="Geospectrum, marketing, services, geospatial, data, GIS, Map satellite, imagery, digitize, optical satellite imagery, remote sensing, Synthetic Aperture Radar, SAR, satellite, imaging, ortho, drone, analytics, mapping Philippines, eartheye, ICEYE, AW3D, Planet, SpaceKnow, Satellite image price">
+		content="HYPER-SPECTRAL, Synthetic Aperture Radar, MULTI-SPECTRAL, High-Resolution Pelican, eartheye, ICEYE, AW3D, Geospectrum marketing services, Map satellite, optical satellite imagery, non-optical satellite imagery, tanager, SpaceKnow">
 	<meta name="description"
 		content="We distribute high-resolution, high-cadence (monthly, weekly, and daily revisit) satellite imagery and value-added products addressing a wide range of applications.">
 	<meta name="author" content="Geospectrum Marketing Services">
@@ -21,6 +30,7 @@
 	<link rel="stylesheet" type="text/css" href="css/productsStyle.css">
 	<link rel="stylesheet" href="CSS/slider.css" type="text/css">
 
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
 	<script type="text/javascript" src="js/jquery.stellar.min.js" defer></script>
 
 	<!-- Auto Slideshow -->
@@ -31,6 +41,8 @@
 		defer></script>
 
 	<title>Products | Geospectrum</title>
+	<!-- Alert Message -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 </head>
 
 <body>
@@ -106,17 +118,17 @@
 									<li class="textfooter1">
 										<p> +63917-7915536 </p>
 										<p> +63920-9113418</p>
-										<p> +(632)-8637-8026</p> <br />
-										<p> Unit 1604 OMM Bldg.,</p>
-										<p> 39 San Miguel Avenue,</p>
+										<p> +(632)-8637-8026</p>
+										<p> Unit 804, Linden Suites Tower 1, </p>
+										<p> 37 San Miguel Avenue,</p>
 										<p> Ortigas Center,</p>
 										<p> Pasig City, Philippines</p>
 									</li>
 								</ul>
 							</div>
-							<div class="mainLogo">
+							<!-- <div class="mainLogo">
 								<img src="logos/logoOnly_gmsWhite.png" alt="">
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</li>
@@ -205,8 +217,8 @@
 										<span class="footerHeading">Visit Us</span>
 										<ul style="">
 											<li class="menuFooterList textfooter"><span style="text-decoration:none;">
-													&nbsp Unit 1604 OMM Bldg., <br />
-													&nbsp 39 San Miguel Avenue,<br />
+													&nbsp Unit 804, Linden Suites Tower 1, <br />
+													&nbsp 37 San Miguel Avenue,<br />
 													&nbsp Ortigas Center,<br />
 													&nbsp Pasig City, Philippines<br />&nbsp<br />
 												</span>
@@ -284,12 +296,58 @@
 			<div class="col-6" style="margin-top:0px;">
 				<div id="number" class=""><span class="aboutUs" style="visibility:hidden;">00</span></div>
 				<div id="subHeading" style="">PRODUCTS</div>
-				<div><img src="Images/brochure.png" alt="more" class="responsive" alt="brochure" id="myImg"></div>
+
+				<div id="Carousel-slider">
+					<section class="sectionCarousel">
+						<div class="Carousel-slider">
+							<!-- Background Images div -->
+							<div class="slider-item superHero1" data-href="#">
+								<!-- <button onclick="downloadBrochure()">Download Brochure</button> -->
+								<img src="Images/gmsbrochure.webp" alt="Geospectrum" class="responsive" id="myImg1"
+									onclick="downloadViewBrochure()">
+							</div>
+							<div class="slider-item superHero2" data-href="#">
+								<img src="Images/planetVariables.webp" alt="Planet Variables" class="responsive"
+									onclick="downloadViewBrochure1()">
+							</div>
+							<div class="slider-item superHero3" data-href="#">
+								<img src="Images/aw3d.webp" alt="AW3D" class="responsive"
+									onclick="downloadViewBrochure2()">
+							</div>
+							<div class="slider-item superHero4" data-href="#">
+								<img src="Images/iceye.webp" alt="iceye" class="responsive"
+									onclick="downloadViewBrochure3()">
+							</div>
+							<div class="slider-item superHero5" data-href="#">
+								<img src="Images/pelicanSheet.webp" alt="pelican" class="responsive"
+									onclick="downloadViewBrochure4()">
+							</div>
+							<div class="slider-item superHero6" data-href="#">
+								<img src="Images/planetmonitoring.webp" alt="planet monitoring" class="responsive"
+									id="myImg2" onclick="downloadViewBrochure5()">
+							</div>
+							<div class="slider-item superHero7" data-href="#">
+								<img src="Images/planettasking.webp" alt="planet tasking" class="responsive" id="myImg2"
+									onclick="downloadViewBrochure6()">
+
+							</div>
+							<div class="slider-item superHero8" data-href="#">
+								<img src="Images/tanager.webp" alt="tanager" class="responsive"
+									onclick="downloadViewBrochure7()">
+
+							</div>
+							<!-- Background Images div End -->
+						</div>
+					</section>
+				</div>
+
+				<!-- <div><img src="Images/brochure.webp" alt="more" class="responsive" alt="brochure" id="myImg"></div>
 				<div id="brochureButton">
 					<a href="/Documentation/Geospectrum Brochure.pdf" download="Geospectrum Brochure">
 						<button>Download Brochure</button>
 					</a>
-				</div>
+				</div> -->
+
 			</div>
 			<div class="col-6" style="margin-top:0px;">
 				<div id="answer" style="">
@@ -376,7 +434,9 @@
 		<section id="imageryWrapper">
 			<div style="">
 
-				<div class="productTitle">OPTICAL SATELLITE IMAGERY</div>
+				<div class="productTitle">
+					<h1>OPTICAL SATELLITE IMAGERY</h1>
+				</div>
 
 				<div class="imagery-container" class="reveal" id="imageSpacer">
 					<div class="row">
@@ -877,7 +937,9 @@
 		<section id="imageryNOWrapper">
 			<div class="reveal" style="">
 
-				<div class="productTitle">NON-OPTICAL SATELLITE IMAGERY</div>
+				<div class="productTitle">
+					<h1>NON-OPTICAL SATELLITE IMAGERY</h1>
+				</div>
 
 				<div class="imageryNO-container" id="imageSpacer">
 					<div class="row">
@@ -1019,7 +1081,9 @@
 		<section id="analyticsWrapper">
 			<div class="reveal" style="">
 
-				<div class="productTitle">ANALYTICS SERVICES AND SOFTWARE</div>
+				<div class="productTitle">
+					<h1>ANALYTICS SERVICES AND SOFTWARE</h1>
+				</div>
 
 				<div class="analytics-container" id="imageSpacer">
 					<div class="row">
@@ -1535,8 +1599,8 @@
 						</div>
 						<div class="col-7" style="" id="image">
 							<div><img src="Images/product_pcis.webp" alt="PCIS"
-								style="width:93%; border: 1px dotted #cccccc;">
-						</div>
+									style="width:93%; border: 1px dotted #cccccc;">
+							</div>
 							<div class="imageryDesc" style="">Patient Consultation Information Systems, or PCIS, is a
 								web portal and
 								desktop application that provides medical professionals tools that target efficiency in
@@ -1676,8 +1740,8 @@
 					<span class="footerHeading">Visit Us</span>
 					<ul style="">
 						<li class="menuFooterList textfooter"><span style="text-decoration:none;">
-								&nbsp Unit 1604 OMM Bldg., <br />
-								&nbsp 39 San Miguel Avenue,<br />
+								&nbsp Unit 804, Linden Suites Tower 1, <br />
+								&nbsp 37 San Miguel Avenue,<br />
 								&nbsp Ortigas Center,<br />
 								&nbsp Pasig City, Philippines<br />&nbsp<br />
 							</span>
@@ -1727,17 +1791,19 @@
 	</section>
 	<!-- End Footer -->
 
+	<!-- Carousel -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+	<script src="./js/script.js"></script>
+
 	<script>
 		// Get the modal
 		var modal = document.getElementById("myModal");
+		var modalImg = document.getElementById("img1");
 
-
-		var img = document.getElementById("myImg");
-		var modalImg = document.getElementById("img01");
-		img.onclick = function () {
+		function openModal(imgSrc, altText) {
 			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
+			modalImg.src = imgSrc;
 		}
 
 		// Get the <span> element that closes the modal
@@ -1747,6 +1813,196 @@
 		span.onclick = function () {
 			modal.style.display = "none";
 		}
+
+		function downloadViewBrochure() {
+			// Specify the file URL
+			// const brochureUrl = "/Documentation/Geospectrum Brochure.pdf";
+			// Create a temporary anchor element
+			// const anchor = document.createElement('a');
+			// anchor.href = brochureUrl;
+			// Set the download attribute and trigger a click
+			// anchor.download = "Geospectrum Brochure";
+			// anchor.click();
+			openModal(this.src, this.alt);
+		}
+	</script>
+
+	<script>
+		function downloadViewBrochure1() {
+			Swal.fire({
+				title: "Donwload file?",
+				showCancelButton: true,
+				confirmButtonColor: "#1d3973",
+				cancelButtonColor: "#dedede",
+				confirmButtonText: "Yes"
+			}).then((result) => {
+				if (result.isConfirmed) {
+					// Specify the file URL
+					const brochureUrl = "/Documentation/Planet Variables Datasheet.pdf";
+					// Create a temporary anchor element
+					const anchor = document.createElement('a');
+					anchor.href = brochureUrl;
+					// Set the download attribute and trigger a click
+					anchor.download = "Planet Variables Datasheet";
+					anchor.click();
+
+					Swal.fire({
+						title: "Success!",
+						icon: "success"
+					});
+				}
+			});
+		};
+		function downloadViewBrochure2() {
+			Swal.fire({
+				title: "Donwload file?",
+				showCancelButton: true,
+				confirmButtonColor: "#1d3973",
+				cancelButtonColor: "#dedede",
+				confirmButtonText: "Yes"
+			}).then((result) => {
+				if (result.isConfirmed) {
+					// Specify the file URL
+					const brochureUrl = "/Documentation/AW3D.pdf";
+					// Create a temporary anchor element
+					const anchor = document.createElement('a');
+					anchor.href = brochureUrl;
+					// Set the download attribute and trigger a click
+					anchor.download = "AW3D";
+					anchor.click();
+
+					Swal.fire({
+						title: "Success!",
+						icon: "success"
+					});
+				}
+			});
+		};
+		function downloadViewBrochure3() {
+			Swal.fire({
+				title: "Donwload file?",
+				showCancelButton: true,
+				confirmButtonColor: "#1d3973",
+				cancelButtonColor: "#dedede",
+				confirmButtonText: "Yes"
+			}).then((result) => {
+				if (result.isConfirmed) {
+					// Specify the file URL
+					const brochureUrl = "/Documentation/ICEYE Datasheet.pdf";
+					// Create a temporary anchor element
+					const anchor = document.createElement('a');
+					anchor.href = brochureUrl;
+					// Set the download attribute and trigger a click
+					anchor.download = "ICEYE Datasheet";
+					anchor.click();
+
+					Swal.fire({
+						title: "Success!",
+						icon: "success"
+					});
+				}
+			});
+		};
+		function downloadViewBrochure4() {
+			Swal.fire({
+				title: "Donwload file?",
+				showCancelButton: true,
+				confirmButtonColor: "#1d3973",
+				cancelButtonColor: "#dedede",
+				confirmButtonText: "Yes"
+			}).then((result) => {
+				if (result.isConfirmed) {
+					// Specify the file URL
+					const brochureUrl = "/Documentation/Pelican Datasheet.pdf";
+					// Create a temporary anchor element
+					const anchor = document.createElement('a');
+					anchor.href = brochureUrl;
+					// Set the download attribute and trigger a click
+					anchor.download = "Pelican Datasheet";
+					anchor.click();
+
+					Swal.fire({
+						title: "Success!",
+						icon: "success"
+					});
+				}
+			});
+		};
+		function downloadViewBrochure5() {
+			Swal.fire({
+				title: "Donwload file?",
+				showCancelButton: true,
+				confirmButtonColor: "#1d3973",
+				cancelButtonColor: "#dedede",
+				confirmButtonText: "Yes"
+			}).then((result) => {
+				if (result.isConfirmed) {
+					// Specify the file URL
+					const brochureUrl = "/Documentation/Planet Monitoring Datasheet.pdf";
+					// Create a temporary anchor element
+					const anchor = document.createElement('a');
+					anchor.href = brochureUrl;
+					// Set the download attribute and trigger a click
+					anchor.download = "Planet Monitoring Datasheet";
+					anchor.click();
+
+					Swal.fire({
+						title: "Success!",
+						icon: "success"
+					});
+				}
+			});
+		};
+		function downloadViewBrochure6() {
+			Swal.fire({
+				title: "Donwload file?",
+				showCancelButton: true,
+				confirmButtonColor: "#1d3973",
+				cancelButtonColor: "#dedede",
+				confirmButtonText: "Yes"
+			}).then((result) => {
+				if (result.isConfirmed) {
+					// Specify the file URL
+					const brochureUrl = "/Documentation/Planet Tasking Overview.pdf";
+					// Create a temporary anchor element
+					const anchor = document.createElement('a');
+					anchor.href = brochureUrl;
+					// Set the download attribute and trigger a click
+					anchor.download = "Planet Tasking Overview";
+					anchor.click();
+
+					Swal.fire({
+						title: "Success!",
+						icon: "success"
+					});
+				}
+			});
+		};
+		function downloadViewBrochure7() {
+			Swal.fire({
+				title: "Donwload file?",
+				showCancelButton: true,
+				confirmButtonColor: "#1d3973",
+				cancelButtonColor: "#dedede",
+				confirmButtonText: "Yes"
+			}).then((result) => {
+				if (result.isConfirmed) {
+					// Specify the file URL
+					const brochureUrl = "/Documentation/Tanager Datasheet.pdf";
+					// Create a temporary anchor element
+					const anchor = document.createElement('a');
+					anchor.href = brochureUrl;
+					// Set the download attribute and trigger a click
+					anchor.download = "Tanager Datasheet";
+					anchor.click();
+
+					Swal.fire({
+						title: "Success!",
+						icon: "success"
+					});
+				}
+			});
+		};
 	</script>
 
 </body>
@@ -1831,6 +2087,9 @@
 
 	window.addEventListener("scroll", reveal);
 </script>
+
+<!-- Alert Box -->
+<script src="sweetalert2.all.min.js"></script>
 
 <!-- For accordion -->
 <script>
