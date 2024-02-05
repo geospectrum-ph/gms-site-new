@@ -62,7 +62,7 @@
 
 	<div class="logo" style="">
 		<a href="home.html" aria-label="Homepage">
-			<img src="logos/logo_gms.png" alt="Geospectrum Logo" class="logo" style="" border="0"></a>
+			<img src="logos/logo_gms.png" alt="Geospectrum" class="logo" style="" border="0"></a>
 	</div>
 
 
@@ -388,22 +388,22 @@
 			<span class="productsNeed" class="reveal">Whether you are: </span>
 			<div class="container_mid">
 				<div class="grid-item reveal">
-					<img src="Images/offer_agri.webp" alt="Agri" style="width:35%;"></img><br>
+					<img src="Images/offer_agri.webp" alt="geospectrum agricultute" style="width:35%;"></img><br>
 					From the agricultural sector looking for timely satellite imagery for crop monitoring
 				</div>
 				<div class="grid-item reveal">
-					<img src="Images/offer_governm.webp" alt="" style="width:35%;"></img><br>
+					<img src="Images/offer_governm.webp" alt="geospectrum goveernment" style="width:35%;"></img><br>
 					From the government needing spatial data for better resource management
 					<!-- <br>&nbsp -->
 				</div>
 				<div class="grid-item reveal">
-					<img src="Images/offer_academe.webp" alt="" style="width:35%;"></img><br>
+					<img src="Images/offer_academe.webp" alt="geospectrum academe" style="width:35%;"></img><br>
 					From the academe trying to do innovative research that will contribute to the development of our
 					country
 				</div>
 
 				<div class="grid-item reveal">
-					<img src="Images/offer_sector.webp" alt="" style="width:35%;"></img><br>
+					<img src="Images/offer_sector.webp" alt="geospectrum private sector" style="width:35%;"></img><br>
 					From any sector that needs relevant and accurate geospatial data to be used for your applications
 					<br>&nbsp
 				</div>
@@ -1685,7 +1685,7 @@
 						<span class="emailT"> Drop us a line and we will get in touch.</span><br />
 
 						<div id="linkWhiteFooter" style=""><a href="mailto:info@geospectrum.com.ph"> EMAIL US
-								&nbsp;&nbsp;<img src="Images/button_sphere_plus.webp" alt="more" id="sphereFooter"
+								&nbsp;&nbsp;<img src="Images/button_sphere_plus.webp" alt="PLANET TASKING WITH SKYSAT" id="sphereFooter"
 									class="responsive" style="margin-left:0px;"></a>
 						</div>
 					</div>
@@ -1773,7 +1773,7 @@
 			<div class="footer-container">
 				<div class="col-6" style="margin-top: 50px;">
 					<a href="home.html" aria-label="Geospectrum Home"><img src="logos/logo_gmsRowWhite.webp"
-							alt="FooterLogo" style="height:15px; width:165px;" border="0"></a><br /><br />
+							alt="PLANET TASKING WITH SKYSAT" style="height:15px; width:165px;" border="0"></a><br /><br />
 				</div>
 				<div class="col-6" style="margin-top: 50px;">
 					<span class="textFooterTiny" style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</span>
@@ -1785,7 +1785,7 @@
 			</div>
 		</div>
 
-		<div align="right"><a href="#" class="back-to-top"><img src="Images/top.webp" alt="Top Page"
+		<div align="right"><a href="#" class="back-to-top"><img src="Images/top.webp" alt="Geospectrum"
 					class="responsive"></a>
 		</div>
 	</section>
@@ -1828,180 +1828,205 @@
 	</script>
 
 	<script>
+
+
 		function downloadViewBrochure1() {
-			Swal.fire({
-				title: "Donwload file?",
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'bottom-end',
+				iconColor: 'white',
+				customClass: {
+					popup: 'colored-toast',
+				},
 				showCancelButton: true,
 				confirmButtonColor: "#1d3973",
 				cancelButtonColor: "#dedede",
-				confirmButtonText: "Yes"
+				confirmButtonText: "Confirm",
+				timer: 2000,
+				timerProgressBar: true,
+			})
+			Toast.fire({
+				icon: 'success',
+				title: 'Download file?',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// Specify the file URL
 					const brochureUrl = "/Documentation/Planet Variables Datasheet.pdf";
-					// Create a temporary anchor element
 					const anchor = document.createElement('a');
 					anchor.href = brochureUrl;
-					// Set the download attribute and trigger a click
 					anchor.download = "Planet Variables Datasheet";
 					anchor.click();
-
-					Swal.fire({
-						title: "Success!",
-						icon: "success"
-					});
 				}
-			});
+			})
 		};
+
 		function downloadViewBrochure2() {
-			Swal.fire({
-				title: "Donwload file?",
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'bottom-end',
+				iconColor: 'white',
+				customClass: {
+					popup: 'colored-toast',
+				},
 				showCancelButton: true,
 				confirmButtonColor: "#1d3973",
 				cancelButtonColor: "#dedede",
-				confirmButtonText: "Yes"
+				confirmButtonText: "Confirm",
+				timer: 2000,
+				timerProgressBar: true,
+			})
+			Toast.fire({
+				icon: 'success',
+				title: 'Download file?',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// Specify the file URL
 					const brochureUrl = "/Documentation/AW3D.pdf";
-					// Create a temporary anchor element
 					const anchor = document.createElement('a');
 					anchor.href = brochureUrl;
-					// Set the download attribute and trigger a click
-					anchor.download = "AW3D";
+					anchor.download = "Planet Variables Datasheet";
 					anchor.click();
-
-					Swal.fire({
-						title: "Success!",
-						icon: "success"
-					});
 				}
-			});
+			})
 		};
 		function downloadViewBrochure3() {
-			Swal.fire({
-				title: "Donwload file?",
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'bottom-end',
+				iconColor: 'white',
+				customClass: {
+					popup: 'colored-toast',
+				},
 				showCancelButton: true,
 				confirmButtonColor: "#1d3973",
 				cancelButtonColor: "#dedede",
-				confirmButtonText: "Yes"
+				confirmButtonText: "Confirm",
+				timer: 2000,
+				timerProgressBar: true,
+			})
+			Toast.fire({
+				icon: 'success',
+				title: 'Download file?',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// Specify the file URL
 					const brochureUrl = "/Documentation/ICEYE Datasheet.pdf";
-					// Create a temporary anchor element
 					const anchor = document.createElement('a');
 					anchor.href = brochureUrl;
-					// Set the download attribute and trigger a click
-					anchor.download = "ICEYE Datasheet";
+					anchor.download = "Planet Variables Datasheet";
 					anchor.click();
-
-					Swal.fire({
-						title: "Success!",
-						icon: "success"
-					});
 				}
-			});
+			})
 		};
 		function downloadViewBrochure4() {
-			Swal.fire({
-				title: "Donwload file?",
+
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'bottom-end',
+				iconColor: 'white',
+				customClass: {
+					popup: 'colored-toast',
+				},
 				showCancelButton: true,
 				confirmButtonColor: "#1d3973",
 				cancelButtonColor: "#dedede",
-				confirmButtonText: "Yes"
+				confirmButtonText: "Confirm",
+				timer: 2000,
+				timerProgressBar: true,
+			})
+			Toast.fire({
+				icon: 'success',
+				title: 'Download file?',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// Specify the file URL
 					const brochureUrl = "/Documentation/Pelican Datasheet.pdf";
-					// Create a temporary anchor element
 					const anchor = document.createElement('a');
 					anchor.href = brochureUrl;
-					// Set the download attribute and trigger a click
-					anchor.download = "Pelican Datasheet";
+					anchor.download = "Planet Variables Datasheet";
 					anchor.click();
-
-					Swal.fire({
-						title: "Success!",
-						icon: "success"
-					});
 				}
-			});
+			})
 		};
 		function downloadViewBrochure5() {
-			Swal.fire({
-				title: "Donwload file?",
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'bottom-end',
+				iconColor: 'white',
+				customClass: {
+					popup: 'colored-toast',
+				},
 				showCancelButton: true,
 				confirmButtonColor: "#1d3973",
 				cancelButtonColor: "#dedede",
-				confirmButtonText: "Yes"
+				confirmButtonText: "Confirm",
+				timer: 2000,
+				timerProgressBar: true,
+			})
+			Toast.fire({
+				icon: 'success',
+				title: 'Download file?',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// Specify the file URL
 					const brochureUrl = "/Documentation/Planet Monitoring Datasheet.pdf";
-					// Create a temporary anchor element
 					const anchor = document.createElement('a');
 					anchor.href = brochureUrl;
-					// Set the download attribute and trigger a click
-					anchor.download = "Planet Monitoring Datasheet";
+					anchor.download = "Planet Variables Datasheet";
 					anchor.click();
-
-					Swal.fire({
-						title: "Success!",
-						icon: "success"
-					});
 				}
-			});
+			})
 		};
 		function downloadViewBrochure6() {
-			Swal.fire({
-				title: "Donwload file?",
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'bottom-end',
+				iconColor: 'white',
+				customClass: {
+					popup: 'colored-toast',
+				},
 				showCancelButton: true,
 				confirmButtonColor: "#1d3973",
 				cancelButtonColor: "#dedede",
-				confirmButtonText: "Yes"
+				confirmButtonText: "Confirm",
+				timer: 2000,
+				timerProgressBar: true,
+			})
+			Toast.fire({
+				icon: 'success',
+				title: 'Download file?',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// Specify the file URL
 					const brochureUrl = "/Documentation/Planet Tasking Overview.pdf";
-					// Create a temporary anchor element
 					const anchor = document.createElement('a');
 					anchor.href = brochureUrl;
-					// Set the download attribute and trigger a click
-					anchor.download = "Planet Tasking Overview";
+					anchor.download = "Planet Variables Datasheet";
 					anchor.click();
-
-					Swal.fire({
-						title: "Success!",
-						icon: "success"
-					});
 				}
-			});
+			})
 		};
 		function downloadViewBrochure7() {
-			Swal.fire({
-				title: "Donwload file?",
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'bottom-end',
+				iconColor: 'white',
+				customClass: {
+					popup: 'colored-toast',
+				},
 				showCancelButton: true,
 				confirmButtonColor: "#1d3973",
 				cancelButtonColor: "#dedede",
-				confirmButtonText: "Yes"
+				confirmButtonText: "Confirm",
+				timer: 2000,
+				timerProgressBar: true,
+			})
+			Toast.fire({
+				icon: 'success',
+				title: 'Download file?',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// Specify the file URL
 					const brochureUrl = "/Documentation/Tanager Datasheet.pdf";
-					// Create a temporary anchor element
 					const anchor = document.createElement('a');
 					anchor.href = brochureUrl;
-					// Set the download attribute and trigger a click
-					anchor.download = "Tanager Datasheet";
+					anchor.download = "Planet Variables Datasheet";
 					anchor.click();
-
-					Swal.fire({
-						title: "Success!",
-						icon: "success"
-					});
 				}
-			});
+			})
 		};
 	</script>
 
