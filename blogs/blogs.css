@@ -1790,7 +1790,6 @@ section {
 
 .mainContent {
 	background-color: #ffffff;
-	padding: 20px;
 	/* float: left; */
 	color: rgb(0, 0, 0);
 	flex: 40%;
@@ -1835,9 +1834,23 @@ section {
 @media screen and (max-width: 800px) {
 
 	.left,
-	.main,
+	.mainContent,
 	.right {
-		flex: 100%;
+		flex: 90%;
+		/* The width is 100%, when the viewport is 800px or smaller */
+	}
+}
+
+@media screen and (max-width: 1091px) {
+
+	.left{
+		flex: 20%;
+	}
+	.mainContent{
+		flex: 50%;
+	}
+	.right {
+		flex: 20%;
 		/* The width is 100%, when the viewport is 800px or smaller */
 	}
 }
