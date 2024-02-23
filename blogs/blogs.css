@@ -1805,10 +1805,12 @@ section {
 .by{
 	font-size: smaller;
 	font-style: italic;
+	color: #325a67;
 }
 .readTime{
 	font-size: smaller;
 	font-style: italic;
+	color: #325a67;
 }
 .img {
 	margin-top: 2em;
