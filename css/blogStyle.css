@@ -85,7 +85,7 @@ section {
 
 .reveal {
 	position: relative;
-	transform: translateY(150px);
+	transform: translateY(80px);
 	opacity: 0;
 	transition: 2s all ease;
 }
@@ -2037,7 +2037,7 @@ section {
 	display:     flex;
 	align-items: center;
 	gap: 5px;
-	color: var(--foreground-tertiary);
+	color: #cf7702;
   }
     
   .blog ion-icon { --ionicon-stroke-width: 50px; }
@@ -2159,10 +2159,10 @@ section {
 	}
   
 	.blog .wrapper-flex {
-	  display:         flex;
+	  /* display:         flex; */
 	  justify-content: start;
 	  align-items:     center;
-	  gap: 10px;
+	  /* gap: 10px; */
 	}
   
 	.profile-wrapper {
@@ -2172,9 +2172,7 @@ section {
 	  padding: 3px;
 	  border-radius: 50%;
 	}
-  
-	.profile-wrapper img { border-radius: 50%; }
-  
+ 
 	.blog .wrapper {
 	  flex-direction: column;
 	  align-items: start;
