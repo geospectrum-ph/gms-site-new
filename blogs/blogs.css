@@ -56,10 +56,10 @@ nav {
 /* Section Reveal */
 /******************/
 
-section {
+/* section {
 	min-height: 50vh;
 	display: flex;
-}
+} */
 
 .reveal {
 	position: relative;
@@ -240,7 +240,10 @@ section {
 
 
 @media screen and (min-width: 801px) {
-
+	section {
+		min-height: 40vh;
+		display: flex;
+	}
 
 	.logo {
 		display: block;
@@ -250,7 +253,7 @@ section {
 		padding-left: 1vw;
 		height: 5vh;
 		width: auto;
-		mix-blend-mode: difference;
+		/* mix-blend-mode: difference; */
 	}
 
 	/* Top Navigation Bar     */
@@ -706,7 +709,10 @@ section {
 		height: auto;
 		width: 250px;
 	}
-
+	section {
+		min-height: 50vh;
+		display: flex;
+	}
 	.logo {
 		z-index: 15;
 		position: fixed;
@@ -714,7 +720,7 @@ section {
 		padding-left: 1.5vw;
 		width: 30vw;
 		height: 3.7vw;
-		mix-blend-mode: difference;
+		/* mix-blend-mode: difference; */
 	}
 
 	#navbar {
@@ -905,6 +911,7 @@ section {
 
 	#latestWrapper {
 		display: block;
+		background-image: url(../Images/blogs/measuring-precise-ground-movements-from-space.webp);
 		background-color: #000000;
 		overflow: hidden;
 		height: 120vh;
@@ -1165,6 +1172,10 @@ section {
 		height: auto;
 		width: 230px;
 	}
+	section {
+		min-height: 10vh;
+		display: flex;
+	}
 
 	.logo {
 		z-index: 15;
@@ -1173,7 +1184,7 @@ section {
 		padding-left: 12px;
 		width: 226px;
 		height: 30px;
-		mix-blend-mode: difference;
+		/* mix-blend-mode: difference; */
 	}
 
 	#navbar {
@@ -1354,10 +1365,11 @@ section {
 
 	#latestWrapper {
 		display: block;
+		background-image: url(../Images/blogs/measuring-precise-ground-movements-from-space.webp);
 		color: #ffffff;
 		background-color: #000000;
 		overflow: hidden;
-		height: 100vh;
+		height: 40vh;
 		width: 100%;
 	}
 
@@ -1777,6 +1789,33 @@ section {
 }
 
 
+
+
+.title{
+	font-size: 4em;
+	line-height: 1;
+	text-align: center;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.by{
+	text-align: center;
+	font-size: large;
+	/* font-style: italic; */
+	color: #325a67;
+	font-weight: bold;
+}
+.readTime{
+	text-align: center;
+	font-size: small;
+	/* font-style: italic; */
+	color: #325a67;
+	/* font-weight: bold; */
+}
+.ref{
+	color: #4e4e4e;
+}
 .bodyblog {
 	background-color: #ffffff;
 	display: flex;
@@ -1785,31 +1824,24 @@ section {
 
 .left {
 	/* float: left; */
-	flex: 30%;
+	flex: 25%;
 }
 
 .mainContent {
 	background-color: #ffffff;
 	/* float: left; */
 	color: rgb(0, 0, 0);
-	flex: 40%;
+	flex: 50%;
 	padding-bottom: 3em;
 }
 
 .right {
 	/* float: left; */
-	flex: 30%;
+	flex: 25%;
 }
 
-.by{
-	font-size: smaller;
-	font-style: italic;
-	color: #325a67;
-}
-.readTime{
-	font-size: smaller;
-	font-style: italic;
-	color: #325a67;
+.contentpara{
+	font-size: large;
 }
 .img {
 	margin-top: 2em;
