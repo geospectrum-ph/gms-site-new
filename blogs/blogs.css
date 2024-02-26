@@ -122,12 +122,6 @@ nav {
 	width: 100%;
 }
 
-[class*="col-"] {
-	float: left;
-	padding: 0px;
-	/* 55px original */
-}
-
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -1754,7 +1748,7 @@ nav {
 .listfeaturedtag .thumbnail {
 	background-size:cover;
 	height:100%;
-	width: 95%;
+	width: 100%;
 	display:block;
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
@@ -1833,7 +1827,7 @@ span.post-name a,span.post-read-more a:hover {
 	margin-top: 2em;
 }
 .mainheading h1.sitetitle {
-	font-family:Righteous;
+font-weight: bold;
 }
 .card {
 	border-radius:4px;
