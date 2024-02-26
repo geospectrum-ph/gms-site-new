@@ -115,7 +115,7 @@ nav {
 /************************/
 
 /* Clear floats after the columns */
-.row:after {
+.roww:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -1270,7 +1270,7 @@ nav {
 		border-bottom: 5px solid #c0c0c0;
 	}
 
-	.row:after {
+	.roww:after {
 		content: "";
 		display: table;
 		clear: both;
@@ -1754,7 +1754,7 @@ nav {
 .listfeaturedtag .thumbnail {
 	background-size:cover;
 	height:100%;
-	width: 100%;
+	width: 95%;
 	display:block;
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
