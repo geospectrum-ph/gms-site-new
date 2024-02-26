@@ -24,6 +24,9 @@ body {
 	src: url(../../Fonts/texgyreheros-regular.otf);
 }
 
+h1, h2, h4, h3{
+	font-family: siteFont, Tahoma;
+}
 .responsive {
 	max-width: 100%;
 	height: auto;

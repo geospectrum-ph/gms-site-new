@@ -18,6 +18,9 @@ body {
 	font-size: 16px;
 	font-family: siteFont, Tahoma;
 }
+h1, h2, h4, h3{
+	font-family: siteFont, Tahoma;
+}
 
 @font-face {
 	font-family: siteFont;
