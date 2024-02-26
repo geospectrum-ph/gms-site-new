@@ -1931,7 +1931,7 @@ button {
 
 .h4 {
 	font-size: var(--fs-4);
-	font-weight: 580;
+	font-weight: 600;
 }
 
 .text-sm {
@@ -1991,6 +1991,7 @@ button {
 .mainX {
 	background: var(--background-secondary);
 	padding: var(--py) 0;
+	padding-right: 30px;
 }
 
 .blog .h2 {
@@ -2081,8 +2082,111 @@ button {
 	#ASIDE
   \*-----------------------------------*/
 
-.aside {
+/* .aside {
 	display: none;
+} */
+.topic-btn {
+	display: flex;
+	align-items: stretch;
+	background: var(--background-primary);
+	border-radius: 10px;
+	box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
+	overflow: hidden;
+}
+
+.topic-btn:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.topic-btn .VegMon {
+	font-size: 22px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #499c4e;
+	color: white;
+}
+
+.topic-btn .LandMon {
+	font-size: 22px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #15867b;
+	color: white;
+}
+
+.topic-btn .Agri {
+	font-size: 22px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5b331;
+	color: white;
+}
+
+.topic-btn .LandCoastal {
+	font-size: 22px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0aa4e6;
+	color: white;
+}
+
+.topic-btn .Analytic {
+	font-size: 22px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #3C57B0;
+	color: white;
+}
+
+.topic-btn:hover .VegMon,
+.topic-btn:hover .LandMon,
+.topic-btn:hover .Agri,
+.topic-btn:hover .Analytic,
+.topic-btn:hover .LandCoastal
+ {
+	background: var(--accent);
+	color: var(--white);
+}
+
+.topic-btn ion-icon {
+	--ionicon-stroke-width: 40px;
+}
+
+.topic-btn p {
+	padding: 15px;
+	color: var(--foreground-secondary);
+	font-weight: 700;
+}
+.topics {
+	margin-bottom: 3rem;
+}
+.aside {
+	display: block;
+	align-self: stretch;
+}
+
+.aside .h2 {
+	color: var(--foreground-secondary);
+	margin-bottom: 1rem;
+	text-align: center;
+	line-height: 1.3;
+}
+
+.aside .wrapper {
+	background: var(--background-primary);
+	border-radius: 10px;
+	padding: 40px;
+	box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
 }
 
 

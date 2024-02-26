@@ -136,25 +136,29 @@ nav {
 
 @media only screen and (min-width: 768px) {
 
-	/* For desktop: */
-	
-	.col-4 {
-		width: 33.33%;
-	}
 
-	.col-5 {
-		width: 41.66%;
-	}
+/* For desktop: */
 
-	.col-6 {
-		width: 50%;
-	}
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
 }
 
 @media only screen and (min-width: 600px) {
 
 	/* For tablets: */
 	
+
+
 
 	.col-s-4 {
 		width: 33.33%;
@@ -167,7 +171,6 @@ nav {
 	.col-s-6 {
 		width: 50%;
 	}
-
 	
 }
 
@@ -1754,7 +1757,7 @@ nav {
 .listfeaturedtag .thumbnail {
 	background-size:cover;
 	height:100%;
-	width: 95%;
+	width: 100%;
 	display:block;
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
@@ -1829,11 +1832,24 @@ span.post-name a,span.post-read-more a:hover {
 	margin-right:3px;
 }
 .mainheading {
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 	margin-top: 2em;
 }
 .mainheading h1.sitetitle {
 font-weight: bold;
+text-align: center;
+position: relative;
+}
+.mainheading .sitetitle::before {
+    content: '';
+    position: absolute;
+    bottom:  -8%; 
+    left:  50%; 
+    transform: translateX(-50%); 
+    border-radius:  5px;
+    width:  1.9em;
+    height:  4px;
+    background-color: #6e6e6e;
 }
 .card {
 	border-radius:4px;
@@ -1845,4 +1861,27 @@ font-weight: bold;
 
 .recent-posts{
 	margin-bottom: 2em;
+}
+@media (max-width:999px) {
+	.listfeaturedtag .wrapthumbnail, .listfeaturedtag .col-md-7 {
+		width:100%;
+		max-width:100%;
+		-webkit-box-flex: 0;
+		-webkit-flex: 100%;
+		-ms-flex: 100%;
+		flex: 100%;
+	}
+	.listfeaturedtag .wrapthumbnail {
+		height:250px;
+	}
+	.listfeaturedtag .card {
+		height:auto;
+	}
+	.listfeaturedtag .wrapfooter {
+		position:relative;
+		margin-top:30px;
+	}
+	.listfeaturedtag .card-block {
+		padding:20px;
+	}
 }
