@@ -82,7 +82,7 @@ nav {
 /******************/
 
 section {
-	min-height: 100vh;
+	min-height: 20vh;
 	display: flex;
 }
 
@@ -471,9 +471,9 @@ section {
 	#latestWrapper {
 		display: block;
 		background-color: #000000;
-		background-image: url(../Images/blogbanner.webp);
+		background-image: url(../Images/mapcopy.png);
 		overflow: hidden;
-		height: 100vh;
+		height: 10vh;
 		width: 100%;
 	}
 
@@ -936,7 +936,7 @@ section {
 		display: block;
 		background-color: #000000;
 		overflow: hidden;
-		height: 120vh;
+		height: 10vh;
 		width: 100%;
 	}
 
@@ -1389,7 +1389,7 @@ section {
 		color: #ffffff;
 		background-color: #000000;
 		overflow: hidden;
-		height: 100vh;
+		height: 10vh;
 		width: 100%;
 	}
 
@@ -1995,6 +1995,7 @@ button {
 	background: var(--background-secondary);
 	padding: var(--py) 0;
 	padding-right: 30px;
+	padding-top: 6em;
 }
 
 .blog .h2 {

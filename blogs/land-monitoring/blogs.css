@@ -244,7 +244,7 @@ nav {
 
 @media screen and (min-width: 801px) {
 	section {
-		min-height: 40vh;
+		min-height: 30vh;
 		display: flex;
 	}
 
