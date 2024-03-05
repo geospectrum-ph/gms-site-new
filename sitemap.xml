@@ -10,66 +10,79 @@
 <url>
   <loc>https://www.geospectrum.com.ph/</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+   <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/home</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/blog</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/posts</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/products</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/about</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>yearly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/contact</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>yearly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/blogs/land-monitoring/measuring-precise-ground-movements-from-space</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/blogs/land-monitoring-category</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/blogs/vegetation-monitoring-category</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/blogs/agriculture-assessment-category</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/blogs/land-coastal-management-category</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.geospectrum.com.ph/blogs/suitability-analytics-category</loc>
   <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 
