@@ -18,7 +18,11 @@ body {
 	font-size: 16px;
 	font-family: siteFont, Tahoma;
 }
-h1, h2, h4, h3{
+
+h1,
+h2,
+h4,
+h3 {
 	font-family: siteFont, Tahoma;
 }
 
@@ -700,6 +704,13 @@ nav {
 		background-color: #303030;
 	}
 
+	.title {
+		font-size: 4em;
+		line-height: 1;
+		text-align: center;
+		margin-top: .9em;
+		margin-bottom: .4em;
+	}
 }
 
 /************************************/
@@ -712,10 +723,12 @@ nav {
 		height: auto;
 		width: 250px;
 	}
+
 	section {
 		min-height: 50vh;
 		display: flex;
 	}
+
 	.logo {
 		z-index: 15;
 		position: fixed;
@@ -1175,6 +1188,7 @@ nav {
 		height: auto;
 		width: 230px;
 	}
+
 	section {
 		min-height: 10vh;
 		display: flex;
@@ -1372,7 +1386,7 @@ nav {
 		color: #ffffff;
 		background-color: #000000;
 		overflow: hidden;
-		height: 40vh;
+		height: 20vh;
 		width: 100%;
 	}
 
@@ -1618,6 +1632,22 @@ nav {
 	.back-to-top:hover {
 		background-color: #303030;
 	}
+
+
+	.title {
+		font-size: 2.5em;
+		line-height: 1;
+		text-align: center;
+		margin-top: .9em;
+		margin-bottom: .4em;
+	}
+
+	.bodyblog {
+		margin-inline: auto;
+		margin: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 /************************************/
@@ -1793,35 +1823,35 @@ nav {
 
 
 
-
-.title{
-	font-size: 4em;
-	line-height: 1;
-	text-align: center;
-	margin-top: .9em;
-	margin-bottom: .4em;
+.mainX {
+	padding-right: 30px;
 }
 
-.by{
+
+.by {
 	text-align: center;
 	font-size: large;
 	/* font-style: italic; */
 	color: #325a67;
 	font-weight: bold;
 }
-.italic{
+
+.italic {
 	font-style: italic;
 }
-.readTime{
+
+.readTime {
 	text-align: center;
 	font-size: small;
 	/* font-style: italic; */
 	color: #325a67;
 	/* font-weight: bold; */
 }
-.ref{
+
+.ref {
 	color: #4e4e4e;
 }
+
 .bodyblog {
 	background-color: #ffffff;
 	display: flex;
@@ -1841,10 +1871,12 @@ nav {
 	padding-bottom: 3em;
 	font-size: smaller;
 }
-.mainTitle{
+
+.mainTitle {
 	text-align: center;
 }
-.mainTitle button{
+
+.mainTitle button {
 	font-weight: 200;
 	padding: 0.25rem 1rem;
 	border-radius: 5px;
@@ -1857,9 +1889,10 @@ nav {
 	flex: 25%;
 }
 
-.contentpara{
+.contentpara {
 	font-size: large;
 }
+
 .img {
 	margin-top: 2em;
 	width: 100%;
@@ -1869,17 +1902,20 @@ nav {
 	margin-left: auto;
 	margin-right: auto;
 }
-.label{
+
+.label {
 	font-style: italic;
 	font-size: smaller;
 	margin-top: 1em;
 	color: #727272;
 }
-.reference{
+
+.reference {
 	font-style: italic;
 	font-size: smaller;
 	color: #808080;
 }
+
 @media screen and (max-width: 800px) {
 
 	.left,
@@ -1892,12 +1928,14 @@ nav {
 
 @media screen and (max-width: 1091px) {
 
-	.left{
+	.left {
 		flex: 20%;
 	}
-	.mainContent{
+
+	.mainContent {
 		flex: 50%;
 	}
+
 	.right {
 		flex: 20%;
 		/* The width is 100%, when the viewport is 800px or smaller */
