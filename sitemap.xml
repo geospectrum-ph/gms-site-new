@@ -83,6 +83,17 @@
      <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://www.geospectrum.com.ph/blogs/stories-category</loc>
+  <lastmod>2024-03-01T08:04:23+00:00</lastmod>
+     <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+	<loc>https://www.geospectrum.com.ph/blogs/stories/The-Blue-Lagoon-and-the-Iceland%E2%80%99s-Fiery-Fury</loc>
+	<lastmod>2024-03-22T07:31:12+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
 
 
 </urlset>
