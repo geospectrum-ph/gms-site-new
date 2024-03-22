@@ -930,7 +930,7 @@ nav {
 		background-image: url(../../Images/blogs/measuring-precise-ground-movements-from-space.webp);
 		background-color: #000000;
 		overflow: hidden;
-		height: 120vh;
+		height: 20vh;
 		width: 100%;
 	}
 
@@ -1929,15 +1929,15 @@ nav {
 @media screen and (max-width: 1091px) {
 
 	.left {
-		flex: 20%;
+		flex: 10%;
 	}
 
 	.mainContent {
-		flex: 50%;
+		flex: 80%;
 	}
 
 	.right {
-		flex: 20%;
+		flex: 10%;
 		/* The width is 100%, when the viewport is 800px or smaller */
 	}
 }
